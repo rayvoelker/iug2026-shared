@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IUG 2026 Conference Notes</title>
+  <style>
+    :root {
+      --navy: #0C2340;
+      --teal: #006482;
+      --green: #2D8232;
+      --gold: #E6B900;
+      --sky: #7CC4E2;
+      --light: #f4f5f7;
+      --text: #4D4D4D;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+    .banner {
+      width: 100%;
+      background: var(--navy);
+      text-align: center;
+      padding: 0;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 1200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    h1 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      color: var(--teal);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-bar {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      background: white;
+      border-left: 4px solid var(--gold);
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .info-bar div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-bar .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #999;
+    }
+
+    .info-bar .value {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .info-bar a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    .info-bar a:hover { text-decoration: underline; }
+
+    .tracks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .track-card {
+      background: white;
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      border-top: 3px solid var(--teal);
+    }
+
+    .track-card.sierra { border-top-color: var(--green); }
+    .track-card.polaris { border-top-color: var(--gold); }
+    .track-card.vega { border-top-color: #D42426; }
+    .track-card.general { border-top-color: var(--teal); }
+
+    .track-card h3 {
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .track-card p {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .day-grid {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .day-card {
+      background: white;
+      border-radius: 6px;
+      padding: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    .day-date {
+      text-align: center;
+      min-width: 60px;
+    }
+
+    .day-date .dow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    .day-date .num {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .day-date .month {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .day-info h3 {
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .day-info p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .status {
+      background: white;
+      border-radius: 6px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+
+    .status .badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      position: relative;
+    }
+
+    .footer img {
+      width: 100%;
+      max-width: 1200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .footer-text {
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    .footer-text a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="../assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Magnificent Mile — April 13-15">
+  </div>
+
+  <div class="container">
+
+    <h1>IUG 2026 Conference Notes</h1>
+    <p class="subtitle">Innovative Users Group &middot; Chicago, IL</p>
+
+    <div class="info-bar">
+      <div>
+        <span class="label">When</span>
+        <span class="value">April 12&ndash;15, 2026</span>
+      </div>
+      <div>
+        <span class="label">Where</span>
+        <span class="value">Chicago Marriott Downtown</span>
+      </div>
+      <div>
+        <span class="label">Schedule</span>
+        <span class="value"><a href="https://iug2026.sched.com/">iug2026.sched.com</a></span>
+      </div>
+      <div>
+        <span class="label">Source</span>
+        <span class="value"><a href="https://github.com/rayvoelker/iug2026-shared">GitHub Repo</a></span>
+      </div>
+    </div>
+
+    <div class="status">
+      <span class="badge">In Progress</span>
+      <p>Session notes will be posted here during and after the conference.</p>
+    </div>
+
+    <h2>Conference Tracks</h2>
+    <div class="tracks">
+      <div class="track-card general">
+        <h3>General</h3>
+        <p>Cross-platform sessions &amp; forums</p>
+      </div>
+      <div class="track-card sierra">
+        <h3>Sierra</h3>
+        <p>Sierra ILS</p>
+      </div>
+      <div class="track-card polaris">
+        <h3>Polaris</h3>
+        <p>Polaris ILS</p>
+      </div>
+      <div class="track-card vega">
+        <h3>Vega</h3>
+        <p>Vega LX Platform</p>
+      </div>
+    </div>
+
+    <h2>Schedule</h2>
+    <div class="day-grid">
+      <div class="day-card">
+        <div class="day-date">
+          <div class="dow">Sun</div>
+          <div class="num">12</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Pre-Conference</h3>
+          <p>Workshops, hackathon, ILS-Data pre-conference</p>
+        </div>
+      </div>
+      <div class="day-card">
+        <div class="day-date">
+          <div class="dow">Mon</div>
+          <div class="num">13</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 1</h3>
+          <p>Opening session, roadmaps, hackathon awards, dine-arounds</p>
+        </div>
+      </div>
+      <div class="day-card">
+        <div class="day-date">
+          <div class="dow">Tue</div>
+          <div class="num">14</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 2</h3>
+          <p>Breakout sessions, forums, lightning rounds</p>
+        </div>
+      </div>
+      <div class="day-card">
+        <div class="day-date">
+          <div class="dow">Wed</div>
+          <div class="num">15</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 3</h3>
+          <p>Final sessions, system admin forums, trivia night</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <img src="../assets/chicago-skyline.png" alt="Chicago skyline">
+    <div class="footer-text">
+      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot;
+      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
