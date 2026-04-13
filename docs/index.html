@@ -13,6 +13,7 @@
       --sky: #7CC4E2;
       --light: #f4f5f7;
       --text: #4D4D4D;
+      --red: #D42426;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -110,7 +111,7 @@
 
     .track-card.sierra { border-top-color: var(--green); }
     .track-card.polaris { border-top-color: var(--gold); }
-    .track-card.vega { border-top-color: #D42426; }
+    .track-card.vega { border-top-color: var(--red); }
     .track-card.general { border-top-color: var(--teal); }
 
     .track-card h3 {
@@ -181,25 +182,113 @@
       color: #777;
     }
 
-    .status {
-      background: white;
-      border-radius: 6px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    /* Live Updates */
+    .update-feed {
       margin-bottom: 2rem;
     }
 
-    .status .badge {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--navy);
-      padding: 0.25rem 0.75rem;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      font-weight: 600;
+    .update {
+      background: white;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--teal);
+    }
+
+    .update.highlight {
+      border-left-color: var(--gold);
+    }
+
+    .update.announcement {
+      border-left-color: var(--red);
+    }
+
+    .update-meta {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #999;
       margin-bottom: 0.5rem;
     }
+
+    .update h3 {
+      color: var(--navy);
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .update p {
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .update .detail {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .stat {
+      background: white;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .stat .number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .stat .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #999;
+      margin-top: 0.25rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: var(--navy);
+      color: white;
+      padding: 0.6rem 1rem;
+      text-align: left;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    td {
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    tr.current { background: #fffde7; }
 
     .footer {
       text-align: center;
@@ -255,11 +344,72 @@
       </div>
     </div>
 
-    <div class="status">
-      <span class="badge">In Progress</span>
-      <p>Session notes will be posted here during and after the conference.</p>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="number">412</div>
+        <div class="stat-label">Attendees</div>
+      </div>
+      <div class="stat">
+        <div class="number">130+</div>
+        <div class="stat-label">First-timers</div>
+      </div>
+      <div class="stat">
+        <div class="number">4</div>
+        <div class="stat-label">Days</div>
+      </div>
+      <div class="stat">
+        <div class="number">5</div>
+        <div class="stat-label">Tracks</div>
+      </div>
     </div>
 
+    <!-- LIVE UPDATES -->
+    <h2>Live Updates</h2>
+    <div class="update-feed">
+
+      <div class="update announcement">
+        <div class="update-meta">Monday, April 13 &middot; Opening Session</div>
+        <h3>IUG 2027: Boston!</h3>
+        <p>Next year's conference announced: <strong>Boston, MA &mdash; April 1&ndash;3, 2027</strong>.</p>
+      </div>
+
+      <div class="update highlight">
+        <div class="update-meta">Monday, April 13 &middot; Beacon Award</div>
+        <h3>Rhonda Glazier Wins Beacon Award</h3>
+        <p>Presented by previous IUG Chair Jeff Campbell. Rhonda is Assistant Dean &amp; Associate Professor at Kraemer Family Library, UCCS, and former IUG Chair who led the organization through its first all-virtual conference in 2021.</p>
+      </div>
+
+      <div class="update">
+        <div class="update-meta">Monday, April 13 &middot; Opening Session</div>
+        <h3>New Clarivate Leadership</h3>
+        <p><strong>Yoel Goldenberg</strong>, new SVP &amp; GM of Library Software Solutions, addressed the conference.</p>
+        <p class="detail">Goldenberg joins from the enterprise AI space &mdash; previously CPO at Jacada (conversational AI &amp; automation) and SVP Product Management at Uniphore (AI agents &amp; conversational analytics).</p>
+      </div>
+
+      <div class="update">
+        <div class="update-meta">Monday, April 13 &middot; Announcements</div>
+        <h3>Product News</h3>
+        <p><strong>Vega Reports</strong> launched April 7 to all Vega Discover customers &mdash; pre-built dashboards, custom reports, and visitor engagement tracking.</p>
+        <p><strong>Clarivate + OverDrive partnership</strong> expanding library discovery and reporting.</p>
+      </div>
+
+    </div>
+
+    <!-- ATTENDANCE HISTORY -->
+    <h2>Post-COVID Attendance</h2>
+    <table>
+      <thead>
+        <tr><th>Year</th><th>Location</th><th>Attendance</th></tr>
+      </thead>
+      <tbody>
+        <tr class="current"><td><strong>2026</strong></td><td>Chicago</td><td><strong>412</strong></td></tr>
+        <tr><td>2025</td><td>Denver</td><td>502</td></tr>
+        <tr><td>2024</td><td>Detroit</td><td>~400</td></tr>
+        <tr><td>2019</td><td>Phoenix (pre-COVID)</td><td>700+</td></tr>
+      </tbody>
+    </table>
+
+    <!-- TRACKS -->
     <h2>Conference Tracks</h2>
     <div class="tracks">
       <div class="track-card general">
@@ -280,6 +430,7 @@
       </div>
     </div>
 
+    <!-- SCHEDULE -->
     <h2>Schedule</h2>
     <div class="day-grid">
       <div class="day-card">
