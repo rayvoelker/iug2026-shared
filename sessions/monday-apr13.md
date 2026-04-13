@@ -10,6 +10,11 @@
 - Presented by previous IUG Chair **Jeff Campbell**
 - **Winner: Rhonda Glazier** — Assistant Dean & Associate Professor at Kraemer Family Library, UCCS. Former IUG Chair who led the organization through its first all-virtual conference in 2021.
 
+## Partner Integrations
+
+- **Amazon Business** integration announced
+- **Libby / OverDrive** integration announced
+
 ## Key Announcements
 
 - **IUG 2027** will be in **Boston, MA — April 1-3, 2027**
