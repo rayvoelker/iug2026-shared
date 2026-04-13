@@ -1,6 +1,6 @@
 # Sierra Roadmap
 
-**Presenter:** Doug Randall  
+**Presenter:** Mike Dicus  
 **Date:** Monday, April 13, 2026
 
 ## By the Numbers
