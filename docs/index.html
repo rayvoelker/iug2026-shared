@@ -4,351 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUG 2026 Conference Notes</title>
-  <style>
-    :root {
-      --navy: #0C2340;
-      --teal: #006482;
-      --green: #2D8232;
-      --gold: #E6B900;
-      --sky: #7CC4E2;
-      --light: #f4f5f7;
-      --text: #4D4D4D;
-      --red: #D42426;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.6;
-    }
-
-    .banner {
-      width: 100%;
-      background: var(--navy);
-      text-align: center;
-      padding: 0;
-    }
-
-    .banner img {
-      width: 100%;
-      max-width: 1200px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-
-    h1 {
-      color: var(--navy);
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .subtitle {
-      color: var(--teal);
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    .info-bar {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      background: white;
-      border-left: 4px solid var(--gold);
-      padding: 1rem 1.5rem;
-      border-radius: 4px;
-      margin-bottom: 2rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-
-    .info-bar div {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .info-bar .label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #999;
-    }
-
-    .info-bar .value {
-      font-weight: 600;
-      color: var(--navy);
-    }
-
-    .info-bar a {
-      color: var(--teal);
-      text-decoration: none;
-    }
-
-    .info-bar a:hover { text-decoration: underline; }
-
-    .tracks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .track-card {
-      background: white;
-      border-radius: 6px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      border-top: 3px solid var(--teal);
-    }
-
-    .track-card.sierra { border-top-color: var(--green); }
-    .track-card.polaris { border-top-color: var(--gold); }
-    .track-card.vega { border-top-color: var(--red); }
-    .track-card.general { border-top-color: var(--teal); }
-
-    .track-card h3 {
-      color: var(--navy);
-      margin-bottom: 0.25rem;
-    }
-
-    .track-card p {
-      font-size: 0.85rem;
-      color: #777;
-    }
-
-    h2 {
-      color: var(--navy);
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--gold);
-    }
-
-    .day-grid {
-      display: grid;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .day-card {
-      background: white;
-      border-radius: 6px;
-      padding: 1.25rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      display: flex;
-      gap: 1.25rem;
-      align-items: center;
-    }
-
-    .day-date {
-      text-align: center;
-      min-width: 60px;
-    }
-
-    .day-date .dow {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: #999;
-    }
-
-    .day-date .num {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1;
-    }
-
-    .day-date .month {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: var(--teal);
-    }
-
-    .day-info h3 {
-      color: var(--navy);
-      margin-bottom: 0.25rem;
-    }
-
-    .day-info p {
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    /* Live Updates */
-    .update-feed {
-      margin-bottom: 2rem;
-    }
-
-    .update {
-      background: white;
-      border-radius: 6px;
-      padding: 1.25rem 1.5rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      margin-bottom: 1rem;
-      border-left: 4px solid var(--teal);
-    }
-
-    .update.highlight {
-      border-left-color: var(--gold);
-    }
-
-    .update.announcement {
-      border-left-color: var(--red);
-    }
-
-    .update-meta {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #999;
-      margin-bottom: 0.5rem;
-    }
-
-    .update h3 {
-      color: var(--navy);
-      font-size: 1rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .update p {
-      font-size: 0.9rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .update .detail {
-      font-size: 0.85rem;
-      color: #777;
-    }
-
-    .stats-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .stat {
-      background: white;
-      border-radius: 6px;
-      padding: 1rem 1.25rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      flex: 1;
-      min-width: 120px;
-      text-align: center;
-    }
-
-    .stat .number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1;
-    }
-
-    .stat .stat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #999;
-      margin-top: 0.25rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
-      font-size: 0.9rem;
-    }
-
-    th {
-      background: var(--navy);
-      color: white;
-      padding: 0.6rem 1rem;
-      text-align: left;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    td {
-      padding: 0.6rem 1rem;
-      border-bottom: 1px solid #eee;
-    }
-
-    tr:last-child td { border-bottom: none; }
-
-    tr.current { background: #fffde7; }
-
-    .footer {
-      text-align: center;
-      position: relative;
-    }
-
-    .footer img {
-      width: 100%;
-      max-width: 1200px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .footer-text {
-      padding: 1rem;
-      font-size: 0.85rem;
-      color: #999;
-    }
-
-    .footer-text a {
-      color: var(--teal);
-      text-decoration: none;
-    }
-
-    .sources {
-      margin-bottom: 2rem;
-    }
-
-    .sources ol {
-      background: white;
-      border-radius: 6px;
-      padding: 1rem 1rem 1rem 2.5rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-      font-size: 0.85rem;
-      color: #777;
-    }
-
-    .sources li {
-      margin-bottom: 0.35rem;
-    }
-
-    .sources a {
-      color: var(--teal);
-      text-decoration: none;
-    }
-
-    .sources a:hover { text-decoration: underline; }
-
-    .update .detail a {
-      color: var(--teal);
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="banner">
     <img src="../assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Magnificent Mile — April 13-15">
   </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="amazon-business.html">Amazon Business</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
 
@@ -393,96 +64,64 @@
       </div>
     </div>
 
-    <!-- LIVE UPDATES -->
-    <h2>Live Updates</h2>
-    <div class="update-feed">
-
-      <div class="update highlight">
-        <div class="update-meta">Monday, April 13 &middot; AI Strategy</div>
-        <h3>Responsible AI Framework</h3>
-        <p>Clarivate presented AI principles guided by the public library community: <strong>Transparent, Ethical, Safe</strong> (human in the loop). 2026 AI focus: Polaris Data Explorer, Content Creation, Natural Language Analytics. Pursuing natural language search and AI agents/chat in Discover.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Vega Promote</div>
-        <h3>2026: Year of Promote</h3>
-        <p><strong>Vega Promote</strong> July release for libraries and consortia. Scaled mass email, 1000+ integrations, triggered automations, personalization. SSO with Vega Staff and AI tools.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Resource Sharing</div>
-        <h3>Rapido Resource Sharing &mdash; Live Since March</h3>
-        <p><strong>Rapido Consortial Borrowing</strong> with SearchOhio and OhioLINK. <strong>1,000 requests/day</strong> since launch, connecting 120+ libraries across 4 different ILSs. Vega Discover as the central request interface.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Support</div>
-        <h3>New Self-Service Portals</h3>
-        <p><strong>Known Issues Portal</strong> &mdash; AI-powered, went live April 12. Browse, subscribe, track issues. <strong>Unified Knowledge Portal</strong> &mdash; new docs experience, goes live April 15.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Year in Review</div>
-        <h3>"We Listen" &mdash; By the Numbers</h3>
-        <p>91 new Vega Discover features. 27 new Sierra features. 32% reduction in case resolution time. 42% reduction in case backlog (126 Discover PRs fixed). 60 Ideas Exchange suggestions implemented.</p>
-      </div>
-
-      <div class="update highlight">
-        <div class="update-meta">Monday, April 13 &middot; Innovation Awards</div>
-        <h3>Rochester Hills Public Library Wins Inaugural Innovation Award</h3>
-        <p>The first-ever <strong>Clarivate Library Innovation Awards</strong> &mdash; 50+ entries from 11 countries. IUG/Public Library category winner: <strong>Rochester Hills Public Library</strong> for their developmentally-appropriate discovery interface for children through teenagers, combining early childhood literacy expertise with intentional technical design. Finalists: Santa Clarita PL (mobile library) and Suffolk PL (rural branch expansion).
-          <span class="detail">(<a href="https://iii.com/whats-new/clarivate-library-innovation-awards-reveal-the-2026-finalists/">finalists</a>)</span></p>
-      </div>
-
-      <div class="update announcement">
-        <div class="update-meta">Monday, April 13 &middot; Opening Session</div>
-        <h3>IUG 2027: Boston!</h3>
-        <p>Next year's conference announced: <strong>Boston, MA &mdash; April 1&ndash;3, 2027</strong>.</p>
-      </div>
-
-      <div class="update highlight">
-        <div class="update-meta">Monday, April 13 &middot; Beacon Award</div>
-        <h3>Rhonda Glazier Wins Beacon Award</h3>
-        <p>Presented by previous IUG Chair Jeff Campbell. Rhonda is Assistant Dean &amp; Associate Professor at Kraemer Family Library, UCCS, and former IUG Chair who led the organization through its first all-virtual conference in 2021.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Opening Session</div>
-        <h3>New Clarivate Leadership</h3>
-        <p><strong>Yoel Goldenberg</strong>, new SVP &amp; GM of Library Software Solutions, addressed the conference.</p>
-        <p class="detail">Goldenberg joins from the enterprise AI space &mdash; previously CPO at Jacada (conversational AI &amp; automation) and SVP Product Management at Uniphore (AI agents &amp; conversational analytics).</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Partner Announcements</div>
-        <h3>New Integrations</h3>
-        <p><strong>Amazon Business</strong> EDI integration &mdash; order books from Amazon, download MARC records with order info, load into ILS. Amazon's "grid" tech adds fund codes &amp; locations. Sierra acquisitions API in development. CHPL (Cincinnati) launched mid-April as early adopter. Amazon focused on libraries &lt;1 year &mdash; positioning as primary vendor, not just a la carte.
-          <span class="detail">(<a href="https://iii.com/whats-new/innovative-from-clarivate-collaborates-with-amazon-business-to-enable-edi-ordering-integration-for-sierra-libraries/">iii.com</a>)</span></p>
-        <p><strong>Libby / OverDrive</strong> &mdash; print copy availability when eBook/audio unavailable; combined ILS + OverDrive circulation reporting. Seeking early access partners.</p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Product News</div>
-        <h3>Vega Reports Launch</h3>
-        <p><strong>Vega Reports</strong> officially launched, built on a <strong>data lakehouse</strong> architecture. Rolled out April 7 to all Vega Discover customers with pre-built dashboards, custom reports, and visitor engagement tracking. Future integrations planned with Polaris ILS data and OverDrive.
-          <span class="detail">(<a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">iii.com</a>)</span></p>
-      </div>
-
-      <div class="update">
-        <div class="update-meta">Monday, April 13 &middot; Partnerships</div>
-        <h3>Clarivate + OverDrive</h3>
-        <p>Partnership expanding library discovery and reporting.
-          <span class="detail">(<a href="https://iii.com/whats-new/clarivate-and-overdrive-partner-up-to-expand-library-discovery-and-reporting/">iii.com</a>)</span></p>
-      </div>
-
+    <h2>Session Notes</h2>
+    <div class="day-grid">
+      <a class="day-card" href="monday.html">
+        <div class="day-date">
+          <div class="dow">Mon</div>
+          <div class="num">13</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 1 &mdash; Opening Session</h3>
+          <p>Beacon Award, AI framework, Rapido launch, Vega Reports, Amazon Business, Innovation Awards, IUG 2027 announcement</p>
+        </div>
+      </a>
+      <a class="day-card" href="tuesday.html">
+        <div class="day-date">
+          <div class="dow">Tue</div>
+          <div class="num">14</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 2 &mdash; Breakout Sessions</h3>
+          <p>SQL, Python automation, AI session, Vega Reports deep dive, forums</p>
+        </div>
+      </a>
+      <a class="day-card" href="wednesday.html">
+        <div class="day-date">
+          <div class="dow">Wed</div>
+          <div class="num">15</div>
+          <div class="month">Apr</div>
+        </div>
+        <div class="day-info">
+          <h3>Day 3 &mdash; Final Sessions</h3>
+          <p>Sierra APIs, system admin forums, leadership panel, trivia night</p>
+        </div>
+      </a>
     </div>
 
-    <!-- ATTENDANCE HISTORY -->
+    <h2>Deep Dives</h2>
+    <div class="section-list">
+      <a class="day-card" href="amazon-business.html">
+        <div class="day-info">
+          <h3>Amazon Business EDI Integration</h3>
+          <p>CHPL (Cincinnati) as early adopter, Sierra acquisitions API, implementation advice</p>
+        </div>
+      </a>
+    </div>
+
+    <h2>Conference Tracks</h2>
+    <div class="tracks">
+      <div class="track-card general"><h3>General</h3><p>Cross-platform sessions &amp; forums</p></div>
+      <div class="track-card sierra"><h3>Sierra</h3><p>Sierra ILS</p></div>
+      <div class="track-card polaris"><h3>Polaris</h3><p>Polaris ILS</p></div>
+      <div class="track-card vega"><h3>Vega</h3><p>Vega LX Platform</p></div>
+    </div>
+
     <h2>Post-COVID Attendance</h2>
     <table>
-      <thead>
-        <tr><th>Year</th><th>Location</th><th>Attendance</th></tr>
-      </thead>
+      <thead><tr><th>Year</th><th>Location</th><th>Attendance</th></tr></thead>
       <tbody>
         <tr class="current"><td><strong>2026</strong></td><td>Chicago</td><td><strong>412</strong></td></tr>
         <tr><td>2025</td><td>Denver</td><td>502</td></tr>
@@ -490,91 +129,6 @@
         <tr><td>2019</td><td>Phoenix (pre-COVID)</td><td>700+</td></tr>
       </tbody>
     </table>
-
-    <!-- TRACKS -->
-    <h2>Conference Tracks</h2>
-    <div class="tracks">
-      <div class="track-card general">
-        <h3>General</h3>
-        <p>Cross-platform sessions &amp; forums</p>
-      </div>
-      <div class="track-card sierra">
-        <h3>Sierra</h3>
-        <p>Sierra ILS</p>
-      </div>
-      <div class="track-card polaris">
-        <h3>Polaris</h3>
-        <p>Polaris ILS</p>
-      </div>
-      <div class="track-card vega">
-        <h3>Vega</h3>
-        <p>Vega LX Platform</p>
-      </div>
-    </div>
-
-    <!-- SCHEDULE -->
-    <h2>Schedule</h2>
-    <div class="day-grid">
-      <div class="day-card">
-        <div class="day-date">
-          <div class="dow">Sun</div>
-          <div class="num">12</div>
-          <div class="month">Apr</div>
-        </div>
-        <div class="day-info">
-          <h3>Pre-Conference</h3>
-          <p>Workshops, hackathon, ILS-Data pre-conference</p>
-        </div>
-      </div>
-      <div class="day-card">
-        <div class="day-date">
-          <div class="dow">Mon</div>
-          <div class="num">13</div>
-          <div class="month">Apr</div>
-        </div>
-        <div class="day-info">
-          <h3>Day 1</h3>
-          <p>Opening session, roadmaps, hackathon awards, dine-arounds</p>
-        </div>
-      </div>
-      <div class="day-card">
-        <div class="day-date">
-          <div class="dow">Tue</div>
-          <div class="num">14</div>
-          <div class="month">Apr</div>
-        </div>
-        <div class="day-info">
-          <h3>Day 2</h3>
-          <p>Breakout sessions, forums, lightning rounds</p>
-        </div>
-      </div>
-      <div class="day-card">
-        <div class="day-date">
-          <div class="dow">Wed</div>
-          <div class="num">15</div>
-          <div class="month">Apr</div>
-        </div>
-        <div class="day-info">
-          <h3>Day 3</h3>
-          <p>Final sessions, system admin forums, trivia night</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-    <h2>Sources</h2>
-    <div class="sources">
-      <ol>
-        <li><a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Smarter Insights Ahead: Vega Reports Launching Soon</a> &mdash; iii.com, Apr 1 2026</li>
-        <li><a href="https://iii.com/whats-new/clarivate-and-overdrive-partner-up-to-expand-library-discovery-and-reporting/">Clarivate and OverDrive Partner to Expand Library Discovery and Reporting</a> &mdash; iii.com, Apr 1 2026</li>
-        <li><a href="https://iii.com/whats-new/why-iug-remains-a-highlight-every-year/">Why IUG Remains a Highlight Every Year</a> (IUG 2027 Boston announcement) &mdash; iii.com, Apr 9 2026</li>
-        <li><a href="https://iii.com/whats-new/making-the-most-of-iug-2026-discover-what-awaits/">Making the Most of IUG 2026</a> &mdash; iii.com, Mar 30 2026</li>
-        <li><a href="https://iii.com/whats-new/returning-to-iug-fresh-ideas-stronger-connections/">Returning to IUG: Fresh Ideas, Stronger Connections</a> &mdash; iii.com, Apr 9 2026</li>
-        <li><a href="https://www.innovativeusers.org/beacon_award.php">IUG Beacon Award</a> &mdash; innovativeusers.org</li>
-        <li><a href="https://iug2026.sched.com/">IUG 2026 Schedule</a> &mdash; sched.com</li>
-      </ol>
-    </div>
 
   </div>
 

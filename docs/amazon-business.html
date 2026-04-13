@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Business EDI Integration — IUG 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="../assets/iug2026-banner.png" alt="IUG 2026">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="amazon-business.html" class="active">Amazon Business</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="monday.html">Monday</a> / Amazon Business</div>
+    <h1>Amazon Business EDI Integration</h1>
+    <p class="page-subtitle">Opening Session Deep Dive &middot; Monday, April 13</p>
+
+    <div class="card">
+      <h3>Presenters</h3>
+      <p><strong>Holbrook Sample</strong> &mdash; CTLO, Public Library of Cincinnati and Hamilton County (CHPL)</p>
+      <p><strong>Moses Lai</strong> &mdash; Sr. Technical Product Manager, Amazon</p>
+    </div>
+
+    <h2>The Integration</h2>
+    <div class="section-list">
+      <div class="section-item">
+        <h3>How It Works</h3>
+        <p>Order books from Amazon Business, download brief MARC records with order info, load into the ILS. EDI is the backbone.</p>
+        <p>Amazon's "grid" technology lets libraries add structured metadata &mdash; fund codes, locations, processing instructions &mdash; to orders before they flow into EDI.</p>
+      </div>
+      <div class="section-item">
+        <h3>Sierra Side</h3>
+        <p><strong>Sierra acquisitions API is being developed</strong> on the III side to support this integration.</p>
+      </div>
+      <div class="section-item">
+        <h3>Amazon's Library Focus</h3>
+        <p>Amazon has had procurement tools broadly, but has been <strong>focused on libraries for less than 1 year</strong>.</p>
+        <p>MARC record quality has been improved. More features coming. Looking for additional partnerships.</p>
+        <p>Positions Amazon as a <strong>primary materials vendor</strong> (competing with B&amp;T), not just a la carte.</p>
+        <p><strong>Patron-driven acquisitions</strong> mentioned as a future possibility.</p>
+      </div>
+    </div>
+
+    <h2>CHPL Implementation</h2>
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Getting Started</h3>
+        <p>Acquisitions/selection experts on CHPL staff. Early meetings included cataloging, processing, fiscal office, MSA, and cataloging teams.</p>
+        <p>Outsource MARC records (brief records from Amazon supplemented).</p>
+      </div>
+      <div class="section-item">
+        <h3>Launch</h3>
+        <p><strong>Launched mid-April 2026.</strong></p>
+        <p>Half the budget goes to physical materials. Purchase order driven workflow. EDI enforces the structure &mdash; the more methodical the work, the better.</p>
+      </div>
+      <div class="section-item">
+        <h3>Current State</h3>
+        <p>Selectors still use Library Hub for pre-pub work. Currently working out fund mapping between Amazon and ILS.</p>
+        <p>Aligning Amazon Business tools with existing workflows was essential.</p>
+      </div>
+    </div>
+
+    <h2>Implementation Advice</h2>
+    <div class="card">
+      <ul style="padding-left: 1.25rem; margin: 0;">
+        <li>Get acquisitions, cataloging, processing, AND fiscal office involved from the start</li>
+        <li>Know up front how to route materials to different locations/branches</li>
+        <li>Have a short list of goals defined before you begin</li>
+        <li>Get solid MARC records up front to focus on change control</li>
+        <li>Define all important features before implementation</li>
+        <li>Align vendor tools to your workflows, not the other way around</li>
+        <li>EDI-driven workflow is more structured and reliable than credit card purchasing</li>
+      </ul>
+    </div>
+
+    <h2>Source</h2>
+    <div class="sources">
+      <ol>
+        <li><a href="https://iii.com/whats-new/innovative-from-clarivate-collaborates-with-amazon-business-to-enable-edi-ordering-integration-for-sierra-libraries/">Innovative from Clarivate Collaborates with Amazon Business</a> &mdash; iii.com</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <img src="../assets/chicago-skyline.png" alt="Chicago skyline">
+    <div class="footer-text">
+      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot;
+      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
