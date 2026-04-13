@@ -12,31 +12,75 @@
 
 ## Partner Integrations
 
-- **Amazon Business** integration announced
-- **Libby / OverDrive** integration announced
+- **Amazon Business** EDI integration — order books from Amazon, download MARC records with order info, load into ILS automatically
+- **Libby / OverDrive** integration — print copy availability surfaced when audio/eBook is unavailable; combined ILS + OverDrive circulation reporting. Calling for early access partners.
 
-## Vega Reports Launch
+## Vega Reports and Analytics
 
-- **Vega Reports** officially launched, built on a **data lakehouse** architecture
-- Rolled out April 7 to all Vega Discover customers
-- Pre-built dashboards, custom reports, visitor engagement tracking
-- Future integrations planned with Polaris ILS data and OverDrive ^[3] ^[4]
+- **Vega Reports** officially launched April 7, built on a **data lakehouse** architecture
+- Unified modern BI platform with AI-powered insights
+- Connected to Data Lakehouse unifying all portfolio data and 3rd parties
+- Integrated into App Launcher and Vega Connect (single sign-on)
+- Discover data already available; future integrations with Polaris ILS data and OverDrive
+- Early access partners included STELLA, Vigo County Public Library, Pasadena Public Library, Timberland Regional Library ^[3] ^[4]
 
-## Resource Sharing Update
+## 2026: Year of Promote
 
-- Resource sharing **launched in March**
-- CHPL.org (Cleveland Heights-University Heights Public Library) is part of the group
+- **Vega Promote** July release for libraries and consortia
+- Scaled mass email sending, 1000+ integrations, triggered automations, top personalization features
+- Seamless staff flows: SSO with Vega Staff, AI tools, automated workflows
+- CCPA compliant, VPAT report, translatable, dedicated accessibility team
 
-## Support & Tools
+## Next Generation Resource Sharing (Rapido)
 
-- New **known issues portal** announced for customers
-- AI was a theme throughout the opening — slides previewed AI integration across the platform
-- Tuesday features both "AI The Right Way: Smarter Tools, Stronger Outcomes" (Ashley Barey) and "Vega Reports for Discover and Beyond" (Jovana Raskovic) in the 4:30pm block
+- **Rapido Consortial Borrowing** — returnables (books/AV) across different ILSs, preserving each library's workflows, cutting costs
+- **Open ILL Network** — flexible standards-based request methods
+- Partners: **SearchOhio** and **OhioLINK**
+- **Went live in March!**
+- 1,000 requests per day since launch
+- Connecting **120+ libraries using 4 different ILSs**
+- Vega Discover serving as the central request interface
+
+## Responsible AI Principles
+
+Clarivate presented an AI framework guided by the public library community:
+
+- **Transparent** — clear indication of AI features; clear info about training data; not stored with AI agents
+- **Ethical** — AI with a purpose; measures to reduce bad information; collaboration with CAB to monitor direction
+- **Safe** — human in the loop; uphold privacy & security standards; adherence to global regulations
+
+**2026 AI Focus:**
+- AI Advisory Council established
+- Staff efficiency focus — AI solving real problems:
+  - Polaris Data Explorer
+  - Content Creation
+  - Natural Language Analytics
+- Pursuing: natural language search in Discover, Agents/Chat via Discover
+
+## Support & Self-Service
+
+- **Known Issues Portal** — new self-service portal powered by AI. Browse, subscribe, track issues. Built in collaboration with Support Advisory Board. **Went live April 12.**
+- **Unified Knowledge Portal** — new documentation/knowledge discovery experience. **Goes live April 15** (Wednesday of this conference).
+
+## "We Listen" — Year in Review
+
+| What They Heard | What They Did |
+|----------------|---------------|
+| Better support & product communication | 32% reduction in case resolution time |
+| Better documentation & learning tools | Launch of Knowledge Portal and new eLearning |
+| Consortia-specific features | 91 new feature improvements for Vega Discover |
+| Improve cloud platform stability | Recent Cloud Webinar on monitoring & stability |
+
+Additional stats:
+- 2 releases each for Polaris and Sierra in 2025
+- 27 new features developed in Sierra
+- 42% reduction in case backlog — 126 PRs for Discover fixed
+- 60 suggestions from Ideas Exchange implemented
 
 ## Key Announcements
 
 - **IUG 2027** will be in **Boston, MA — April 1-3, 2027** ^[5]
-- **Clarivate Library Innovation Awards** ceremony (10:45am) recognizing AI-assisted cataloguing, discovery enhancements, and community services ^[6]
+- **Clarivate Library Innovation Awards** ceremony (10:45am) ^[6]
 
 ## Post-COVID Attendance Trend
 
@@ -53,8 +97,9 @@ Pre-COVID (2019, Phoenix) drew 700+. The virtual conferences (2020-2022) peaked 
 ## Sources
 
 1. [Yoel Goldenberg — LinkedIn](https://www.linkedin.com/in/yoelgoldenberg/); [Uniphore acquires Jacada (2021)](https://www.uniphore.com/press-releases/uniphore-announces-intent-to-acquire-jacada/)
-2. [IUG Beacon Award history](https://www.innovativeusers.org/beacon_award.php); [IUG 2021 virtual conference recap](https://iii.com/whats-new/)
+2. [IUG Beacon Award history](https://www.innovativeusers.org/beacon_award.php)
 3. [Smarter Insights Ahead: Vega Reports Launching Soon — iii.com, Apr 1 2026](https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/)
 4. [Clarivate and OverDrive Partner to Expand Library Discovery and Reporting — iii.com, Apr 1 2026](https://iii.com/whats-new/clarivate-and-overdrive-partner-up-to-expand-library-discovery-and-reporting/)
 5. [Why IUG Remains a Highlight Every Year — iii.com, Apr 9 2026](https://iii.com/whats-new/why-iug-remains-a-highlight-every-year/)
 6. [Making the Most of IUG 2026 — iii.com, Mar 30 2026](https://iii.com/whats-new/making-the-most-of-iug-2026-discover-what-awaits/)
+7. Opening session slide photos — [Google Photos Album](https://photos.app.goo.gl/jvbF72F849caaXmdA)
