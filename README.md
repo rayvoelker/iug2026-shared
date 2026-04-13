@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Magnificent Mile — April 13-15" width="100%">
+  <img src="docs/assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Magnificent Mile — April 13-15" width="100%">
 </p>
 
 # IUG 2026 Conference Notes
@@ -34,5 +34,5 @@ Links, handouts, and reference materials in [`resources/`](resources/).
 | **Vega** | Vega LX platform-specific |
 
 <p align="center">
-  <img src="assets/chicago-skyline.png" alt="Chicago skyline" width="100%">
+  <img src="docs/assets/chicago-skyline.png" alt="Chicago skyline" width="100%">
 </p>
