@@ -22,6 +22,17 @@
 - Pre-built dashboards, custom reports, visitor engagement tracking
 - Future integrations planned with Polaris ILS data and OverDrive ^[3] ^[4]
 
+## Resource Sharing Update
+
+- Resource sharing **launched in March**
+- CHPL.org (Cleveland Heights-University Heights Public Library) is part of the group
+
+## Support & Tools
+
+- New **known issues portal** announced for customers
+- AI was a theme throughout the opening — slides previewed AI integration across the platform
+- Tuesday features both "AI The Right Way: Smarter Tools, Stronger Outcomes" (Ashley Barey) and "Vega Reports for Discover and Beyond" (Jovana Raskovic) in the 4:30pm block
+
 ## Key Announcements
 
 - **IUG 2027** will be in **Boston, MA — April 1-3, 2027** ^[5]
