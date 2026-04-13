@@ -80,7 +80,9 @@ Additional stats:
 ## Key Announcements
 
 - **IUG 2027** will be in **Boston, MA — April 1-3, 2027** ^[5]
-- **Clarivate Library Innovation Awards** ceremony (10:45am) ^[6]
+- **Clarivate Library Innovation Awards** — inaugural awards, 50+ entries from 11 countries ^[6]
+  - **IUG Winner: Rochester Hills Public Library** — developmentally-appropriate discovery interface for children through teenagers, combining early childhood literacy expertise with intentional technical design
+  - Finalists: Santa Clarita Public Library (mobile library), Suffolk Public Library (rural branch expansion)
 
 ## Post-COVID Attendance Trend
 
