@@ -34,6 +34,7 @@ Session notes organized by day:
 | [Resource Sharing Update](sessions/tuesday-apr14-resource-sharing.md) | Rapido CB & stand-alone, SearchOhio deployment |
 | [Floating Collections BoF](sessions/tuesday-apr14-floating-collections-bof.md) | Smart routing, bulk holds, Sierra API gaps, Vega Reports |
 | [Sierra Year in Review](sessions/tuesday-apr14-sierra-year-in-review.md) | 6.4 & 6.5 releases, patron checkout limits, Admin Corner migration |
+| [MEEP](sessions/tuesday-apr14-meep.md) | Member-Exclusive Enhancement Process — voting, priorities, roadmap input |
 
 ## Conference Tracks
 
