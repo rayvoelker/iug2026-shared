@@ -31,6 +31,8 @@ Session notes organized by day:
 | [Sierra Roadmap](sessions/monday-apr13-sierra-roadmap.md) | May & November 2026 releases |
 | [Amazon Business EDI](sessions/monday-apr13-amazon-business.md) | CHPL early adopter, implementation advice |
 | [Hackathon Awards](sessions/monday-apr13-hackathon-awards.md) | Six projects, Shelf Defense wins |
+| [Resource Sharing Update](sessions/tuesday-apr14-resource-sharing.md) | Rapido CB & stand-alone, SearchOhio deployment |
+| [Floating Collections BoF](sessions/tuesday-apr14-floating-collections-bof.md) | Smart routing, bulk holds, Sierra API gaps, Vega Reports |
 
 ## Conference Tracks
 
