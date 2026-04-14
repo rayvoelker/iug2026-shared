@@ -102,6 +102,14 @@ Rapido is a growing community across **20 countries** spanning USA/Canada, Latin
 
 ---
 
+## Q&A Highlights
+
+- **Distinguishing item types** is one of the top features requested at listening sessions — DVD vs. Blu-ray was the example given. Patrons need to tell formats apart when requesting through Rapido.
+- **INN-Reach is not going away** — but the next generation is Rapido/Vega. Not rushing anyone off INN-Reach, but the two systems **do not interoperate and likely never will**. No plans to build a bridge between them. When a consortium moves to Rapido, it's a full cutover.
+- **Fewer OCLC resource sharing platforms** — trend toward moving away from OCLC ILL, reducing dependency on it. Rapido offers **customizable workflow management** that puts more control in the hands of staff users.
+
+---
+
 ## Slide Reference
 
 | Slide | Description |
