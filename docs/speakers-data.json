@@ -1,0 +1,4588 @@
+[
+  {
+    "id": "alan-mccarthy-behler",
+    "name": "Alan McCarthy-Behler",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Bytes and Bites: Cybersecurity Conversations",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1w1Ho/bytes-and-bites-cybersecurity-conversations"
+      },
+      {
+        "year": 2025,
+        "title": "Creating Effective Cybersecurity",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0ED/creating-effective-cybersecurity"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "alex-vancina",
+    "name": "Alex Vancina",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "WILIUG - **OFFSITE - RSVP** - Wisconsin/Illinois Innovative Users Group Lunch",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQd/wiliug-offsite-rsvp-wisconsinillinois-innovative-users-group-lunch"
+      },
+      {
+        "year": 2024,
+        "title": "Exploring Aspen Discovery",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPB/exploring-aspen-discovery"
+      },
+      {
+        "year": 2025,
+        "title": "Wisconsin-Illinois Innovative Users Group (WILIUG) Lunch",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ew/wisconsin-illinois-innovative-users-group-wiliug-lunch"
+      },
+      {
+        "year": 2026,
+        "title": "MEEP (Member-Exclusive Enhancement Process)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZb6/meep-member-exclusive-enhancement-process"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Circulation Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbX/sierra-circulation-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "alissa-dornink",
+    "name": "Alissa Dornink",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris acquisitions and cataloging forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ3/polaris-acquisitions-and-cataloging-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Cataloging & Acquisitions Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bk/polaris-cataloging-acquisitions-forum"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris Cataloging & Acquisitions Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZa2/polaris-cataloging-acquisitions-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "allison-sartwell",
+    "name": "Allison Sartwell",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Using Data to Set Priorities & Enhance the Collection",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DF/using-data-to-set-priorities-enhance-the-collection"
+      },
+      {
+        "year": 2026,
+        "title": "Public Services Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdH/public-services-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "alvin-dantes",
+    "name": "Alvin Dantes",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris Single Sign-on: Tips, tricks, pitfalls, and other things to avoid",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOq/polaris-single-sign-on-tips-tricks-pitfalls-and-other-things-to-avoid"
+      },
+      {
+        "year": 2026,
+        "title": "IUG Dine Around: The Purple Pig - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2J3mi/iug-dine-around-the-purple-pig-rsvp-required"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "amanda-raver",
+    "name": "Amanda Raver",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbU/lightning-rounds"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "andrew-mcdonald",
+    "name": "Andrew McDonald",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Lessons Learned, Custom software in the Library Space",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dg/lessons-learned-custom-software-in-the-library-space"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "angela-nolet",
+    "name": "Angela Nolet",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Vega LX for Consortia",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOb/vega-lx-for-consortia"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Program Overview",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOh/vega-program-overview"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Discover Overview",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOk/vega-discover-overview"
+      },
+      {
+        "year": 2025,
+        "title": "Vega Discover Integrations",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0D3/vega-discover-integrations"
+      },
+      {
+        "year": 2025,
+        "title": "Easy Event and Room Management with Vega Program",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DO/easy-event-and-room-management-with-vega-program"
+      },
+      {
+        "year": 2025,
+        "title": "Vega LX Consortia Benefits",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0E4/vega-lx-consortia-benefits"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ann-langlois",
+    "name": "Ann Langlois",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Cleaning Up Our Act Using Really, Really Simple Inventory & Other Projects",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZc7/cleaning-up-our-act-using-really-really-simple-inventory-other-projects"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "anthony-quinn",
+    "name": "Anthony Quinn",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "A Day in the Life of Product Design: Journey Mapping and UX Conception",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyO4/a-day-in-the-life-of-product-design-journey-mapping-and-ux-conception"
+      },
+      {
+        "year": 2025,
+        "title": "Accessibility Matters",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cx/accessibility-matters"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ashley-barey",
+    "name": "Ashley Barey",
+    "affiliation": "Innovative (Clarivate)",
+    "type": "Product Strategist",
+    "primaryTrack": "vega",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Vega LX Roadmap",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZV/vega-lx-roadmap"
+      },
+      {
+        "year": 2026,
+        "title": "Leveraging the Vega Suite for Personalized Library Experiences",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZt/leveraging-the-vega-suite-for-personalized-library-experiences"
+      },
+      {
+        "year": 2026,
+        "title": "AI The Right Way: Smarter Tools, Stronger Outcomes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbL/ai-the-right-way-smarter-tools-stronger-outcomes"
+      },
+      {
+        "year": 2026,
+        "title": "Vega Mobile Update",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd2/vega-mobile-update"
+      }
+    ],
+    "notes": "VP Product Management. Not a librarian — enterprise tech background."
+  },
+  {
+    "id": "beth-lane",
+    "name": "Beth Lane",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Getting Started With Patron Imports & Student Cards",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2IA3c/getting-started-with-patron-imports-student-cards"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bethany-baker",
+    "name": "Bethany Baker",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Thriving as a New Sierra ILS Administrator: Tips, Tricks, and Lessons Learned",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DU/thriving-as-a-new-sierra-ils-administrator-tips-tricks-and-lessons-learned"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bob-gaydos",
+    "name": "Bob Gaydos",
+    "affiliation": "Stark County District Library, OH",
+    "type": "SQL Sage",
+    "primaryTrack": "sierra",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "4 Perspectives on Using Holds Data with SQL",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNC/4-perspectives-on-using-holds-data-with-sql"
+      },
+      {
+        "year": 2024,
+        "title": "A Reusable Pattern for Scheduled Python/SQL/API Jobs",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNI/a-reusable-pattern-for-scheduled-pythonsqlapi-jobs"
+      },
+      {
+        "year": 2024,
+        "title": "CANCELLED - Preparing Data with Unixesque Commands",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOA/cancelled-preparing-data-with-unixesque-commands"
+      },
+      {
+        "year": 2025,
+        "title": "Intermediate SQL for Sierra and Polaris",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dv/intermediate-sql-for-sierra-and-polaris"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      },
+      {
+        "year": 2026,
+        "title": "Where Do I Start? Techniques for writing a large and/or complex SQL report",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZb3/where-do-i-start-techniques-for-writing-a-large-andor-complex-sql-report"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbm/lightning-rounds"
+      }
+    ],
+    "notes": "Career database developer and former DBA. 2025 Beacon Award nominee."
+  },
+  {
+    "id": "brad-rogers",
+    "name": "Brad Rogers",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brandon-bolek-toubeaux",
+    "name": "Brandon Bolek-Toubeaux",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Seeing the Forest Through the Weeds: Inventory Through Polaris Weeding Workflows",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbj/seeing-the-forest-through-the-weeds-inventory-through-polaris-weeding-workflows"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brandon-cole",
+    "name": "Brandon Cole",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Implementing PINs for max security",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EA/implementing-pins-for-max-security"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brandy-helewa",
+    "name": "Brandy Helewa",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Exhibitor Showcase: Recollect (Coffee Provided)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2Kh73/exhibitor-showcase-recollect-coffee-provided"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bryan-yostos",
+    "name": "Bryan Yostos",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyTv/pre-conference-the-iug-hackathon"
+      },
+      {
+        "year": 2024,
+        "title": "IUG Dine Around: Pegasus Taverna **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b1BN/iug-dine-around-pegasus-taverna-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2026,
+        "title": "Vega WebBuilder - The easy way, the advanced way & the takeaways",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcD/vega-webbuilder-the-easy-way-the-advanced-way-the-takeaways"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "c-mulder",
+    "name": "C Mulder",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris acquisitions and cataloging forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ3/polaris-acquisitions-and-cataloging-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Mixing Data Driven Decisions with Collection Development Knowledge: It's time to Weed",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bq/mixing-data-driven-decisions-with-collection-development-knowledge-its-time-to-weed"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Cataloging & Acquisitions Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bk/polaris-cataloging-acquisitions-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Messy, Messy Records: The Who, How, and When of Polaris Bibliographic Record Clean-up and Maintenance",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dm/messy-messy-records-the-who-how-and-when-of-polaris-bibliographic-record-clean-up-and-maintenance"
+      },
+      {
+        "year": 2026,
+        "title": "Vega Rollups and Your Bibliographic Records: Making Them Work for Your Users",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd8/vega-rollups-and-your-bibliographic-records-making-them-work-for-your-users"
+      },
+      {
+        "year": 2026,
+        "title": "Public Services Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdH/public-services-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "caitlin-spears",
+    "name": "Caitlin Spears",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      },
+      {
+        "year": 2024,
+        "title": "Support Update",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNy/support-update"
+      },
+      {
+        "year": 2025,
+        "title": "Support Update & Support Center Overview",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0C2/support-update-support-center-overview"
+      },
+      {
+        "year": 2026,
+        "title": "Support Update",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZck/support-update"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cameron-crawford",
+    "name": "Cameron Crawford",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Seeing the Forest Through the Weeds: Inventory Through Polaris Weeding Workflows",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbj/seeing-the-forest-through-the-weeds-inventory-through-polaris-weeding-workflows"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "carol-hassler",
+    "name": "Carol Hassler",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Two Sierra Tricks",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZa5/two-sierra-tricks"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "carolyn-bly",
+    "name": "Carolyn Bly",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "From Backlog to Breakthrough: Streamlining Technical Services with Workslip Cataloging and LEAN Solutions",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaN/from-backlog-to-breakthrough-streamlining-technical-services-with-workslip-cataloging-and-lean-solutions"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "carrie-pearson",
+    "name": "Carrie Pearson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "charlie-rosenthal",
+    "name": "Charlie Rosenthal",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Messy, Messy Records: The Who, How, and When of Polaris Bibliographic Record Clean-up and Maintenance",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dm/messy-messy-records-the-who-how-and-when-of-polaris-bibliographic-record-clean-up-and-maintenance"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "christine-diederich",
+    "name": "Christine Diederich",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Top Speed: From Zero to Polaris in Six Months",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyP5/top-speed-from-zero-to-polaris-in-six-months"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "christine-webb",
+    "name": "Christine Webb",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Things I Wished I'd Known When I was a Polaris Admin",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbI/things-i-wished-id-known-when-i-was-a-polaris-admin"
+      },
+      {
+        "year": 2026,
+        "title": "SQL and the Find Tool",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcq/sql-and-the-find-tool"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "christopher-stowell",
+    "name": "Christopher Stowell",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Quick Hit: Translating Library Policy to Polaris Circulation Settings",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQI/quick-hit-translating-library-policy-to-polaris-circulation-settings"
+      },
+      {
+        "year": 2024,
+        "title": "Quick Hit: Polaris Weeding Workflow",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQC/quick-hit-polaris-weeding-workflow"
+      },
+      {
+        "year": 2024,
+        "title": "Quick Hit: Headings in the Right Direction",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQR/quick-hit-headings-in-the-right-direction"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cordelia-anderson",
+    "name": "Cordelia Anderson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: Marketing Best Practices",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyTz/pre-conference-marketing-best-practices"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cori-iannaggi",
+    "name": "Cori Iannaggi",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "A New Direction in Library Analytics – An Exciting Partnership with LibraryIQ",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOD/a-new-direction-in-library-analytics-an-exciting-partnership-with-libraryiq"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "daniel-messer",
+    "name": "Daniel Messer",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Tales from the Dark Side: What Our ILSes Can Learn from Shadow Libraries",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPE/tales-from-the-dark-side-what-our-ilses-can-learn-from-shadow-libraries"
+      },
+      {
+        "year": 2024,
+        "title": "Drawing Down the Data - An introduction to the PolarisTransactions database",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPl/drawing-down-the-data-an-introduction-to-the-polaristransactions-database"
+      },
+      {
+        "year": 2024,
+        "title": "Reporting with a Twist",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOP/reporting-with-a-twist"
+      },
+      {
+        "year": 2024,
+        "title": "Polaris System Administrator's Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ0/polaris-system-administrators-forum"
+      },
+      {
+        "year": 2025,
+        "title": "IUG Dine Around: Pint Brothers - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1v3SJ/iug-dine-around-pint-brothers-rsvp-required"
+      },
+      {
+        "year": 2025,
+        "title": "Surprise SQL Forum (Polaris and Sierra)",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1xxKH/surprise-sql-forum-polaris-and-sierra"
+      },
+      {
+        "year": 2025,
+        "title": "Electric Libraryland: AI, Copyright, Ownership, and Tomorrow",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CW/electric-libraryland-ai-copyright-ownership-and-tomorrow"
+      },
+      {
+        "year": 2025,
+        "title": "Are You Suggesting That an ILS Migrates?",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DI/are-you-suggesting-that-an-ils-migrates"
+      },
+      {
+        "year": 2025,
+        "title": "A Room With a View of Polaris and a Pond",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DR/a-room-with-a-view-of-polaris-and-a-pond"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris System Administration Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0En/polaris-system-administration-forum"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      },
+      {
+        "year": 2026,
+        "title": "Suddenly, You're a Polaris Administrator - Now What?",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaQ/suddenly-youre-a-polaris-administrator-now-what"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbU/lightning-rounds"
+      },
+      {
+        "year": 2026,
+        "title": "Sproc Talk",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcS/sproc-talk"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris System Administration Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdN/polaris-system-administration-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "debra-wischmeyer",
+    "name": "Debra Wischmeyer",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Leaping Forward with Technical Services",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPf/leaping-forward-with-technical-services"
+      },
+      {
+        "year": 2024,
+        "title": "All About PIAC (Polaris ILS Advisory Committee)",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQg/all-about-piac-polaris-ils-advisory-committee"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "dena-porter",
+    "name": "Dena Porter",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Herding the Cats: Bibliographic Services and System Administration in the Nation's Largest Automated Consortium",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bt/herding-the-cats-bibliographic-services-and-system-administration-in-the-nations-largest-automated-consortium"
+      },
+      {
+        "year": 2026,
+        "title": "Building Permission Structures in Polaris: The SHARE Approach",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaZ/building-permission-structures-in-polaris-the-share-approach"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "derek-brown",
+    "name": "Derek Brown",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "First time IUG attendee reception **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b0KR/first-time-iug-attendee-reception-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2024,
+        "title": "Michigan IUG Meet-up (hosted by SeMi-IUG)",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQj/michigan-iug-meet-up-hosted-by-semi-iug"
+      },
+      {
+        "year": 2024,
+        "title": "Transitioning to the Google Cloud: A multi-phased journey to bid farewell to Windows",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPo/transitioning-to-the-google-cloud-a-multi-phased-journey-to-bid-farewell-to-windows"
+      },
+      {
+        "year": 2024,
+        "title": "Automating Patron Room Reservations with Localhop and OpenPath",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPK/automating-patron-room-reservations-with-localhop-and-openpath"
+      },
+      {
+        "year": 2025,
+        "title": "SeMI-IUG (Southeast Michigan) Meet-up",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1uJ5K/semi-iug-southeast-michigan-meet-up"
+      },
+      {
+        "year": 2025,
+        "title": "LibData: A True OS-Agnostic Patron Device Management Solution",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ez/libdata-a-true-os-agnostic-patron-device-management-solution"
+      },
+      {
+        "year": 2025,
+        "title": "IUG Dine Around: Bonefish Grill - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1v37J/iug-dine-around-bonefish-grill-rsvp-required"
+      },
+      {
+        "year": 2025,
+        "title": "Modding Vega Discover: How I Stopped Using Defaults and Learned to Love Customization",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bw/modding-vega-discover-how-i-stopped-using-defaults-and-learned-to-love-customization"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      },
+      {
+        "year": 2026,
+        "title": "Vega in Action: A Community Showcase of Customer Implementations",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaT/vega-in-action-a-community-showcase-of-customer-implementations"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbU/lightning-rounds"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbm/lightning-rounds"
+      },
+      {
+        "year": 2026,
+        "title": "All Things Vega Forum",
+        "role": "moderator",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZch/all-things-vega-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "eduardo-loza",
+    "name": "Eduardo Loza",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Modding Vega Discover: How I Stopped Using Defaults and Learned to Love Customization",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bw/modding-vega-discover-how-i-stopped-using-defaults-and-learned-to-love-customization"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "eileen-keller",
+    "name": "Eileen Keller",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "'Help us help you' or Managing the Needs of 50+ Libraries Using a Shared System",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNF/help-us-help-you-or-managing-the-needs-of-50+-libraries-using-a-shared-system"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "elaine-sloan",
+    "name": "Elaine Sloan",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Mixing Data Driven Decisions with Collection Development Knowledge: It's time to Weed",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bq/mixing-data-driven-decisions-with-collection-development-knowledge-its-time-to-weed"
+      },
+      {
+        "year": 2025,
+        "title": "Messy, Messy Records: The Who, How, and When of Polaris Bibliographic Record Clean-up and Maintenance",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dm/messy-messy-records-the-who-how-and-when-of-polaris-bibliographic-record-clean-up-and-maintenance"
+      },
+      {
+        "year": 2026,
+        "title": "Kicking the Elephant out of the Room: Cataloging without OCLC",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZce/kicking-the-elephant-out-of-the-room-cataloging-without-oclc"
+      },
+      {
+        "year": 2026,
+        "title": "Vega Rollups and Your Bibliographic Records: Making Them Work for Your Users",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd8/vega-rollups-and-your-bibliographic-records-making-them-work-for-your-users"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "eleanor-crumblehulme",
+    "name": "Eleanor Crumblehulme",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Reporting with a Twist",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOP/reporting-with-a-twist"
+      },
+      {
+        "year": 2024,
+        "title": "Your Ideas: Innovative and IUG Enhancement Processes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ6/your-ideas-innovative-and-iug-enhancement-processes"
+      },
+      {
+        "year": 2025,
+        "title": "Messy, Messy Records: The Who, How, and When of Polaris Bibliographic Record Clean-up and Maintenance",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dm/messy-messy-records-the-who-how-and-when-of-polaris-bibliographic-record-clean-up-and-maintenance"
+      },
+      {
+        "year": 2026,
+        "title": "OverDrive Users Group",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2Ia5j/overdrive-users-group"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "elizabeth-biggs",
+    "name": "Elizabeth Biggs",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Quick Hit: Useful things you can do in Leap with record sets",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQF/quick-hit-useful-things-you-can-do-in-leap-with-record-sets"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "elizabeth-wright",
+    "name": "Elizabeth Wright",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "How could new analytics tools help multi-branch Sierra systems with floating collections better manage their collections?",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2Is2l/how-could-new-analytics-tools-help-multi-branch-sierra-systems-with-floating-collections-better-manage-their-collections"
+      },
+      {
+        "year": 2026,
+        "title": "Configuring Sierra Holds - what was your best decision?",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2Js9r/configuring-sierra-holds-what-was-your-best-decision"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "emily-vieyra",
+    "name": "Emily Vieyra",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CT/sierra-cataloging-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Automatic Authority Control",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Et/sierra-automatic-authority-control"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZz/sierra-cataloging-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "erin-snapp",
+    "name": "Erin Snapp",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Free Vinyasa Yoga Flow with Erin Snapp - Mats provided!",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1ZfpZ/free-vinyasa-yoga-flow-with-erin-snapp-mats-provided"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "frank-florian",
+    "name": "Frank Florian",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Quick Hit: Sierra Rest API Best Practices",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQa/quick-hit-sierra-rest-api-best-practices"
+      },
+      {
+        "year": 2024,
+        "title": "Quick Hit: How your Sierra/Polaris syncs with Vega",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ9/quick-hit-how-your-sierrapolaris-syncs-with-vega"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "gabrielle-gosselin",
+    "name": "Gabrielle Gosselin",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Polaris & TS360: The Acquisitions API in Action",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CQ/polaris-ts360-the-acquisitions-api-in-action"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Year in Review",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EY/polaris-year-in-review"
+      },
+      {
+        "year": 2026,
+        "title": "The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYm/the-iug-hackathon"
+      },
+      {
+        "year": 2026,
+        "title": "IUG Hackathon Presentation & Awards",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZk/iug-hackathon-presentation-awards"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris Year in Review",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZao/polaris-year-in-review"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "gale-forster",
+    "name": "Gale Forster",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Navigating Location Code Updates in Sierra",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbp/navigating-location-code-updates-in-sierra"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hope-harley",
+    "name": "Hope Harley",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Rapido Consortial Borrowing Launch",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1wZco/rapido-consortial-borrowing-launch"
+      },
+      {
+        "year": 2025,
+        "title": "Resource Sharing Landscape",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EP/resource-sharing-landscape"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "iii",
+    "name": "III",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CK/executive-leadership-panel"
+      },
+      {
+        "year": 2025,
+        "title": "System Security in an Insecure World",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cc/system-security-in-an-insecure-world"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "innovative-product-staff",
+    "name": "Innovative Product Staff",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: Marketing Best Practices",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyTz/pre-conference-marketing-best-practices"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jamie-morris",
+    "name": "Jamie Morris",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Better Together: Sys Admin & Marketing",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOS/better-together-sys-admin-marketing"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jason-bedsaul",
+    "name": "Jason Bedsaul",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris Consortia Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPr/polaris-consortia-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Consortia Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0E7/polaris-consortia-forum"
+      },
+      {
+        "year": 2026,
+        "title": "IUG Dine Around: Sunda New Asian - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2J3mK/iug-dine-around-sunda-new-asian-rsvp-required"
+      },
+      {
+        "year": 2026,
+        "title": "Consortia Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcV/consortia-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jason-boland",
+    "name": "Jason Boland",
+    "affiliation": "Innovative (Clarivate)",
+    "type": "Training Specialist",
+    "primaryTrack": "sierra",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: Sierra DIY - Understanding your reporting toolbox and a 60k Miles System Tune-up in this DIY health self-check",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyVQ/pre-conference-sierra-diy-understanding-your-reporting-toolbox-and-a-60k-miles-system-tune-up-in-this-diy-health-self-check"
+      },
+      {
+        "year": 2024,
+        "title": "Quick Hit: Customize Email Notifications with LX Starter",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQL/quick-hit-customize-email-notifications-with-lx-starter"
+      },
+      {
+        "year": 2024,
+        "title": "Problem Solving with APIs",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOJ/problem-solving-with-apis"
+      },
+      {
+        "year": 2024,
+        "title": "Leap Acquisitions A-Z in a Nutshell",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyO1/leap-acquisitions-a-z-in-a-nutshell"
+      },
+      {
+        "year": 2025,
+        "title": "Vega LX Academy: Advanced Skills",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FN/vega-lx-academy-advanced-skills"
+      },
+      {
+        "year": 2025,
+        "title": "Unlock the Power of Communication with LX Starter’s New Email Notification!",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CN/unlock-the-power-of-communication-with-lx-starters-new-email-notification"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra SQL for the Beginner",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cf/sierra-sql-for-the-beginner"
+      },
+      {
+        "year": 2025,
+        "title": "Getting Started with Polaris SQL",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ee/getting-started-with-polaris-sql"
+      },
+      {
+        "year": 2026,
+        "title": "Vega LX Academy: Discover, Vega Mobile, Vega Interact Voice & SMS, Vega Promote, Vega Program, and LX Starter Advanced Skills Course",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYj/vega-lx-academy-discover-vega-mobile-vega-interact-voice-sms-vega-promote-vega-program-and-lx-starter-advanced-skills-course"
+      },
+      {
+        "year": 2026,
+        "title": "Getting the Most Out of Your Data Using SimplyReports and SQL in Leap",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaE/getting-the-most-out-of-your-data-using-simplyreports-and-sql-in-leap"
+      },
+      {
+        "year": 2026,
+        "title": "Program Registration",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbg/program-registration"
+      },
+      {
+        "year": 2026,
+        "title": "Getting Started with the Sierra RESTful APIs",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcb/getting-started-with-the-sierra-restful-apis"
+      }
+    ],
+    "notes": "Senior Library Training Consultant. Covers Sierra, Polaris, and Vega."
+  },
+  {
+    "id": "jay-peters",
+    "name": "Jay Peters",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Automating Reports and Maximizing Efficiency",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZc4/automating-reports-and-maximizing-efficiency"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jeff-campbell",
+    "name": "Jeff Campbell",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "First time IUG attendee reception **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b0KR/first-time-iug-attendee-reception-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Circulation Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNR/sierra-circulation-forum"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Systems Administration Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNd/sierra-systems-administration-forum"
+      },
+      {
+        "year": 2025,
+        "title": "IUG and Innovative Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FQ/iug-and-innovative-opening-session"
+      },
+      {
+        "year": 2025,
+        "title": "The IUG Hackathon Presentations & Awards/Lightning Round Presentations",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ff/the-iug-hackathon-presentations-awardslightning-round-presentations"
+      },
+      {
+        "year": 2025,
+        "title": "Using Fail2Ban Works to Protect Services on a Linux Server from AI Harvesters",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0F5/using-fail2ban-works-to-protect-services-on-a-linux-server-from-ai-harvesters"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Systems Administration Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Eq/sierra-systems-administration-forum"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbU/lightning-rounds"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra System Administration Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdK/sierra-system-administration-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jeff-tate",
+    "name": "Jeff Tate",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cl/polaris-circulation-forum"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZba/polaris-circulation-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jennifer-baugh",
+    "name": "Jennifer Baugh",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Herding the Cats: Bibliographic Services and System Administration in the Nation's Largest Automated Consortium",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bt/herding-the-cats-bibliographic-services-and-system-administration-in-the-nations-largest-automated-consortium"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jennifer-hoffman",
+    "name": "Jennifer Hoffman",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Leaping from the middle while your organization is distracted with other things",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dy/leaping-from-the-middle-while-your-organization-is-distracted-with-other-things"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jeremy-goldstein",
+    "name": "Jeremy Goldstein",
+    "affiliation": "Minuteman Library Network, MA",
+    "type": "Acquisitions Wizard",
+    "primaryTrack": "sierra",
+    "quote": "The system you start with is kind of what you imprint on.",
+    "quoteContext": "Sierra Sys Admin Forum, IUG 2026",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "4 Perspectives on Using Holds Data with SQL",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNC/4-perspectives-on-using-holds-data-with-sql"
+      },
+      {
+        "year": 2024,
+        "title": "The Rules of SQL-sitions: Mastering Sierra SQL for acquisitions",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPN/the-rules-of-sql-sitions-mastering-sierra-sql-for-acquisitions"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Acquisitions Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNU/sierra-acquisitions-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Surprise SQL Forum (Polaris and Sierra)",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1xxKH/surprise-sql-forum-polaris-and-sierra"
+      },
+      {
+        "year": 2025,
+        "title": "LibraryIQ & You: Collaborative Approaches to Vendor Integrations",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DX/libraryiq-you-collaborative-approaches-to-vendor-integrations"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Reporting Tools Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0D6/sierra-reporting-tools-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Unlocking Sierra's REST APIs: Practical Python Projects for Libraries",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0ES/unlocking-sierras-rest-apis-practical-python-projects-for-libraries"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      },
+      {
+        "year": 2026,
+        "title": "Automating Reports with Python 2: Getting Modular",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaK/automating-reports-with-python-2-getting-modular"
+      },
+      {
+        "year": 2026,
+        "title": "Acquisitions Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcJ/acquisitions-forum"
+      }
+    ],
+    "notes": "One of the most prolific Sierra data/code contributors in IUG. Co-presented Sierra REST APIs with Ray Voelker at IUG 2025."
+  },
+  {
+    "id": "jill-messing",
+    "name": "Jill Messing",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Polaris Cataloging & Acquisitions Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZa2/polaris-cataloging-acquisitions-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jim-lynch",
+    "name": "Jim Lynch",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "joel-tonyan",
+    "name": "Joel Tonyan",
+    "affiliation": "Kraemer Family Library, UCCS",
+    "type": "Dashboard Architect",
+    "primaryTrack": "sierra",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Applied SQL: How One Library is Using Sierra Direct SQL Access to Troubleshoot Issues and Collect Statistics",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyP2/applied-sql-how-one-library-is-using-sierra-direct-sql-access-to-troubleshoot-issues-and-collect-statistics"
+      },
+      {
+        "year": 2026,
+        "title": "Creating a Circulation Statistics Dashboard Using SQL and LibInsights",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZai/creating-a-circulation-statistics-dashboard-using-sql-and-libinsights"
+      }
+    ],
+    "notes": "Published researcher, presented at Computers in Libraries 2023."
+  },
+  {
+    "id": "john-pierre",
+    "name": "John Pierre",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "The Pillars of Motion: Balance and Fall Prevention with John Pierre - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1uT3m/the-pillars-of-motion-balance-and-fall-prevention-with-john-pierre-rsvp-required"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "joice-wilson",
+    "name": "Joice Wilson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris acquisitions and cataloging forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ3/polaris-acquisitions-and-cataloging-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "josie-wilson",
+    "name": "Josie Wilson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Mixing Data Driven Decisions with Collection Development Knowledge: It's time to Weed",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bq/mixing-data-driven-decisions-with-collection-development-knowledge-its-time-to-weed"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Cataloging & Acquisitions Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bk/polaris-cataloging-acquisitions-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jovana-raskovic",
+    "name": "Jovana Raskovic",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Vega Reports for Discover and Beyond",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbR/vega-reports-for-discover-and-beyond"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "julie-cole",
+    "name": "Julie Cole",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Your Ideas: Innovative and IUG Enhancement Processes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ6/your-ideas-innovative-and-iug-enhancement-processes"
+      },
+      {
+        "year": 2025,
+        "title": "MEEP (Member Exclusive Enhancement Process)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CZ/meep-member-exclusive-enhancement-process"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "justin-newcomer",
+    "name": "Justin Newcomer",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Sierra Staff and Single Sign-On",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2IpEm/sierra-staff-and-single-sign-on"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kalee-burkett",
+    "name": "Kalee Burkett",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris SQL for the Absolute Beginner",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPZ/polaris-sql-for-the-absolute-beginner"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris cataloging for NEW System Administrators",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cr/polaris-cataloging-for-new-system-administrators"
+      },
+      {
+        "year": 2026,
+        "title": "Slightly More Advanced Polaris SQL: The Sequel to Absolute Beginner's SQL",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcA/slightly-more-advanced-polaris-sql-the-sequel-to-absolute-beginners-sql"
+      },
+      {
+        "year": 2026,
+        "title": "You Don't Need a Report: Maximizing the Leap Find Tool",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd5/you-dont-need-a-report-maximizing-the-leap-find-tool"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kat-cuff",
+    "name": "Kat Cuff",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Vega LX Roadmap",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FW/vega-lx-roadmap"
+      },
+      {
+        "year": 2025,
+        "title": "Resource Sharing Landscape",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EP/resource-sharing-landscape"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kathleen-lince",
+    "name": "Kathleen Lince",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "From Backlog to Breakthrough: Streamlining Technical Services with Workslip Cataloging and LEAN Solutions",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaN/from-backlog-to-breakthrough-streamlining-technical-services-with-workslip-cataloging-and-lean-solutions"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kathy-setter",
+    "name": "Kathy Setter",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Consortia Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOM/consortia-forum"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNX/sierra-cataloging-forum"
+      },
+      {
+        "year": 2024,
+        "title": "Load Profile Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNa/load-profile-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "katie-leblanc",
+    "name": "Katie LeBlanc",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Better Together: Sys Admin & Marketing",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOS/better-together-sys-admin-marketing"
+      },
+      {
+        "year": 2024,
+        "title": "Reporting with a Twist",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOP/reporting-with-a-twist"
+      },
+      {
+        "year": 2024,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPu/polaris-circulation-forum"
+      },
+      {
+        "year": 2025,
+        "title": "MEEP (Member Exclusive Enhancement Process)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CZ/meep-member-exclusive-enhancement-process"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cl/polaris-circulation-forum"
+      },
+      {
+        "year": 2026,
+        "title": "MEEP (Member-Exclusive Enhancement Process)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZb6/meep-member-exclusive-enhancement-process"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "katy-aranoff",
+    "name": "Katy Aranoff",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Resource Sharing Landscape",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyO7/resource-sharing-landscape"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kimberly-bolan",
+    "name": "Kimberly Bolan",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Top Speed: From Zero to Polaris in Six Months",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyP5/top-speed-from-zero-to-polaris-in-six-months"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kristen-marshall",
+    "name": "Kristen Marshall",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "A Day Ending in 'Y' in Florida: Handling Natural and Man-made Disasters",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0D9/a-day-ending-in-y-in-florida-handling-natural-and-man-made-disasters"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kristen-tait",
+    "name": "Kristen Tait",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Seeing the Forest Through the Weeds: Inventory Through Polaris Weeding Workflows",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbj/seeing-the-forest-through-the-weeds-inventory-through-polaris-weeding-workflows"
+      },
+      {
+        "year": 2026,
+        "title": "You Don't Need a Report: Maximizing the Leap Find Tool",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd5/you-dont-need-a-report-maximizing-the-leap-find-tool"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kristine-den-boon",
+    "name": "Kristine den Boon",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Strange New Worlds: Implementing Vega Discover in a Complex Consortium",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbs/strange-new-worlds-implementing-vega-discover-in-a-complex-consortium"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "laura-eckert",
+    "name": "Laura Eckert",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Simple Tools, Stunning Sites: Vega WebBuilder & Donate",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZct/simple-tools-stunning-sites-vega-webbuilder-donate"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lauren-arnsman",
+    "name": "Lauren Arnsman",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "PIAC",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DC/piac"
+      },
+      {
+        "year": 2026,
+        "title": "IUG Dine Around: Weber Grill - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2J3lL/iug-dine-around-weber-grill-rsvp-required"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris ILS Advisory Committee (PIAC): who we are, what we do, and how we can help you!",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcY/polaris-ils-advisory-committee-piac-who-we-are-what-we-do-and-how-we-can-help-you"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "leslie-collie",
+    "name": "Leslie Collie",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "More Product AND More Process : Automating Archival Processing Workflows",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOt/more-product-and-more-process-automating-archival-processing-workflows"
+      },
+      {
+        "year": 2024,
+        "title": "Panic! At The Library: Preparing Diverse Collections For A Building Renovation",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNO/panic-at-the-library-preparing-diverse-collections-for-a-building-renovation"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lester-owencroft",
+    "name": "Lester Owencroft",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lloyd-chittenden",
+    "name": "Lloyd Chittenden",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Two More Weird Tricks From Marmot",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPW/two-more-weird-tricks-from-marmot"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Scheduler Workarounds",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EG/sierra-scheduler-workarounds"
+      },
+      {
+        "year": 2026,
+        "title": "Two Sierra Tricks",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZa5/two-sierra-tricks"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "luda-soffer",
+    "name": "Luda Soffer",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Support Update & Support Center Overview",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0C2/support-update-support-center-overview"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "luke-patterson",
+    "name": "Luke Patterson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "In-House On-boarding of a New Library",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPc/in-house-on-boarding-of-a-new-library"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "luke-wood",
+    "name": "Luke Wood",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Vega WebBuilder - The easy way, the advanced way & the takeaways",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcD/vega-webbuilder-the-easy-way-the-advanced-way-the-takeaways"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lynn-gates",
+    "name": "Lynn Gates",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CT/sierra-cataloging-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Did Cataloging Choose You? Learn How to Level Up?",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EM/did-cataloging-choose-you-learn-how-to-level-up"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZz/sierra-cataloging-forum"
+      },
+      {
+        "year": 2026,
+        "title": "There Are No Cataloging Police (aka Cataloging for the non-cataloger), Part 1",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZb0/there-are-no-cataloging-police-aka-cataloging-for-the-non-cataloger-part-1"
+      },
+      {
+        "year": 2026,
+        "title": "There Are No Cataloging Police (aka Cataloging for the non-cataloger), Part 2",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbO/there-are-no-cataloging-police-aka-cataloging-for-the-non-cataloger-part-2"
+      },
+      {
+        "year": 2026,
+        "title": "Tending to Your Collection",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcz/tending-to-your-collection"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "maggie-hughes",
+    "name": "Maggie Hughes",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "More Product AND More Process : Automating Archival Processing Workflows",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOt/more-product-and-more-process-automating-archival-processing-workflows"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "margaret-o-keefe",
+    "name": "Margaret O'Keefe",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "In-House On-boarding of a New Library",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPc/in-house-on-boarding-of-a-new-library"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mark-harrington",
+    "name": "Mark Harrington",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Vega Interact Voice & SMS 101 Troubleshooting",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcP/vega-interact-voice-sms-101-troubleshooting"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "martha-rice-sanders",
+    "name": "Martha Rice Sanders",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Getting Started with an Authority Control Project with a Vendor",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZb/getting-started-with-an-authority-control-project-with-a-vendor"
+      },
+      {
+        "year": 2026,
+        "title": "Demystifying Sierra Authority Control",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaH/demystifying-sierra-authority-control"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "martha-sanders",
+    "name": "Martha Sanders",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Quick Hits: Starting an Authority Control Project (both Sierra and Polaris covered)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1xArN/quick-hits-starting-an-authority-control-project-both-sierra-and-polaris-covered"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mary-miller",
+    "name": "Mary Miller",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris SIP Logs: Monthly Self-Check Statistics Report",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPi/polaris-sip-logs-monthly-self-check-statistics-report"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "matt-hammermeister",
+    "name": "Matt Hammermeister",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Reporting with a Twist",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOP/reporting-with-a-twist"
+      },
+      {
+        "year": 2024,
+        "title": "Polaris SQL/Reports Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPx/polaris-sqlreports-forum"
+      },
+      {
+        "year": 2025,
+        "title": "Modding Vega Discover: How I Stopped Using Defaults and Learned to Love Customization",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bw/modding-vega-discover-how-i-stopped-using-defaults-and-learned-to-love-customization"
+      },
+      {
+        "year": 2026,
+        "title": "SQL Basics for Polaris: Querying Data with the Polaris Find Tool",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYg/sql-basics-for-polaris-querying-data-with-the-polaris-find-tool"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "matthew-etzel",
+    "name": "Matthew Etzel",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Leveraging Collaborative Software to Facilitate System Administration",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dp/leveraging-collaborative-software-to-facilitate-system-administration"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "meg-albee",
+    "name": "Meg Albee",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Denver Public Library Tour - Travel Time Needed - **PLEASE SEE SPECIAL RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1x3LG/denver-public-library-tour-travel-time-needed-please-see-special-rsvp-instructions"
+      },
+      {
+        "year": 2025,
+        "title": "Denver Public Library Tour - Travel Time Needed - **PLEASE SEE SPECIAL RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1xC71/denver-public-library-tour-travel-time-needed-please-see-special-rsvp-instructions"
+      },
+      {
+        "year": 2025,
+        "title": "Leaping from the middle while your organization is distracted with other things",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dy/leaping-from-the-middle-while-your-organization-is-distracted-with-other-things"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "melissa-baker",
+    "name": "Melissa Baker",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Birds of a Feather - Northeastern IUG Regional Meeting",
+        "role": "moderator",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2IWUE/birds-of-a-feather-northeastern-iug-regional-meeting"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "michael-cummings",
+    "name": "Michael Cummings",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "There is no such thing as a permanent URL. Ways to identify and repair broken links in your catalog.",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPT/there-is-no-such-thing-as-a-permanent-url-ways-to-identify-and-repair-broken-links-in-your-catalog"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "michael-mcclellan",
+    "name": "Michael McClellan",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: Polaris DIY - Review and Update Your Technical Services Workflows",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyV5/pre-conference-polaris-diy-review-and-update-your-technical-services-workflows"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Cataloging Nuts and Bolts",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNg/sierra-cataloging-nuts-and-bolts"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Acquisitions in a Nutshell",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNj/sierra-acquisitions-in-a-nutshell"
+      },
+      {
+        "year": 2024,
+        "title": "Quick Hit: First Impressions - Vega Discover Home Page",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQO/quick-hit-first-impressions-vega-discover-home-page"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Discover Administration and Configuration",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOn/vega-discover-administration-and-configuration"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Academy: Skills Refresher & Accelerator",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FK/sierra-academy-skills-refresher-accelerator"
+      },
+      {
+        "year": 2025,
+        "title": "Circulation Parameters in a Nutshell",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0C5/circulation-parameters-in-a-nutshell"
+      },
+      {
+        "year": 2025,
+        "title": "Fun with Funds in Sierra",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0D0/fun-with-funds-in-sierra"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Academy: Technical Services - a Deep Look on Cataloging and Serials Workflows Skills Refresher & Accelerator",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYs/sierra-academy-technical-services-a-deep-look-on-cataloging-and-serials-workflows-skills-refresher-accelerator"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Statistical Reports - Review of the Sierra Reporting Tool",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2I9d0/sierra-statistical-reports-review-of-the-sierra-reporting-tool"
+      },
+      {
+        "year": 2026,
+        "title": "Engaging Readers with Vega Discover",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZc1/engaging-readers-with-vega-discover"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "michele-dimond",
+    "name": "Michele Dimond",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Revolutionizing Patron Engagement: Exploring Vega Promote at the Rochester Hills Public Library",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyP8/revolutionizing-patron-engagement-exploring-vega-promote-at-the-rochester-hills-public-library"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "michelle-ralston",
+    "name": "Michelle Ralston",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Polaris Academy: Skills Refresher & Accelerator",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FH/polaris-academy-skills-refresher-accelerator"
+      },
+      {
+        "year": 2025,
+        "title": "Are you Kidding Me? Learn more about Vega Discover's Kids Catalog & Themed Catalogs",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ci/are-you-kidding-me-learn-more-about-vega-discovers-kids-catalog-themed-catalogs"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Web-Based System Admin",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DL/polaris-web-based-system-admin"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Reporting Tools",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Eb/polaris-reporting-tools"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris Academy: Web Based System Administration Skills Refresher & Accelerator",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYv/polaris-academy-web-based-system-administration-skills-refresher-accelerator"
+      },
+      {
+        "year": 2026,
+        "title": "Managing Tech Services in LEAP",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZb9/managing-tech-services-in-leap"
+      },
+      {
+        "year": 2026,
+        "title": "From Desktop to Web: Administering Polaris",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcG/from-desktop-to-web-administering-polaris"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mieko-fujiura-landers",
+    "name": "Mieko Fujiura-Landers",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "From Feedback to Focus: Crafting Responsive Training for Library Staff",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dd/from-feedback-to-focus-crafting-responsive-training-for-library-staff"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mike-dicus",
+    "name": "Mike Dicus",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Sierra Roadmap",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYu/sierra-roadmap"
+      },
+      {
+        "year": 2024,
+        "title": "Sierra Year in Review",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNv/sierra-year-in-review"
+      },
+      {
+        "year": 2024,
+        "title": "Your Ideas: Innovative and IUG Enhancement Processes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ6/your-ideas-innovative-and-iug-enhancement-processes"
+      },
+      {
+        "year": 2025,
+        "title": "The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FB/the-iug-hackathon"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Roadmap",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Fc/sierra-roadmap"
+      },
+      {
+        "year": 2025,
+        "title": "The IUG Hackathon Presentations & Awards/Lightning Round Presentations",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ff/the-iug-hackathon-presentations-awardslightning-round-presentations"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Year in Review",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Eh/sierra-year-in-review"
+      },
+      {
+        "year": 2026,
+        "title": "The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYm/the-iug-hackathon"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Roadmap",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZe/sierra-roadmap"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Year in Review",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZal/sierra-year-in-review"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mike-fields",
+    "name": "Mike Fields",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbm/lightning-rounds"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "molly-lisowsky",
+    "name": "Molly Lisowsky",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Consortia Forum",
+        "role": "moderator",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcV/consortia-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nate-burnard",
+    "name": "Nate Burnard",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Top Speed: From Zero to Polaris in Six Months",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyP5/top-speed-from-zero-to-polaris-in-six-months"
+      },
+      {
+        "year": 2025,
+        "title": "Leveraging Collaborative Software to Facilitate System Administration",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dp/leveraging-collaborative-software-to-facilitate-system-administration"
+      },
+      {
+        "year": 2026,
+        "title": "Getting Started With Patron Imports & Student Cards",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2IA3c/getting-started-with-patron-imports-student-cards"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nathan-james",
+    "name": "Nathan James",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Pre-conference: The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyTv/pre-conference-the-iug-hackathon"
+      },
+      {
+        "year": 2024,
+        "title": "SNACKS INCLUDED - The IUG Hackathon Presentation and Awards Ceremony",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYx/snacks-included-the-iug-hackathon-presentation-and-awards-ceremony"
+      },
+      {
+        "year": 2024,
+        "title": "Connecting from Behind the Curtain: The Role of Technical Services in Public Engagement",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOG/connecting-from-behind-the-curtain-the-role-of-technical-services-in-public-engagement"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Promote & Promote Web Overview",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOe/vega-promote-promote-web-overview"
+      },
+      {
+        "year": 2025,
+        "title": "Library Website Design & Construction Best Practices",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FE/library-website-design-construction-best-practices"
+      },
+      {
+        "year": 2025,
+        "title": "Best of the web and website design trends",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ek/best-of-the-web-and-website-design-trends"
+      },
+      {
+        "year": 2026,
+        "title": "Simple Tools, Stunning Sites: Vega WebBuilder & Donate",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZct/simple-tools-stunning-sites-vega-webbuilder-donate"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nick-west",
+    "name": "Nick West",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Quick Hits: Upgrades Best Practices (both Sierra and Polaris)",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1whFt/quick-hits-upgrades-best-practices-both-sierra-and-polaris"
+      },
+      {
+        "year": 2025,
+        "title": "Quick Hits: Is SSO Right for your Polaris Library",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1xArx/quick-hits-is-sso-right-for-your-polaris-library"
+      },
+      {
+        "year": 2026,
+        "title": "Receipt and Label Printers: Tips and Tricks",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaB/receipt-and-label-printers-tips-and-tricks"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nicole-allen",
+    "name": "Nicole Allen",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Automating the Routine",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cu/automating-the-routine"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nicole-bovee",
+    "name": "Nicole Bovee",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPu/polaris-circulation-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nicole-turzillo",
+    "name": "Nicole Turzillo",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "'Help us help you' or Managing the Needs of 50+ Libraries Using a Shared System",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNF/help-us-help-you-or-managing-the-needs-of-50+-libraries-using-a-shared-system"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pam-skittino",
+    "name": "Pam Skittino",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Exploring Aspen Discovery",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPB/exploring-aspen-discovery"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Load Profile Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0C8/sierra-load-profile-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "priscilla-borquez",
+    "name": "Priscilla Borquez",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Quick Hits: Add some 'Swagger' to your Sierra API",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1xAsc/quick-hits-add-some-swagger-to-your-sierra-api"
+      },
+      {
+        "year": 2025,
+        "title": "Quick Hits: Statistics and the Sierra API",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1xBTP/quick-hits-statistics-and-the-sierra-api"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rachel-fischer",
+    "name": "Rachel Fischer",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "From Simply Reports to Bulk Changes: Reports and Correcting Errors in the Catalog",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0F8/from-simply-reports-to-bulk-changes-reports-and-correcting-errors-in-the-catalog"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ray-voelker",
+    "name": "Ray Voelker",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Python Power-Up: Supercharging Sierra Integration with sierra-ils-utils",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPQ/python-power-up-supercharging-sierra-integration-with-sierra-ils-utils"
+      },
+      {
+        "year": 2024,
+        "title": "Semantic Search Swiftly: Thirty-Six minutes to Transform Sierra Data for Enhanced Data Discovery",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOV/semantic-search-swiftly-thirty-six-minutes-to-transform-sierra-data-for-enhanced-data-discovery"
+      },
+      {
+        "year": 2025,
+        "title": "Unlocking Sierra's REST APIs: Practical Python Projects for Libraries",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0ES/unlocking-sierras-rest-apis-practical-python-projects-for-libraries"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rebecca-king",
+    "name": "Rebecca King",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "4 Perspectives on Using Holds Data with SQL",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNC/4-perspectives-on-using-holds-data-with-sql"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rebecca-pfenning",
+    "name": "Rebecca Pfenning",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Wisconsin-Illinois Innovative Users Group (WILIUG) Lunch",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ew/wisconsin-illinois-innovative-users-group-wiliug-lunch"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rhonda-glazier",
+    "name": "Rhonda Glazier",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Technical Services: Managing with limited resources",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EV/technical-services-managing-with-limited-resources"
+      },
+      {
+        "year": 2026,
+        "title": "Collaborative Solutions for Technical Services Challenges",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2L7GG/collaborative-solutions-for-technical-services-challenges"
+      },
+      {
+        "year": 2026,
+        "title": "REPEAT: Collaborative Solutions for Technical Services Challenges",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZac/repeat-collaborative-solutions-for-technical-services-challenges"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rita-fregola",
+    "name": "Rita Fregola",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Quick Hit: Scheduler Best Practices",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQU/quick-hit-scheduler-best-practices"
+      },
+      {
+        "year": 2026,
+        "title": "Maximizing Scheduler for Output to Vendors",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZG/maximizing-scheduler-for-output-to-vendors"
+      },
+      {
+        "year": 2026,
+        "title": "Switching Acquisitions Vendors",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZau/switching-acquisitions-vendors"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rob-zylstra",
+    "name": "Rob Zylstra",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Visual Reporting using Kibana",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ds/visual-reporting-using-kibana"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ruth-starr",
+    "name": "Ruth Starr",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Accessibility Learning Lab & Workshop",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYp/accessibility-learning-lab-workshop"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sam-hollo",
+    "name": "Sam Hollo",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Seeing the Forest Through the Weeds: Inventory Through Polaris Weeding Workflows",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbj/seeing-the-forest-through-the-weeds-inventory-through-polaris-weeding-workflows"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "samantha-cunning",
+    "name": "Samantha Cunning",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Vega LX for Consortia",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOb/vega-lx-for-consortia"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Discover Overview",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOk/vega-discover-overview"
+      },
+      {
+        "year": 2025,
+        "title": "Vega Discover Integrations",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0D3/vega-discover-integrations"
+      },
+      {
+        "year": 2025,
+        "title": "Vega LX Consortia Benefits",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0E4/vega-lx-consortia-benefits"
+      },
+      {
+        "year": 2025,
+        "title": "Streamline Staff Workflows with Mobile Worklists",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0E1/streamline-staff-workflows-with-mobile-worklists"
+      },
+      {
+        "year": 2026,
+        "title": "Vega Discover - Year in Review",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbC/vega-discover-year-in-review"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "samantha-quell",
+    "name": "Samantha Quell",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Polaris Roadmap",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYr/polaris-roadmap"
+      },
+      {
+        "year": 2024,
+        "title": "10 Leap Hacks [Features] To Make Your Staff More Efficient",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNm/10-leap-hacks-features-to-make-your-staff-more-efficient"
+      },
+      {
+        "year": 2024,
+        "title": "Your Ideas: Innovative and IUG Enhancement Processes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ6/your-ideas-innovative-and-iug-enhancement-processes"
+      },
+      {
+        "year": 2025,
+        "title": "The IUG Hackathon",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FB/the-iug-hackathon"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Roadmap",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FZ/polaris-roadmap"
+      },
+      {
+        "year": 2025,
+        "title": "The IUG Hackathon Presentations & Awards/Lightning Round Presentations",
+        "role": "hackathon",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ff/the-iug-hackathon-presentations-awardslightning-round-presentations"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris & TS360: The Acquisitions API in Action",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CQ/polaris-ts360-the-acquisitions-api-in-action"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris Year in Review",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EY/polaris-year-in-review"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris Roadmap",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZh/polaris-roadmap"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sara-roberts",
+    "name": "Sara Roberts",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "A New Direction in Library Analytics – An Exciting Partnership with LibraryIQ",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOD/a-new-direction-in-library-analytics-an-exciting-partnership-with-libraryiq"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sarah-frieldsmith",
+    "name": "Sarah Frieldsmith",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Customer Spotlight: Understanding the New Enhancement Process",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYi/customer-spotlight-understanding-the-new-enhancement-process"
+      },
+      {
+        "year": 2024,
+        "title": "Your Ideas: Innovative and IUG Enhancement Processes",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQ6/your-ideas-innovative-and-iug-enhancement-processes"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sarah-kasprzak",
+    "name": "Sarah Kasprzak",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Modding Vega Discover: How I Stopped Using Defaults and Learned to Love Customization",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bw/modding-vega-discover-how-i-stopped-using-defaults-and-learned-to-love-customization"
+      },
+      {
+        "year": 2026,
+        "title": "Vega in Action: A Community Showcase of Customer Implementations",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaT/vega-in-action-a-community-showcase-of-customer-implementations"
+      },
+      {
+        "year": 2026,
+        "title": "Vega Rollups and Your Bibliographic Records: Making Them Work for Your Users",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZd8/vega-rollups-and-your-bibliographic-records-making-them-work-for-your-users"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sarah-st-martin",
+    "name": "Sarah St. Martin",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Strength in Consistency: A Consortium's Journey Toward Uniform Settings",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZcw/strength-in-consistency-a-consortiums-journey-toward-uniform-settings"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "shawn-farrell",
+    "name": "Shawn Farrell",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Sierra Circulation Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Co/sierra-circulation-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "stefanie-kaloustian",
+    "name": "Stefanie Kaloustian",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Polaris Circulation Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZba/polaris-circulation-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "stephanie-ruhe",
+    "name": "Stephanie Ruhe",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "First time IUG attendee reception **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b0KR/first-time-iug-attendee-reception-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2025,
+        "title": "Sierra Systems Administration Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Eq/sierra-systems-administration-forum"
+      },
+      {
+        "year": 2026,
+        "title": "Curtains for Encore; Discovering Vega",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaf/curtains-for-encore-discovering-vega"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Circulation Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbX/sierra-circulation-forum"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra System Administration Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdK/sierra-system-administration-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "stephanie-thero",
+    "name": "Stephanie Thero",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Bytes and Bites: Cybersecurity Conversations",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1w1Ho/bytes-and-bites-cybersecurity-conversations"
+      },
+      {
+        "year": 2025,
+        "title": "The Human Factor: Empowering Staff to Stay Secure",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Da/the-human-factor-empowering-staff-to-stay-secure"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "suri-smith",
+    "name": "Suri Smith",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Demystify and democratize Find Tool SQL for library staff: strategies for engaging trainings",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0EJ/demystify-and-democratize-find-tool-sql-for-library-staff-strategies-for-engaging-trainings"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "talia-hofacker",
+    "name": "Talia Hofacker",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Getting Started With Patron Imports & Student Cards",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2IA3c/getting-started-with-patron-imports-student-cards"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tammy-poquette",
+    "name": "Tammy Poquette",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Sierra Inventory, without using Circa",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2025.sched.com/event/1u0F2/sierra-inventory-without-using-circa"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "taylor-fisher",
+    "name": "Taylor Fisher",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Vega LX for Consortia",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOb/vega-lx-for-consortia"
+      },
+      {
+        "year": 2024,
+        "title": "Vega Promote & Promote Web Overview",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOe/vega-promote-promote-web-overview"
+      },
+      {
+        "year": 2025,
+        "title": "Library Website Design & Construction Best Practices",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FE/library-website-design-construction-best-practices"
+      },
+      {
+        "year": 2025,
+        "title": "Maximize your reach with Vega Promote",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Dj/maximize-your-reach-with-vega-promote"
+      },
+      {
+        "year": 2025,
+        "title": "Vega LX Consortia Benefits",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0E4/vega-lx-consortia-benefits"
+      },
+      {
+        "year": 2025,
+        "title": "Best of the web and website design trends",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Ek/best-of-the-web-and-website-design-trends"
+      },
+      {
+        "year": 2026,
+        "title": "Managing a Cohesive Circ Notice Strategy Across Channels",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZax/managing-a-cohesive-circ-notice-strategy-across-channels"
+      },
+      {
+        "year": 2026,
+        "title": "Patrons in Promote: Unlocking a New Level of Engagement",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbd/patrons-in-promote-unlocking-a-new-level-of-engagement"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tim-mayse-lillig",
+    "name": "Tim Mayse-Lillig",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "WILIUG - **OFFSITE - RSVP** - Wisconsin/Illinois Innovative Users Group Lunch",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQd/wiliug-offsite-rsvp-wisconsinillinois-innovative-users-group-lunch"
+      },
+      {
+        "year": 2024,
+        "title": "Exploring Aspen Discovery",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPB/exploring-aspen-discovery"
+      },
+      {
+        "year": 2026,
+        "title": "Sierra Cataloging Forum",
+        "role": "moderator",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZz/sierra-cataloging-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tim-sills",
+    "name": "Tim Sills",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Navigating Location Code Updates in Sierra",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbp/navigating-location-code-updates-in-sierra"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tom-jacobson",
+    "name": "Tom Jacobson",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYc/opening-session"
+      },
+      {
+        "year": 2024,
+        "title": "Understanding Artificial Intelligence (AI): The History, the Application & the Technology",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNp/understanding-artificial-intelligence-ai-the-history-the-application-the-technology"
+      },
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      },
+      {
+        "year": 2024,
+        "title": "Resource Sharing Landscape",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyO7/resource-sharing-landscape"
+      },
+      {
+        "year": 2025,
+        "title": "IUG and Innovative Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FQ/iug-and-innovative-opening-session"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "toni-minick",
+    "name": "Toni Minick",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Customer Spotlight: Understanding the New Enhancement Process",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYi/customer-spotlight-understanding-the-new-enhancement-process"
+      },
+      {
+        "year": 2024,
+        "title": "We've Come Full Circle",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYl/weve-come-full-circle"
+      },
+      {
+        "year": 2024,
+        "title": "A New Direction in Library Analytics – An Exciting Partnership with LibraryIQ",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOD/a-new-direction-in-library-analytics-an-exciting-partnership-with-libraryiq"
+      },
+      {
+        "year": 2024,
+        "title": "Understanding Artificial Intelligence (AI): The History, the Application & the Technology",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNp/understanding-artificial-intelligence-ai-the-history-the-application-the-technology"
+      },
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "troy-brown",
+    "name": "Troy Brown",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Herding the Cats: Bibliographic Services and System Administration in the Nation's Largest Automated Consortium",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bt/herding-the-cats-bibliographic-services-and-system-administration-in-the-nations-largest-automated-consortium"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tyler-works",
+    "name": "Tyler Works",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbm/lightning-rounds"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "valerie-rollins",
+    "name": "Valerie Rollins",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2026,
+        "title": "From Backlog to Breakthrough: Streamlining Technical Services with Workslip Cataloging and LEAN Solutions",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZaN/from-backlog-to-breakthrough-streamlining-technical-services-with-workslip-cataloging-and-lean-solutions"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "vega-product-team",
+    "name": "Vega Product Team",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "How to connect w/ your community: Showcase your resources across Vega products and running user testing",
+        "role": "speaker",
+        "track": "vega",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyOY/how-to-connect-w-your-community-showcase-your-resources-across-vega-products-and-running-user-testing"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "victor-zuniga",
+    "name": "Victor Zuniga",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "4 Perspectives on Using Holds Data with SQL",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNC/4-perspectives-on-using-holds-data-with-sql"
+      },
+      {
+        "year": 2024,
+        "title": "Migrating to AWS: From ideation to launch in six months",
+        "role": "speaker",
+        "track": "sierra",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNL/migrating-to-aws-from-ideation-to-launch-in-six-months"
+      },
+      {
+        "year": 2025,
+        "title": "Denver Public Library Tour - Travel Time Needed - **PLEASE SEE SPECIAL RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1x3LG/denver-public-library-tour-travel-time-needed-please-see-special-rsvp-instructions"
+      },
+      {
+        "year": 2025,
+        "title": "Denver Public Library Tour - Travel Time Needed - **PLEASE SEE SPECIAL RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1xC71/denver-public-library-tour-travel-time-needed-please-see-special-rsvp-instructions"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "wayne-decarr",
+    "name": "Wayne DeCarr",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Quick Hit: Polaris Email Configuration: New Features, SPF, DKIM and Other Best Practices to Keep Your Notices Sending",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyQX/quick-hit-polaris-email-configuration-new-features-spf-dkim-and-other-best-practices-to-keep-your-notices-sending"
+      },
+      {
+        "year": 2026,
+        "title": "Support Center Case Submission 101",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZS/support-center-case-submission-101"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "wendy-xie",
+    "name": "Wendy Xie",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2025,
+        "title": "Yes, Simply Reports can help!",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Bz/yes-simply-reports-can-help"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "wes-osborn",
+    "name": "Wes Osborn",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "First time IUG attendee reception **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b0KR/first-time-iug-attendee-reception-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2024,
+        "title": "Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYc/opening-session"
+      },
+      {
+        "year": 2024,
+        "title": "IUG Dine Around: Andiamo Italian **Limited Space - PLEASE SEE RSVP INSTRUCTIONS**",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2024.sched.com/event/1b1BZ/iug-dine-around-andiamo-italian-limited-space-please-see-rsvp-instructions"
+      },
+      {
+        "year": 2024,
+        "title": "Borrowing Brilliance: Tech Tips Inspired by Other Sectors",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPH/borrowing-brilliance-tech-tips-inspired-by-other-sectors"
+      },
+      {
+        "year": 2025,
+        "title": "IUG Dine Around: Teds' Montana Grill - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2025.sched.com/event/1wXuE/iug-dine-around-teds-montana-grill-rsvp-required"
+      },
+      {
+        "year": 2025,
+        "title": "Securing your library data",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0CE/securing-your-library-data"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris cataloging for NEW System Administrators",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0Cr/polaris-cataloging-for-new-system-administrators"
+      },
+      {
+        "year": 2025,
+        "title": "Are You Suggesting That an ILS Migrates?",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0DI/are-you-suggesting-that-an-ils-migrates"
+      },
+      {
+        "year": 2025,
+        "title": "Polaris System Administration Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2025.sched.com/event/1u0En/polaris-system-administration-forum"
+      },
+      {
+        "year": 2026,
+        "title": "The Great ILS-Data Pre-Conference: Quick Lessons With Your Peers",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZYy/the-great-ils-data-pre-conference-quick-lessons-with-your-peers"
+      },
+      {
+        "year": 2026,
+        "title": "IUG Dine Around: The Smith - RSVP Required",
+        "role": "speaker",
+        "track": "gatherings",
+        "schedUrl": "https://iug2026.sched.com/event/2J3l1/iug-dine-around-the-smith-rsvp-required"
+      },
+      {
+        "year": 2026,
+        "title": "Vibe Coding with SQL for Fun and \"Profit\"",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZZw/vibe-coding-with-sql-for-fun-and-profit"
+      },
+      {
+        "year": 2026,
+        "title": "Lightning Rounds",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2026.sched.com/event/2HZbm/lightning-rounds"
+      },
+      {
+        "year": 2026,
+        "title": "Polaris System Administration Forum",
+        "role": "moderator",
+        "track": "polaris",
+        "schedUrl": "https://iug2026.sched.com/event/2HZdN/polaris-system-administration-forum"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "william-louigene",
+    "name": "William Louigene",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "In-House On-boarding of a New Library",
+        "role": "speaker",
+        "track": "polaris",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyPc/in-house-on-boarding-of-a-new-library"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "yaniv-shmuel",
+    "name": "Yaniv Shmuel",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "We've Come Full Circle",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYl/weve-come-full-circle"
+      },
+      {
+        "year": 2024,
+        "title": "Understanding Artificial Intelligence (AI): The History, the Application & the Technology",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNp/understanding-artificial-intelligence-ai-the-history-the-application-the-technology"
+      },
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "yariv-kursh",
+    "name": "Yariv Kursh",
+    "affiliation": "",
+    "type": "",
+    "primaryTrack": "",
+    "quote": "",
+    "quoteContext": "",
+    "sessions": [
+      {
+        "year": 2024,
+        "title": "Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZDYc/opening-session"
+      },
+      {
+        "year": 2024,
+        "title": "Executive Leadership Panel",
+        "role": "panelist",
+        "track": "general",
+        "schedUrl": "https://iug2024.sched.com/event/1ZyNs/executive-leadership-panel"
+      },
+      {
+        "year": 2025,
+        "title": "IUG and Innovative Opening Session",
+        "role": "speaker",
+        "track": "general",
+        "schedUrl": "https://iug2025.sched.com/event/1u0FQ/iug-and-innovative-opening-session"
+      }
+    ],
+    "notes": ""
+  }
+]
