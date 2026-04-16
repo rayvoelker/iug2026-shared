@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaker Cards — IUG 2026</title>
+  <meta name="description" content="IUG conference speaker cards — presentation history, stats, and personality across all IUG years.">
+  <meta property="og:title" content="Speaker Cards — IUG 2026">
+  <meta property="og:description" content="IUG conference speaker cards — presentation history, stats, and personality across all IUG years.">
+  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/speakers.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IUG 2026 Conference Notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speaker Cards — IUG 2026">
+  <meta name="twitter:description" content="IUG conference speaker cards — presentation history, stats, and personality across all IUG years.">
+  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Speaker card grid */
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Individual speaker card */
+    .speaker-card {
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: box-shadow 0.15s;
+    }
+    .speaker-card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Track-color top border */
+    .speaker-card .card-top {
+      height: 4px;
+    }
+    .speaker-card .card-top.sierra { background: var(--green); }
+    .speaker-card .card-top.polaris { background: var(--gold); }
+    .speaker-card .card-top.vega { background: var(--red); }
+    .speaker-card .card-top.general { background: var(--teal); }
+    .speaker-card .card-top.gatherings { background: var(--sky); }
+
+    .speaker-card .card-body {
+      padding: 1.25rem;
+    }
+
+    /* Header row: rarity badge + track icon */
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .rarity-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+    }
+    .rarity-common { background: #e0e0e0; color: #666; }
+    .rarity-uncommon { background: #e8f5e9; color: var(--green); }
+    .rarity-rare { background: #e0f2f1; color: var(--teal); }
+    .rarity-legendary {
+      background: linear-gradient(135deg, #fff8e1, #ffecb3);
+      color: #b8860b;
+      box-shadow: 0 0 6px rgba(230, 185, 0, 0.3);
+    }
+
+    .track-icon {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    /* Speaker info */
+    .speaker-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.15rem;
+    }
+    .speaker-affiliation {
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 0.1rem;
+    }
+    .speaker-type {
+      font-size: 0.8rem;
+      color: var(--teal);
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Stat blocks */
+    .stat-blocks {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .stat-block {
+      background: var(--light);
+      border-radius: 4px;
+      padding: 0.4rem 0.6rem;
+      text-align: center;
+      min-width: 50px;
+    }
+    .stat-block .stat-num {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-block .stat-lbl {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #999;
+    }
+
+    /* Quote */
+    .speaker-quote {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: #777;
+      margin-bottom: 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--gold);
+    }
+    .speaker-quote .quote-ctx {
+      display: block;
+      font-size: 0.7rem;
+      font-style: normal;
+      color: #aaa;
+      margin-top: 0.25rem;
+    }
+
+    /* Session history */
+    .session-toggle {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--teal);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .session-toggle:hover { text-decoration: underline; }
+    .session-toggle .arrow {
+      transition: transform 0.15s;
+      font-size: 0.65rem;
+    }
+    .session-toggle.open .arrow { transform: rotate(90deg); }
+
+    .session-list {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: #666;
+    }
+    .session-list.open { display: block; }
+    .session-list .session-entry {
+      padding: 0.2rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .session-list .session-entry:last-child { border-bottom: none; }
+    .session-year { font-weight: 600; color: var(--navy); min-width: 35px; display: inline-block; }
+    .session-role { font-size: 0.7rem; color: #aaa; }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="assets/iug2026-banner.png" alt="IUG 2026">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sunday.html">Sunday</a></li>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html">Wednesday</a></li>
+      <li><a href="speakers.html" class="active">Speakers</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="breadcrumb"><a href="index.html">Home</a> / Speakers</div>
+    <h1>IUG Speaker Cards</h1>
+    <p class="page-subtitle">Conference presentation history across all IUG years</p>
+
+    <div class="stats-row" id="page-stats"></div>
+
+    <div class="speaker-grid" id="speaker-grid"></div>
+
+  </div>
+
+  <div class="footer">
+    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
+    <div class="footer-text">
+      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot;
+      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a> &middot;
+      &#9998; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Speakers&body=Page:+speakers.html%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+  <script>
+    (async function() {
+      const resp = await fetch('speakers-data.json');
+      const speakers = await resp.json();
+
+      // --- Computed stats ---
+      function getRarity(count) {
+        if (count >= 8) return { tier: 'legendary', label: 'Legendary' };
+        if (count >= 5) return { tier: 'rare', label: 'Rare' };
+        if (count >= 3) return { tier: 'uncommon', label: 'Uncommon' };
+        return { tier: 'common', label: 'Common' };
+      }
+
+      function uniqueYears(sessions) {
+        return [...new Set(sessions.map(s => s.year))];
+      }
+
+      function uniqueTracks(sessions) {
+        return [...new Set(sessions.map(s => s.track).filter(Boolean))];
+      }
+
+      // --- Page stats ---
+      const totalSessions = speakers.reduce((sum, s) => sum + s.sessions.length, 0);
+      const allYears = [...new Set(speakers.flatMap(s => s.sessions.map(ss => ss.year)))].sort();
+      const legendaryCount = speakers.filter(s => s.sessions.length >= 8).length;
+
+      document.getElementById('page-stats').innerHTML = `
+        <div class="stat"><div class="number">${speakers.length}</div><div class="stat-label">Speakers</div></div>
+        <div class="stat"><div class="number">${totalSessions}</div><div class="stat-label">Sessions Tracked</div></div>
+        <div class="stat"><div class="number">${allYears.length}</div><div class="stat-label">Years Covered</div></div>
+        <div class="stat"><div class="number">${legendaryCount}</div><div class="stat-label">Legendary</div></div>
+      `;
+
+      // --- Render cards ---
+      const grid = document.getElementById('speaker-grid');
+
+      speakers.forEach(speaker => {
+        const sessions = speaker.sessions;
+        const rarity = getRarity(sessions.length);
+        const years = uniqueYears(sessions);
+        const tracks = uniqueTracks(sessions);
+        const track = speaker.primaryTrack || tracks[0] || 'general';
+
+        const card = document.createElement('div');
+        card.className = 'speaker-card';
+        card.id = speaker.id;
+
+        const quoteHtml = speaker.quote
+          ? `<div class="speaker-quote">"${speaker.quote}"${speaker.quoteContext ? `<span class="quote-ctx">&mdash; ${speaker.quoteContext}</span>` : ''}</div>`
+          : '';
+
+        const typeHtml = speaker.type
+          ? `<div class="speaker-type">${speaker.type}</div>`
+          : '<div class="speaker-type">&nbsp;</div>';
+
+        const affiliationHtml = speaker.affiliation
+          ? `<div class="speaker-affiliation">${speaker.affiliation}</div>`
+          : '';
+
+        const sessionsHtml = sessions
+          .sort((a, b) => b.year - a.year)
+          .map(s => {
+            const link = s.schedUrl ? `<a href="${s.schedUrl}">${s.title}</a>` : s.title;
+            return `<div class="session-entry"><span class="session-year">${s.year}</span> ${link} <span class="session-role">(${s.role})</span></div>`;
+          })
+          .join('');
+
+        card.innerHTML = `
+          <div class="card-top ${track}"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="rarity-badge rarity-${rarity.tier}">${rarity.label}</span>
+              <span class="track-icon">${track}</span>
+            </div>
+            <div class="speaker-name">${speaker.name}</div>
+            ${affiliationHtml}
+            ${typeHtml}
+            <div class="stat-blocks">
+              <div class="stat-block"><div class="stat-num">${sessions.length}</div><div class="stat-lbl">sessions</div></div>
+              <div class="stat-block"><div class="stat-num">${years.length}</div><div class="stat-lbl">years</div></div>
+              <div class="stat-block"><div class="stat-num">${tracks.length}</div><div class="stat-lbl">tracks</div></div>
+            </div>
+            ${quoteHtml}
+            <button class="session-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">
+              <span class="arrow">&#9656;</span> Session History (${sessions.length})
+            </button>
+            <div class="session-list">${sessionsHtml}</div>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    })();
+  </script>
+
+</body>
+</html>
