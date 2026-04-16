@@ -35,6 +35,11 @@ Session notes organized by day:
 | [Floating Collections BoF](sessions/tuesday-apr14-floating-collections-bof.md) | Smart routing, bulk holds, Sierra API gaps, Vega Reports |
 | [Sierra Year in Review](sessions/tuesday-apr14-sierra-year-in-review.md) | 6.4 & 6.5 releases, patron checkout limits, Admin Corner migration |
 | [MEEP](sessions/tuesday-apr14-meep.md) | Member-Exclusive Enhancement Process — voting, priorities, roadmap input |
+| [AI The Right Way](sessions/tuesday-apr14-ai-the-right-way.md) | Clarivate's responsible AI approach |
+| [Vega Reports](sessions/tuesday-apr14-vega-reports.md) | Vega Reports for Discover, data lakehouse strategy |
+| [Executive Leadership Panel](sessions/wednesday-apr15-executive-panel.md) | Sierra's future, Vega unification, 3–5 year vision, support restructure |
+| [Cataloging without OCLC](sessions/wednesday-apr15-cataloging-without-oclc.md) | Boise Public Library's move to Bookware after OCLC and BT Cat |
+| [Sierra Staff & SSO](sessions/wednesday-apr15-sierra-sso-technical-guide.md) | SAML SSO for staff auth, MFA, Keycloak, cyber insurance — [technical guide](docs/sierra-sso-guide.html) |
 
 ## Conference Tracks
 
