@@ -17,15 +17,24 @@
   <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
   <link rel="stylesheet" href="style.css">
   <style>
+    .vibed-af-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0.75rem;
+    }
     .vibed-af {
-      position: fixed;
-      top: 1rem;
-      right: 1.5rem;
-      z-index: 9999;
+      display: inline-block;
       font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.15em;
+      padding: 0.3rem 0.85rem;
+      border-radius: 6px;
+      background-color: var(--navy);
+      position: relative;
+      user-select: none;
+    }
+    .vibed-af span {
       background: linear-gradient(
         90deg,
         #ff6b6b, #ffa07a, #ffd700, #98fb98,
@@ -36,10 +45,6 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: shimmer 2.5s linear infinite;
-      pointer-events: none;
-      user-select: none;
-      text-transform: lowercase;
-      opacity: 0.85;
     }
     @keyframes shimmer {
       0% { background-position: 200% center; }
@@ -48,8 +53,6 @@
   </style>
 </head>
 <body>
-
-  <div class="vibed-af">vibedAF</div>
 
   <div class="banner">
     <img src="assets/iug2026-banner.png" alt="IUG 2026">
@@ -67,6 +70,7 @@
 
   <div class="container">
 
+    <div class="vibed-af-wrap"><div class="vibed-af"><span>vibedAF</span></div></div>
     <div class="breadcrumb"><a href="index.html">Home</a> / <a href="wednesday.html">Wednesday</a> / <a href="sierra-sys-admin-forum.html">Sierra Sys Admin Forum</a> / Cloudflare Guide</div>
     <h1>Cloudflare Protection for Sierra ILS</h1>
     <p class="page-subtitle">Practical Guide for Library Sys Admins &middot; From the IUG 2026 Sys Admin Forum</p>
