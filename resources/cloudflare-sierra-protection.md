@@ -524,9 +524,9 @@ If you're running Encore or Vega Discover in addition to WebPAC:
   basic bot fighting, AI scraper blocking, 5 WAF rules, and rate limiting. This
   is already a massive improvement over no protection.
 
-- **Medium library or academic library:** Pro ($20/mo) adds OWASP rules, 20 WAF
-  rules, Super Bot Fight Mode with verified bot allowlisting, and bot analytics.
-  Best value for most Sierra installations.
+- **Medium library or academic library:** Pro (~$20-25/mo depending on billing
+  cycle) adds OWASP rules, 20 WAF rules, Super Bot Fight Mode with verified bot
+  allowlisting, and bot analytics. Best value for most Sierra installations.
 
 - **Large academic or consortium:** Business ($200/mo) adds bypass-cache-on-cookie
   (important for patron sessions), 100 WAF rules, advanced rate limiting, and
