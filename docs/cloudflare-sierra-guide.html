@@ -16,8 +16,40 @@
   <meta name="twitter:description" content="Practical guide for library sys admins on putting Sierra&rsquo;s web OPAC behind Cloudflare: what works, what breaks, and what to watch out for.">
   <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .vibed-af {
+      position: fixed;
+      top: 1rem;
+      right: 1.5rem;
+      z-index: 9999;
+      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      background: linear-gradient(
+        90deg,
+        #ff6b6b, #ffa07a, #ffd700, #98fb98,
+        #7cc4e2, #9b8ec7, #ff69b4, #ff6b6b
+      );
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 2.5s linear infinite;
+      pointer-events: none;
+      user-select: none;
+      text-transform: lowercase;
+      opacity: 0.85;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+  </style>
 </head>
 <body>
+
+  <div class="vibed-af">vibedAF</div>
 
   <div class="banner">
     <img src="assets/iug2026-banner.png" alt="IUG 2026">
