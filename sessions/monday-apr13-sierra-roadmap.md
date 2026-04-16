@@ -33,7 +33,7 @@ Theme: **Customer-driven enhancements** — sourced from MEEP, Idea Exchange, an
 |---|---|---|---|
 | View history for item and volume records (Record History button) | Override patron block workflow for bookings | Migrate Admin Corner features into Sierra client: catalog database status, circulation status, system information | Sierra API endpoints for ILL requests |
 | New permissions to delete notice jobs | Run notice jobs automatically | Web Management: Admin Console for Vega Reports | Enhanced support for consortial workflows |
-| Customize SAML login forms (webmaster-controlled logos, branding) | Accessibility improvements in staff client and WebPAC | Group call numbers for statistical reports (stat groups) | Rapido / consortial borrowing improvements — pickup location data, filling gaps for missing data |
+| Customize SAML login forms (webmaster-controlled logos, branding) — see also [SSO session notes](../../../iug2026-private/sessions/wednesday-apr15-sierra-sso.md); Keycloak (currently powering Vega identity) may become a shared service across Sierra/Polaris/Vega | Accessibility improvements in staff client and WebPAC | Group call numbers for statistical reports (stat groups) | Rapido / consortial borrowing improvements — pickup location data, filling gaps for missing data |
 | | | Scoping authority records in Sierra client | |
 | | | Maintain and run daily record link maintenance in Sierra client | |
 

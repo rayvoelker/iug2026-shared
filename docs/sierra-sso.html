@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sierra Staff and Single Sign-On &mdash; IUG 2026</title>
+  <meta name="description" content="Session recap from IUG 2026: implementing SAML SSO for Sierra staff and patron authentication, MFA practices, shared accounts, identity providers, and and Keycloak as a potential unified identity layer.">
+  <meta property="og:title" content="Sierra Staff and Single Sign-On &mdash; IUG 2026">
+  <meta property="og:description" content="Implementing SAML SSO for Sierra staff and patron authentication, MFA practices, shared accounts, identity providers, and and Keycloak as a potential unified identity layer.">
+  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/sierra-sso.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IUG 2026 Conference Notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sierra Staff and Single Sign-On &mdash; IUG 2026">
+  <meta name="twitter:description" content="Implementing SAML SSO for Sierra staff and patron authentication, MFA practices, shared accounts, identity providers, and and Keycloak as a potential unified identity layer.">
+  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="banner">
+    <img src="assets/iug2026-banner.png" alt="IUG 2026">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sunday.html">Sunday</a></li>
+      <li><a href="monday.html">Monday</a></li>
+      <li><a href="tuesday.html">Tuesday</a></li>
+      <li><a href="wednesday.html" class="active">Wednesday</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="wednesday.html">Wednesday</a> / Sierra Staff and Single Sign-On</div>
+    <h1>Sierra Staff and Single Sign-On</h1>
+    <p class="page-subtitle">Wednesday, April 15, 3:00&ndash;4:00 PM &middot; Cook &middot; Gatherings (Sierra)</p>
+
+    <div class="card">
+      <p>An informal gathering led by <strong>Justin Newcomer</strong> (Rochester Institute of Technology) about his experience implementing SAML SSO for Sierra staff and patron authentication. As one of the few sites actively using it, Justin walked through the setup, limitations, and pain points at RIT. The session evolved into a broader conversation about MFA policies, shared accounts, identity provider options, cyber insurance implications, and the prospect of Keycloak unifying identity across all Innovative products.</p>
+    </div>
+
+    <!-- How It Works at RIT -->
+
+    <h2>How It Works at RIT</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Architecture overview</h3>
+        <p>RIT uses <strong>Shibboleth</strong> as their university-wide identity provider with separate SAML configurations for patron authentication and staff authentication, each using different match points. They previously used external LDAP authentication for patrons before switching to SAML.</p>
+      </div>
+      <div class="section-item">
+        <h3>Staff SSO ID field</h3>
+        <p>They use <strong>username (uid)</strong> as the matching attribute&mdash;chosen because it didn&rsquo;t require special permissions from the IdP team. SSO IDs can be changed on the fly; Justin swaps his SSO ID to a test account to impersonate and debug.</p>
+      </div>
+      <div class="section-item">
+        <h3>Desktop client behavior</h3>
+        <p>When the Sierra desktop client launches with SSO enabled, a <strong>browser window pops up</strong> offering two choices: SAML login or legacy Sierra password. Edge works best; <strong>Firefox can be flaky</strong>. On Chrome, Windows credentials pass through to the browser and Duo MFA decisions happen automatically.</p>
+      </div>
+    </div>
+
+    <!-- Can't Disable Local Login -->
+
+    <h2>Can&rsquo;t Disable Local Login</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>The problem</h3>
+        <p>Even with SAML fully configured, <strong>the legacy Sierra password login cannot be disabled</strong>&mdash;both options always appear on the login page. Justin has raised this issue repeatedly. The login page is Sierra-controlled, so libraries cannot modify the scripting or remove the legacy option.</p>
+      </div>
+      <div class="section-item">
+        <h3>Planned IdeaLab request</h3>
+        <p>Justin plans to submit an IdeaLab request after the conference to <strong>require MFA</strong>, not just allow it. Previous requests were &ldquo;loose with words&rdquo;&mdash;they demanded MFA <em>support</em> but not MFA as a <em>requirement</em>. He encouraged the room to help word-smith the request &ldquo;with lawyers in mind.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Apps That Don't Support SSO -->
+
+    <h2>Apps That Don&rsquo;t Support SSO</h2>
+
+    <div class="card">
+      <p>Several Sierra-adjacent applications still require legacy password authentication:</p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Application</th>
+          <th>SSO Status</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Decision Center</td>
+          <td>Legacy password only</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr>
+          <td>Circa</td>
+          <td>Legacy password only</td>
+          <td>No longer sold, but RIT uses it daily</td>
+        </tr>
+        <tr>
+          <td>Circulation overrides</td>
+          <td>Legacy password only</td>
+          <td>Supervisor override pop-up at circ desks uses legacy credentials</td>
+        </tr>
+        <tr>
+          <td>Innovative/Vega mobile worklists app</td>
+          <td>No</td>
+          <td>Legacy only; a roadmap slide suggested SSO support may be coming</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="card">
+      <p>Justin mentioned he might <strong>vibe-code a Circa replacement</strong> using Shibboleth/PHP for authentication to work around the SSO gap.</p>
+    </div>
+
+    <!-- Student Employees -->
+
+    <h2>Student Employees</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>SSO-only access</h3>
+        <p>Students get SSO access through their university accounts. Justin sets a <strong>random password they never receive</strong>&mdash;SSO is their only way in. If a student needs Decision Center or Circa, they require the legacy password as well.</p>
+      </div>
+      <div class="section-item">
+        <h3>MFA self-enrollment</h3>
+        <p>Students self-enroll for Duo MFA automatically. Justin noted: &ldquo;I had confusion trying to explain how to enroll, then they told me it&rsquo;s just automatic. I stopped trying to explain it and we haven&rsquo;t had problems since.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Patron SSO -->
+
+    <h2>Patron SSO</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Forced SAML for all patrons</h3>
+        <p>Patron authentication matches on a different attribute (University ID in patron records). RIT <strong>disabled the patron choice</strong> between SAML and barcode/PIN, forcing SAML-only since all patrons have RIT accounts. The one or two theoretical community users with expired accounts were told to get an RIT account.</p>
+      </div>
+      <div class="section-item">
+        <h3>Support burden eliminated</h3>
+        <p>Forcing SAML for patrons eliminates password reset support entirely. As Justin put it: &ldquo;It&rsquo;s Central IT&rsquo;s problem.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Shared Accounts & Cyber Insurance -->
+
+    <h2>Shared Accounts &amp; Cyber Insurance</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>RIT&rsquo;s approach</h3>
+        <p>RIT uses <strong>one context user</strong> at their circulation desk with a legacy login (no SSO). Permissions on this account are minimal&mdash;it can only check books in and out, with no patron access and no record deletion. They filed an <strong>exception</strong> with their cyber insurance provider, and everyone signed off on it.</p>
+      </div>
+      <div class="section-item">
+        <h3>Insurance implications</h3>
+        <p>Other attendees noted that <strong>any shared account</strong> moves your library into a more expensive insurance tier, even if the account&rsquo;s permissions are heavily restricted. The cheapest rate requires every user to be a single signer with no shared service accounts. RIT previously used shared accounts for library programs (e.g., 36 high schoolers for an hour) but now requires each person to have a separate account.</p>
+      </div>
+    </div>
+
+    <!-- Bring Your Own IdP -->
+
+    <h2>&ldquo;Bring Your Own Identity Provider&rdquo; Discussion</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Getting started is straightforward</h3>
+        <p>Justin&rsquo;s advice: &ldquo;If you have Google, Google &lsquo;Google SAML.&rsquo; If you have Microsoft, Azure that up.&rdquo; The setup is self-service&mdash;you can configure it in test mode through the Sierra admin web app without affecting production. The metadata exchange is straightforward: match the SSO ID field to whatever attribute your IdP sends.</p>
+      </div>
+      <div class="section-item">
+        <h3>Patron &ldquo;bring your own identity&rdquo;</h3>
+        <p>One attendee asked about allowing <strong>patrons to choose their own IdP</strong>&mdash;sign in with Google, Apple, Meta, and so on&mdash;the way consumer sites work. Justin noted that SAML is designed for defined groups; <strong>OAuth</strong> might be a better fit for &ldquo;bring your own&rdquo; patron authentication. The idea has major potential for public libraries, but it raises support questions: password resets and account recovery would go to Apple or Google, not the library.</p>
+      </div>
+    </div>
+
+    <!-- Traveling Staff / Consortium Challenge -->
+
+    <h2>Traveling Staff / Consortium Challenge</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>The multi-location problem</h3>
+        <p>One attendee described staff traveling to <strong>9 different locations</strong> who need different context logins for each location&rsquo;s stack groups. They stood up their own IdP to create 9 separate entries, spent 3 months working with their IT department and the city, and ultimately concluded &ldquo;we can&rsquo;t do that&rdquo; with current Sierra.</p>
+      </div>
+      <div class="section-item">
+        <h3>Workarounds discussed</h3>
+        <p>Possible approaches included multiple accounts with the same password but different usernames, or dummy Google nonprofit accounts per location. Justin candidly acknowledged: &ldquo;I only have bad ideas about how to solve this.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- User Provisioning / SCIM -->
+
+    <h2>User Provisioning / SCIM Discussion</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>No automatic provisioning today</h3>
+        <p>An attendee asked about automatic provisioning&mdash;mapping LDAP groups to Sierra permission groups. <strong>This does not exist currently</strong>: no SCIM, no automatic role-based provisioning. Justin manages approximately 80&ndash;90 staff accounts manually, cloning permissions from existing accounts.</p>
+      </div>
+      <div class="section-item">
+        <h3>The pragmatic reality</h3>
+        <p>&ldquo;Takes longer to close out the ticket with proper change controls than to actually click &lsquo;copy from other supervisor.&rsquo;&rdquo; Justin also prefers keeping control in-house rather than letting central IT touch Sierra groups: &ldquo;They touched groups I had specific notes saying do not touch.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Keycloak / Future Architecture -->
+
+    <h2>Keycloak / Future Architecture</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Vega already uses Keycloak</h3>
+        <p>An attendee (possibly from the Innovative/engineering side) confirmed that <strong>Vega currently runs through Keycloak</strong> for identity management.</p>
+      </div>
+      <div class="section-item">
+        <h3>Planned unification</h3>
+        <p>There are plans to make <strong>Keycloak a shared service</strong> across all products&mdash;pushing it down to Polaris and across to Sierra. If this happens, IdeaLab requests for SSO improvements would benefit all products simultaneously rather than requiring incremental changes in each module.</p>
+      </div>
+    </div>
+
+    <!-- MFA Practices Around the Room -->
+
+    <h2>MFA Practices Around the Room</h2>
+
+    <div class="card">
+      <p>The session included a candid survey of how different libraries handle multi-factor authentication:</p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Library</th>
+          <th>IdP</th>
+          <th>MFA Method</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>RIT (Justin)</td>
+          <td>Shibboleth</td>
+          <td>Duo (YubiKey + web auth)</td>
+          <td>Disabled SMS, disabled push, using verified push (type 3 numbers). No phone-call MFA.</td>
+        </tr>
+        <tr>
+          <td>Attendee (Google shop)</td>
+          <td>Google Workspace (free nonprofit)</td>
+          <td>YubiKey + phone</td>
+          <td>Must manually assign YubiKeys per account&mdash;no bulk provisioning on free tier. YubiKeys also used for physical door access (NFC).</td>
+        </tr>
+        <tr>
+          <td>Attendee (Microsoft shop)</td>
+          <td>Azure AD / Entra ID</td>
+          <td>Microsoft Authenticator app</td>
+          <td>4 out of 75 staff requested hardware tokens (Token2). SMS turned off.</td>
+        </tr>
+        <tr>
+          <td>Another attendee</td>
+          <td>Microsoft</td>
+          <td>MS Authenticator</td>
+          <td>Conditional access: no MFA required on library network. Off-network requires MFA every time.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Password Policies -->
+
+    <h2>Password Policies</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Modern standards winning out</h3>
+        <p>RIT requires <strong>16 characters, set once, never rotated</strong> unless the password is detected on a breach list (following the Microsoft standard). One attendee uses <strong>Spanning</strong> (a Google Workspace backup tool) with dark web monitoring for compromised credentials&mdash;it has flagged a match only once in four years.</p>
+      </div>
+      <div class="section-item">
+        <h3>Sierra-specific gap</h3>
+        <p>Justin does not check Sierra passwords against breach lists&mdash;it is unclear how that would work given Sierra&rsquo;s password infrastructure. The room&rsquo;s general consensus: <strong>long passwords + MFA + no rotation</strong> is the modern standard.</p>
+      </div>
+    </div>
+
+    <!-- Passwordless Discussion -->
+
+    <h2>Passwordless Discussion</h2>
+
+    <div class="section-list">
+      <div class="section-item">
+        <h3>Interest tempered by caution</h3>
+        <p>Justin expressed interest in passwordless authentication but remains cautious. His concern: a YubiKey alone (something you have) without a password means anyone who knows the username and has the key gets everything.</p>
+      </div>
+      <div class="section-item">
+        <h3>PIN-protected hardware tokens</h3>
+        <p>One attendee described a setup where the YubiKey requires a PIN to unlock, preserving the two-factor model (something you know + something you have). Justin noted he is attending a <strong>Google conference next week</strong> to learn more about passwordless at enterprise scale, but added: &ldquo;I&rsquo;m not going to be the first person on campus to push for it.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Action Items / Follow-ups -->
+
+    <h2>Action Items / Follow-ups</h2>
+
+    <div class="card">
+      <ul style="margin: 0.75rem 0 0 1.5rem;">
+        <li><strong>IdeaLab request for mandatory MFA</strong> &mdash; Justin will submit a request to <em>require</em> (not just allow) MFA. He asked the community to help word-smith it &ldquo;with lawyers in mind&rdquo; and upvote it on the <a href="https://ideas.iii.com">Idea Exchange</a>.</li>
+        <li><strong>Watch for the request on Idea Exchange / Discourse</strong> &mdash; community support and upvotes will be critical to getting traction.</li>
+        <li><strong>Watch for Keycloak unification</strong> &mdash; an attendee (possibly from Innovative&rsquo;s engineering side) mentioned plans to make Keycloak a shared identity service across Sierra, Polaris, and Vega. This was not an official announcement, but if it materializes it could address many of the SSO gaps discussed in this session.</li>
+      </ul>
+    </div>
+
+    <!-- Cross-References -->
+
+    <h2>Cross-References</h2>
+
+    <div class="card">
+      <ul style="margin: 0.75rem 0 0 1.5rem;">
+        <li><strong><a href="sierra-sso-guide.html">Sierra SSO Technical Guide</a></strong> &mdash; detailed configuration walkthrough, IdP comparison, debugging tips, and reference links compiled from background research</li>
+        <li><strong><a href="sierra-roadmap.html">Sierra Roadmap</a></strong> &mdash; broader Sierra development plans including the May 2026 release with customizable SAML login forms</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
+    <div class="footer-text">
+      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot;
+      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a> &middot;
+      ✏️ <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Sierra+SSO&body=Page:+sierra-sso.html%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+</body>
+</html>
