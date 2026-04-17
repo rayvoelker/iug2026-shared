@@ -45,3 +45,14 @@ class TestBuildCompleteness:
         }
         missing = expected - html_files
         assert not missing, f"Missing pages: {missing}"
+
+
+class TestContentIntegrity:
+    def test_no_escaped_html_in_output(self):
+        """No page should contain HTML that mistune escaped into code blocks."""
+        failures = []
+        for html_file in get_html_files():
+            content = html_file.read_text()
+            if "<pre><code>&lt;div" in content or "<pre><code>&lt;p" in content:
+                failures.append(html_file.name)
+        assert not failures, f"Pages with escaped HTML: {failures}"

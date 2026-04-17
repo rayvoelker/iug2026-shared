@@ -4,6 +4,7 @@
 import argparse
 import http.server
 import json
+import re
 import shutil
 import threading
 from pathlib import Path
@@ -53,18 +54,38 @@ def discover_content(content_dir=None):
 def render_markdown(text):
     """Convert markdown text to HTML.
 
-    Preprocesses to strip leading whitespace from HTML lines, preventing
-    mistune from treating indented HTML (common in nested structures)
-    as code blocks.
+    Preprocesses to:
+    1. Strip leading whitespace from HTML lines (prevents code block treatment)
+    2. Bridge blank lines inside nested HTML (prevents block splitting)
     """
+    BLOCK_TAGS = (
+        r"(?:div|ul|ol|table|section|article|nav|aside|header|footer"
+        r"|main|details|figure|blockquote|form|fieldset|dl|pre)"
+    )
+
     lines = text.split("\n")
     processed = []
+    depth = 0
+
     for line in lines:
         stripped = line.lstrip()
+
+        # Strip indentation from HTML lines
         if stripped.startswith("<") or stripped.startswith("</"):
-            processed.append(stripped)
+            line = stripped
+
+        # Track block-level HTML depth
+        opens = len(re.findall(rf"<{BLOCK_TAGS}\b", line, re.I))
+        closes = len(re.findall(rf"</{BLOCK_TAGS}\b", line, re.I))
+        depth = max(0, depth + opens - closes)
+
+        # Bridge blank lines inside nested HTML blocks to prevent
+        # mistune from ending the HTML block prematurely
+        if stripped == "" and depth > 0:
+            processed.append("<!-- -->")
         else:
             processed.append(line)
+
     return mistune.html("\n".join(processed))
 
 
