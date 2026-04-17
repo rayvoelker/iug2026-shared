@@ -1,53 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuesday, April 14 — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports.">
-  <meta property="og:title" content="Tuesday, April 14">
-  <meta property="og:description" content="Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/tuesday.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tuesday, April 14">
-  <meta name="twitter:description" content="Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / Tuesday, April 14</div>
-
-    
-<h1>Tuesday, April 14</h1>
-<p class="page-subtitle">Breakout Sessions · Day 2</p>
+---
+title: "Tuesday, April 14"
+template: day
+date: "April 14"
+day: tuesday
+page_subtitle: "Breakout Sessions · Day 2"
+description: "Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports."
+---
 
 <h2>Full Schedule</h2>
 <div class="section-list">
@@ -176,25 +134,3 @@
   </div>
 
 </div>
-
-
-
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Tuesday%2C%20April%2014&body=Page:+tuesday.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

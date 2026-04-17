@@ -1,53 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monday, April 13 — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement.">
-  <meta property="og:title" content="Monday, April 13">
-  <meta property="og:description" content="Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/monday.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Monday, April 13">
-  <meta name="twitter:description" content="Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html" class="active">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / Monday, April 13</div>
-
-    
-<h1>Monday, April 13</h1>
-<p class="page-subtitle">Opening Session · Day 1</p>
+---
+title: "Monday, April 13"
+template: day
+date: "April 13"
+day: monday
+page_subtitle: "Opening Session · Day 1"
+description: "Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement."
+---
 
 <h2>Live Updates</h2>
 <div class="update-feed">
@@ -150,25 +108,3 @@
     <li>Opening session slide photos &mdash; <a href="https://photos.app.goo.gl/jvbF72F849caaXmdA">Google Photos Album</a></li>
   </ol>
 </div>
-
-
-
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Monday%2C%20April%2013&body=Page:+monday.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>
