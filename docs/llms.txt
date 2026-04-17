@@ -36,3 +36,13 @@ Conference knowledge base with session notes, technical guides, and speaker data
 
 ## Structured Data
 - [speakers.json](speakers-data.json): Full speaker database with session history
+
+## Corrections & Contributions
+
+Found an error or want to suggest a correction?
+
+- **File an issue:** https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction&body=Page:%20(which%20page)%0A%0ACorrection:%20(describe%20the%20issue)
+- **Browse open issues:** https://github.com/rayvoelker/iug2026-shared/issues
+- **Submit a pull request:** Fork https://github.com/rayvoelker/iug2026-shared, edit the relevant markdown file in `content/`, and open a PR.
+
+Content source files are markdown with YAML frontmatter in the `content/` directory.
