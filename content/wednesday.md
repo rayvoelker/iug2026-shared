@@ -1,53 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wednesday, April 15 — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Final day: Executive Leadership Panel, Lightning Rounds, forums (Acquisitions, Consortia, Public Services, System Admin), API onboarding, and Trivia Night.">
-  <meta property="og:title" content="Wednesday, April 15">
-  <meta property="og:description" content="Final day: Executive Leadership Panel, Lightning Rounds, forums (Acquisitions, Consortia, Public Services, System Admin), API onboarding, and Trivia Night.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/wednesday.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wednesday, April 15">
-  <meta name="twitter:description" content="Final day: Executive Leadership Panel, Lightning Rounds, forums (Acquisitions, Consortia, Public Services, System Admin), API onboarding, and Trivia Night.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html" class="active">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / Wednesday, April 15</div>
-
-    
-<h1>Wednesday, April 15</h1>
-<p class="page-subtitle">Final Sessions · Day 3</p>
+---
+title: "Wednesday, April 15"
+template: day
+date: "April 15"
+day: wednesday
+page_subtitle: "Final Sessions · Day 3"
+description: "Final day: Executive Leadership Panel, Lightning Rounds, forums (Acquisitions, Consortia, Public Services, System Admin), API onboarding, and Trivia Night."
+---
 
 <h2>Full Schedule</h2>
 <div class="section-list">
@@ -180,25 +138,3 @@
     <p>Los Angeles/Miami/Scottsdale Rooms &middot; RSVP Required</p>
   </div>
 </div>
-
-
-
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Wednesday%2C%20April%2015&body=Page:+wednesday.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>
