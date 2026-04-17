@@ -36,34 +36,33 @@
 </div>
 {% endif %}
 
-<h2>Session Notes</h2>
-<div class="day-grid">
-  {% for day in page.days %}
-  <a class="day-card" href="{{ day.url }}">
-    <div class="day-date">
-      <div class="dow">{{ day.dow }}</div>
-      <div class="num">{{ day.num }}</div>
-      <div class="month">{{ day.month }}</div>
-    </div>
-    <div class="day-info">
-      <h3>{{ day.title }}</h3>
-      <p>{{ day.description }}</p>
-    </div>
-  </a>
-  {% endfor %}
-</div>
-
-<h2>Deep Dives</h2>
+{% for day_group in page.sessions_by_day %}
+<h2><a href="{{ day_group.day_url }}">{{ day_group.day }}</a></h2>
 <div class="section-list">
-  {% for dive in page.deep_dives %}
-  <a class="day-card" href="{{ dive.url }}">
+  {% for session in day_group.sessions %}
+  <a class="day-card" href="{{ session.url }}">
     <div class="day-info">
-      <h3>{{ dive.title }}</h3>
-      <p>{{ dive.description }}</p>
+      <h3>{{ session.title }}</h3>
+      <p>{{ session.description }}</p>
     </div>
   </a>
   {% endfor %}
 </div>
+{% endfor %}
+
+{% if page.guides %}
+<h2>Guides & References</h2>
+<div class="section-list">
+  {% for guide in page.guides %}
+  <a class="day-card" href="{{ guide.url }}">
+    <div class="day-info">
+      <h3>{{ guide.title }}</h3>
+      <p>{{ guide.description }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
 
 <h2>Conference Tracks</h2>
 <div class="tracks">
