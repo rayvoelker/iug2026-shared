@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block breadcrumbs %}
+<div class="breadcrumb"><a href="index.html">Home</a> / {{ page.title }}</div>
+{% endblock %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+{% if page.page_subtitle %}<p class="page-subtitle">{{ page.page_subtitle }}</p>{% endif %}
+
+{{ content }}
+
+{% set day_sessions = get_sessions_for_day(pages, page.day) %}
+{% if day_sessions %}
+<h2>Session Notes from This Day</h2>
+<div class="section-list">
+  {% for session in day_sessions %}
+  <a class="day-card" href="{{ session.url }}">
+    <div class="day-info">
+      <h3>{{ session.title }}</h3>
+      <p>{{ session.description }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block breadcrumbs %}
+<div class="breadcrumb"><a href="index.html">Home</a> / <a href="{{ page.day }}.html">{{ page.day | title }}, {{ page.date }}</a> / {{ page.title }}</div>
+{% endblock %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+<p class="page-subtitle">
+  {%- if page.speakers_display %}{{ page.speakers_display }} &middot; {% endif -%}
+  {{ page.day | title }}, {{ page.date }}
+</p>
+
+{% if page.speakers %}
+<div class="card">
+  <p><strong>Speaker{{ 's' if page.speakers | length > 1 else '' }}:</strong>
+    {% for sid in page.speakers %}
+    <a href="speakers.html#{{ sid }}">{{ speakers[sid].name if sid in speakers else sid }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+</div>
+{% endif %}
+
+{{ content }}
+{% endblock %}
