@@ -57,33 +57,33 @@
 <!-- Two cards side by side -->
 
 <div class="vs-header">
-  <div class="vs-card polaris">
-    <h3>Auto-Suggest-a-Purchase</h3>
-    <p class="org">Somalia Jamall &mdash; Jacksonville Public Library</p>
-    <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Patron-facing purchase suggestion system with staff review dashboard and automated hold placement. <strong>~400 patrons</strong> have used it in production.</p>
-    <div class="stack">
-      <span>Polaris</span>
-      <span>React 19</span>
-      <span>PHP 8.2</span>
-      <span>MariaDB</span>
-      <span>Python</span>
-      <span>Docker</span>
-    </div>
-    <p style="font-size: 0.8rem; margin-top: 0.75rem;"><a href="https://github.com/SomaliaJamall/Auto-Suggest-a-Purchase">GitHub</a> &middot; AGPL-3.0</p>
-  </div>
-  <div class="vs-card sierra">
-    <h3>Datasette Suggest-Purchase</h3>
-    <p class="org">Ray Voelker &mdash; chimpy-me / CHPL</p>
-    <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Datasette plugin with an automated bot pipeline for evidence extraction, catalog matching, and Open Library enrichment. Part of a broader Sierra data ecosystem.</p>
-    <div class="stack">
-      <span>Sierra</span>
-      <span>Datasette</span>
-      <span>Python</span>
-      <span>SQLite</span>
-      <span>Open Library</span>
-    </div>
-    <p style="font-size: 0.8rem; margin-top: 0.75rem;"><a href="https://github.com/chimpy-me/datasette-sierra-suggest-purchase">GitHub</a></p>
-  </div>
+<div class="vs-card polaris">
+<h3>Auto-Suggest-a-Purchase</h3>
+<p class="org">Somalia Jamall &mdash; Jacksonville Public Library</p>
+<p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Patron-facing purchase suggestion system with staff review dashboard and automated hold placement. <strong>~400 patrons</strong> have used it in production.</p>
+<div class="stack">
+<span>Polaris</span>
+<span>React 19</span>
+<span>PHP 8.2</span>
+<span>MariaDB</span>
+<span>Python</span>
+<span>Docker</span>
+</div>
+<p style="font-size: 0.8rem; margin-top: 0.75rem;"><a href="https://github.com/SomaliaJamall/Auto-Suggest-a-Purchase">GitHub</a> &middot; AGPL-3.0</p>
+</div>
+<div class="vs-card sierra">
+<h3>Datasette Suggest-Purchase</h3>
+<p class="org">Ray Voelker &mdash; chimpy-me / CHPL</p>
+<p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Datasette plugin with an automated bot pipeline for evidence extraction, catalog matching, and Open Library enrichment. Part of a broader Sierra data ecosystem.</p>
+<div class="stack">
+<span>Sierra</span>
+<span>Datasette</span>
+<span>Python</span>
+<span>SQLite</span>
+<span>Open Library</span>
+</div>
+<p style="font-size: 0.8rem; margin-top: 0.75rem;"><a href="https://github.com/chimpy-me/datasette-sierra-suggest-purchase">GitHub</a></p>
+</div>
 </div>
 
 <!-- Workflows -->
@@ -91,132 +91,132 @@
 <h2>How Each System Works</h2>
 
 <div class="flow">
-  <h3 style="color: #b8860b;">Jacksonville (Polaris)</h3>
-  <div class="flow-steps">
-    <div class="flow-step"><strong>Patron</strong>Card + PIN login</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Form</strong>Title, Author, ISBN, Format</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Staff</strong>Review in React dashboard</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Nightly Bot</strong>Searches catalog by ISBN</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Auto-Hold</strong>Places hold via Polaris API</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Closed</strong>Detects checkout, emails patron</div>
-  </div>
+<h3 style="color: #b8860b;">Jacksonville (Polaris)</h3>
+<div class="flow-steps">
+<div class="flow-step"><strong>Patron</strong>Card + PIN login</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Form</strong>Title, Author, ISBN, Format</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Staff</strong>Review in React dashboard</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Nightly Bot</strong>Searches catalog by ISBN</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Auto-Hold</strong>Places hold via Polaris API</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Closed</strong>Detects checkout, emails patron</div>
+</div>
 </div>
 
 <div class="flow">
-  <h3 style="color: var(--green);">chimpy-me (Sierra)</h3>
-  <div class="flow-steps">
-    <div class="flow-step"><strong>Patron</strong>Barcode + PIN login</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Free Text</strong>Paste a link, type a title, anything</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Bot: Extract</strong>ISBN validation, URL parsing, heuristics</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Bot: Search</strong>Tiered catalog lookup</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Bot: Enrich</strong>Open Library metadata</div>
-    <span class="flow-arrow">&rarr;</span>
-    <div class="flow-step"><strong>Staff</strong>Review in Datasette</div>
-  </div>
+<h3 style="color: var(--green);">chimpy-me (Sierra)</h3>
+<div class="flow-steps">
+<div class="flow-step"><strong>Patron</strong>Barcode + PIN login</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Free Text</strong>Paste a link, type a title, anything</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Bot: Extract</strong>ISBN validation, URL parsing, heuristics</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Bot: Search</strong>Tiered catalog lookup</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Bot: Enrich</strong>Open Library metadata</div>
+<span class="flow-arrow">&rarr;</span>
+<div class="flow-step"><strong>Staff</strong>Review in Datasette</div>
+</div>
 </div>
 
 <!-- Comparison table -->
 
 <h2>Side by Side</h2>
 <table class="compare">
-  <thead>
-    <tr><th>Aspect</th><th>Jacksonville (Polaris)</th><th>chimpy-me (Sierra)</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Patron Input</td>
-      <td>Structured form &mdash; title, author, ISBN, format dropdown, age group</td>
-      <td>Free-text field &mdash; paste an Amazon link, type a title, enter an ISBN; bot parses it</td>
-    </tr>
-    <tr>
-      <td>Staff Review</td>
-      <td>Custom React/MUI dashboard with 5 status tabs, inline editing, action buttons, toast notifications</td>
-      <td>Datasette native table UI &mdash; filtering, sorting, SQL, CSV export come free; custom update route for status changes</td>
-    </tr>
-    <tr>
-      <td>Intelligence</td>
-      <td>Nightly script searches catalog by ISBN, places holds, detects checkouts</td>
-      <td>7-stage bot pipeline: evidence extraction (ISBN validation, URL classification, ASIN extraction), tiered catalog search, Open Library enrichment. LLM stages planned.</td>
-    </tr>
-    <tr>
-      <td>Hold Placement</td>
-      <td>Fully automated &mdash; nightly script handles Polaris two-step hold confirmation</td>
-      <td>Planned (Stage 5) &mdash; not yet implemented</td>
-    </tr>
-    <tr>
-      <td>Email</td>
-      <td>4 touchpoints: submission received, already owned, rejected, hold placed. PHPMailer + smtplib.</td>
-      <td>Not yet implemented</td>
-    </tr>
-    <tr>
-      <td>Auth</td>
-      <td>Polaris API for patron + staff; hardcoded staff username list</td>
-      <td>Sierra API for patrons; separate RBAC plugin for staff (viewer / staff / admin roles, PBKDF2 passwords)</td>
-    </tr>
-    <tr>
-      <td>Data Store</td>
-      <td>MariaDB &mdash; single <code>title_requests</code> table</td>
-      <td>SQLite &mdash; 6 tables with migrations, full event audit trail (<code>request_events</code>)</td>
-    </tr>
-    <tr>
-      <td>Security</td>
-      <td>Form validation, suggestion rate limiting</td>
-      <td>Login rate limiting, CSRF protection, PII scrubbing on outbound queries, CSV injection prevention</td>
-    </tr>
-    <tr>
-      <td>Testing</td>
-      <td>&mdash;</td>
-      <td>Full test suite (15+ files); fake Sierra API server for local dev</td>
-    </tr>
-    <tr>
-      <td>Production</td>
-      <td>~400 patrons served at Jacksonville PL</td>
-      <td>In development</td>
-    </tr>
-    <tr>
-      <td>Deployment</td>
-      <td>Docker Compose (PHP/Apache + MariaDB)</td>
-      <td>Datasette with pip-installable plugins</td>
-    </tr>
-    <tr>
-      <td>Clever Detail</td>
-      <td>eBook/eAudiobook requests redirect patrons to Libby instead of accepting</td>
-      <td>Patron can paste an Amazon URL and the bot extracts the ASIN, finds the ISBN, searches the catalog, and enriches with cover art &mdash; all before staff sees it</td>
-    </tr>
-  </tbody>
+<thead>
+<tr><th>Aspect</th><th>Jacksonville (Polaris)</th><th>chimpy-me (Sierra)</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Patron Input</td>
+<td>Structured form &mdash; title, author, ISBN, format dropdown, age group</td>
+<td>Free-text field &mdash; paste an Amazon link, type a title, enter an ISBN; bot parses it</td>
+</tr>
+<tr>
+<td>Staff Review</td>
+<td>Custom React/MUI dashboard with 5 status tabs, inline editing, action buttons, toast notifications</td>
+<td>Datasette native table UI &mdash; filtering, sorting, SQL, CSV export come free; custom update route for status changes</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>Nightly script searches catalog by ISBN, places holds, detects checkouts</td>
+<td>7-stage bot pipeline: evidence extraction (ISBN validation, URL classification, ASIN extraction), tiered catalog search, Open Library enrichment. LLM stages planned.</td>
+</tr>
+<tr>
+<td>Hold Placement</td>
+<td>Fully automated &mdash; nightly script handles Polaris two-step hold confirmation</td>
+<td>Planned (Stage 5) &mdash; not yet implemented</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>4 touchpoints: submission received, already owned, rejected, hold placed. PHPMailer + smtplib.</td>
+<td>Not yet implemented</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Polaris API for patron + staff; hardcoded staff username list</td>
+<td>Sierra API for patrons; separate RBAC plugin for staff (viewer / staff / admin roles, PBKDF2 passwords)</td>
+</tr>
+<tr>
+<td>Data Store</td>
+<td>MariaDB &mdash; single <code>title_requests</code> table</td>
+<td>SQLite &mdash; 6 tables with migrations, full event audit trail (<code>request_events</code>)</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Form validation, suggestion rate limiting</td>
+<td>Login rate limiting, CSRF protection, PII scrubbing on outbound queries, CSV injection prevention</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>&mdash;</td>
+<td>Full test suite (15+ files); fake Sierra API server for local dev</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>~400 patrons served at Jacksonville PL</td>
+<td>In development</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Docker Compose (PHP/Apache + MariaDB)</td>
+<td>Datasette with pip-installable plugins</td>
+</tr>
+<tr>
+<td>Clever Detail</td>
+<td>eBook/eAudiobook requests redirect patrons to Libby instead of accepting</td>
+<td>Patron can paste an Amazon URL and the bot extracts the ASIN, finds the ISBN, searches the catalog, and enriches with cover art &mdash; all before staff sees it</td>
+</tr>
+</tbody>
 </table>
 
 <!-- What we could learn from each other -->
 
 <h2>Where We Complement Each Other</h2>
 <div class="complement">
-  <div class="complement-card">
-    <h3>What I'd love to borrow from yours</h3>
-    <ul style="padding-left: 1.25rem; margin: 0; font-size: 0.85rem; color: #555;">
-      <li><strong>The complete hold lifecycle</strong> &mdash; your nightly script handles the full loop: catalog search &rarr; hold placement &rarr; checkout detection &rarr; close. My Stage 5 needs exactly this.</li>
-      <li><strong>eBook &rarr; Libby redirect</strong> &mdash; elegant way to handle digital formats without creating suggestions staff can't fulfill.</li>
-      <li><strong>Email at every stage</strong> &mdash; patron communication is critical and I haven't built it yet.</li>
-      <li><strong>Real production data</strong> &mdash; 400 patrons is real validation. I'd love to hear what surprised you.</li>
-    </ul>
-  </div>
-  <div class="complement-card">
-    <h3>What might be useful from mine</h3>
-    <ul style="padding-left: 1.25rem; margin: 0; font-size: 0.85rem; color: #555;">
-      <li><strong>Evidence extraction</strong> &mdash; ISBN check-digit validation, Amazon/Goodreads URL parsing, heuristic title/author detection could reduce staff triage time.</li>
-      <li><strong>Open Library enrichment</strong> &mdash; free metadata + cover images for items not yet in the catalog.</li>
-      <li><strong>Datasette as the staff UI</strong> &mdash; gets you filtering, SQL, CSV export without building a custom dashboard. Could complement or replace the React admin.</li>
-      <li><strong>Audit trail via event table</strong> &mdash; every action logged with actor + timestamp instead of appending to a notes field.</li>
-    </ul>
-  </div>
+<div class="complement-card">
+<h3>What I'd love to borrow from yours</h3>
+<ul style="padding-left: 1.25rem; margin: 0; font-size: 0.85rem; color: #555;">
+<li><strong>The complete hold lifecycle</strong> &mdash; your nightly script handles the full loop: catalog search &rarr; hold placement &rarr; checkout detection &rarr; close. My Stage 5 needs exactly this.</li>
+<li><strong>eBook &rarr; Libby redirect</strong> &mdash; elegant way to handle digital formats without creating suggestions staff can't fulfill.</li>
+<li><strong>Email at every stage</strong> &mdash; patron communication is critical and I haven't built it yet.</li>
+<li><strong>Real production data</strong> &mdash; 400 patrons is real validation. I'd love to hear what surprised you.</li>
+</ul>
+</div>
+<div class="complement-card">
+<h3>What might be useful from mine</h3>
+<ul style="padding-left: 1.25rem; margin: 0; font-size: 0.85rem; color: #555;">
+<li><strong>Evidence extraction</strong> &mdash; ISBN check-digit validation, Amazon/Goodreads URL parsing, heuristic title/author detection could reduce staff triage time.</li>
+<li><strong>Open Library enrichment</strong> &mdash; free metadata + cover images for items not yet in the catalog.</li>
+<li><strong>Datasette as the staff UI</strong> &mdash; gets you filtering, SQL, CSV export without building a custom dashboard. Could complement or replace the React admin.</li>
+<li><strong>Audit trail via event table</strong> &mdash; every action logged with actor + timestamp instead of appending to a notes field.</li>
+</ul>
+</div>
 </div>
 
 <!-- The ecosystem -->
@@ -224,27 +224,27 @@
 <h2>The Broader chimpy-me Ecosystem</h2>
 <p style="font-size: 0.9rem; color: #555; margin-bottom: 1rem;">The suggest-purchase plugin is part of a set of tools for working with Sierra data through Datasette:</p>
 <div class="section-list">
-  <div class="section-item">
-    <h3>chimpy-extract</h3>
-    <p>ETL framework &mdash; SQL-first job definitions that stream data from Sierra's Postgres into SQLite. Collection data, patron data, items in transit.</p>
-    <p><a href="https://github.com/chimpy-me/chimpy-extract">GitHub</a></p>
-  </div>
-  <div class="section-item">
-    <h3>datasette-sierra-ils-auth</h3>
-    <p>Staff authentication plugin &mdash; validates credentials against Sierra's user API, manages roles (viewer / staff / admin) and permissions.</p>
-    <p><a href="https://github.com/chimpy-me/datasette-sierra-ils-auth">GitHub</a></p>
-  </div>
-  <div class="section-item">
-    <h3>sierra-users-datasette</h3>
-    <p>Extracts Sierra's 18 internal user management tables (users, roles, permissions, locations, branches) into SQLite for browsing.</p>
-    <p><a href="https://github.com/chimpy-me/sierra-users-datasette">GitHub</a></p>
-  </div>
+<div class="section-item">
+<h3>chimpy-extract</h3>
+<p>ETL framework &mdash; SQL-first job definitions that stream data from Sierra's Postgres into SQLite. Collection data, patron data, items in transit.</p>
+<p><a href="https://github.com/chimpy-me/chimpy-extract">GitHub</a></p>
+</div>
+<div class="section-item">
+<h3>datasette-sierra-ils-auth</h3>
+<p>Staff authentication plugin &mdash; validates credentials against Sierra's user API, manages roles (viewer / staff / admin) and permissions.</p>
+<p><a href="https://github.com/chimpy-me/datasette-sierra-ils-auth">GitHub</a></p>
+</div>
+<div class="section-item">
+<h3>sierra-users-datasette</h3>
+<p>Extracts Sierra's 18 internal user management tables (users, roles, permissions, locations, branches) into SQLite for browsing.</p>
+<p><a href="https://github.com/chimpy-me/sierra-users-datasette">GitHub</a></p>
+</div>
 </div>
 
 <h2>Let's Talk</h2>
 <div class="card" style="border-left: 4px solid var(--gold);">
-  <p style="font-size: 0.9rem;">We're solving the same problem for different ILS platforms from different angles &mdash; structured form vs. free text, custom React dashboard vs. Datasette, complete lifecycle vs. deep enrichment pipeline. I think there's a lot we could share.</p>
-  <p style="font-size: 0.85rem; color: #777; margin-top: 0.75rem;"><strong>Ray Voelker</strong> &mdash; <a href="https://github.com/rayvoelker">github.com/rayvoelker</a> &middot; <a href="https://github.com/chimpy-me">github.com/chimpy-me</a></p>
+<p style="font-size: 0.9rem;">We're solving the same problem for different ILS platforms from different angles &mdash; structured form vs. free text, custom React dashboard vs. Datasette, complete lifecycle vs. deep enrichment pipeline. I think there's a lot we could share.</p>
+<p style="font-size: 0.85rem; color: #777; margin-top: 0.75rem;"><strong>Ray Voelker</strong> &mdash; <a href="https://github.com/rayvoelker">github.com/rayvoelker</a> &middot; <a href="https://github.com/chimpy-me">github.com/chimpy-me</a></p>
 </div>
 
 
