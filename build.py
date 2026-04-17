@@ -85,6 +85,77 @@ def get_sessions_for_day(pages, day):
     return [p for p in pages if p.get("day") == day and p.get("template") == "session"]
 
 
+def generate_llms_txt(site, pages, output_dir=None):
+    """Generate llms.txt and llms-full.txt for AI agent navigation."""
+    output_dir = output_dir or OUTPUT_DIR
+
+    # Categorize pages
+    sessions = [p for p in pages if p.get("template") == "session"]
+    day_pages = [p for p in pages if p.get("template") == "day"]
+    guides = [p for p in pages if p.get("template") == "page"]
+    special = [p for p in pages if p.get("template") in ("index", "speakers", "index-b")]
+
+    lines = []
+    lines.append(f"# {site['title']}")
+    lines.append(f"> {site.get('url', '')}")
+    lines.append("")
+    lines.append("Conference knowledge base with session notes, technical guides, and speaker data.")
+    lines.append("")
+
+    if special:
+        lines.append("## Pages")
+        for p in special:
+            lines.append(f"- [{p['title']}]({p['url']}): {p.get('description', '')}")
+        lines.append("")
+
+    if day_pages:
+        lines.append("## Day Overviews")
+        for p in sorted(day_pages, key=lambda p: p.get("date", "")):
+            lines.append(f"- [{p['title']}]({p['url']}): {p.get('description', '')}")
+        lines.append("")
+
+    if sessions:
+        lines.append("## Sessions")
+        for p in sorted(sessions, key=lambda p: (p.get("day", ""), p.get("title", ""))):
+            day = p.get("day", "")
+            lines.append(f"- [{p['title']}]({p['url']}): {p.get('description', '')} [{day}]")
+        lines.append("")
+
+    if guides:
+        lines.append("## Guides")
+        for p in guides:
+            lines.append(f"- [{p['title']}]({p['url']}): {p.get('description', '')}")
+        lines.append("")
+
+    lines.append("## Structured Data")
+    lines.append("- [speakers.json](speakers-data.json): Full speaker database with session history")
+    lines.append("")
+
+    (output_dir / "llms.txt").write_text("\n".join(lines))
+
+    # llms-full.txt: include rendered content
+    full_lines = list(lines)
+    full_lines.append("---")
+    full_lines.append("")
+    for p in pages:
+        full_lines.append(f"# {p['title']}")
+        full_lines.append(f"URL: {p['url']}")
+        if p.get("description"):
+            full_lines.append(f"Description: {p['description']}")
+        full_lines.append("")
+        body = p.get("_body", "")
+        if body.strip():
+            full_lines.append(body.strip())
+        else:
+            full_lines.append("(Template-driven page — see structured data)")
+        full_lines.append("")
+        full_lines.append("---")
+        full_lines.append("")
+
+    (output_dir / "llms-full.txt").write_text("\n".join(full_lines))
+    print("  Generated llms.txt and llms-full.txt")
+
+
 def build_site():
     """Run the full build pipeline."""
     print("Building site...")
@@ -120,6 +191,9 @@ def build_site():
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(html)
         print(f"  {page['url']}")
+
+    # Generate agent navigation files
+    generate_llms_txt(site, pages)
 
     # Copy static assets
     if STATIC_DIR.exists():
