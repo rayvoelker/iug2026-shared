@@ -1,72 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resource Sharing Update — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Rapido resource sharing: consortial borrowing across SearchOhio/OhioLINK (110+ libraries), Rapido stand-alone for academics (5.5M requests, 96% fill rate).">
-  <meta property="og:title" content="Resource Sharing Update">
-  <meta property="og:description" content="Rapido resource sharing: consortial borrowing across SearchOhio/OhioLINK (110+ libraries), Rapido stand-alone for academics (5.5M requests, 96% fill rate).">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/resource-sharing.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Resource Sharing Update">
-  <meta name="twitter:description" content="Rapido resource sharing: consortial borrowing across SearchOhio/OhioLINK (110+ libraries), Rapido stand-alone for academics (5.5M requests, 96% fill rate).">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="tuesday.html">Tuesday, April 14</a> / Resource Sharing Update</div>
-
-    
-<h1>Resource Sharing Update</h1>
-<p class="page-subtitle">Hope Harley & Katy Aranoff · Denver Room &middot; Tuesday, April 14
-</p>
-
-
-<div class="card">
-  <p><strong>Speakers:</strong>
-    
-    <a href="speakers.html#hope-harley">Hope Harley</a>, 
-    
-    <a href="speakers.html#katy-aranoff">Katy Aranoff</a>
-    
-  </p>
-</div>
-
+---
+title: "Resource Sharing Update"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - hope-harley
+  - katy-aranoff
+speakers_display: "Hope Harley & Katy Aranoff · Denver Room"
+description: "Rapido resource sharing: consortial borrowing across SearchOhio/OhioLINK (110+ libraries), Rapido stand-alone for academics (5.5M requests, 96% fill rate)."
+---
 
 <div class="card">
   <p>Two-part session covering the Rapido resource sharing platform: <strong>Rapido CB</strong> (Consortial Borrowing) for cross-ILS lending, and <strong>Rapido stand-alone</strong> for academic institutions. Features the SearchOhio/OhioLINK deployment &mdash; the largest cross-ILS Rapido implementation to date.</p>
 </div>
 
-<h2>Part 1: Rapido Consortial Borrowing</h2>
+## Part 1: Rapido Consortial Borrowing
+
 <p style="margin-bottom: 1rem; color: #777;">Presented by Hope Harley</p>
 
 <h3 style="color: var(--navy); margin-bottom: 0.75rem;">SearchOhio / OhioLINK Deployment</h3>
@@ -193,7 +142,8 @@
   <p>Target go-live: <strong>late June 2026</strong></p>
 </div>
 
-<h2>Part 2: Rapido Stand-Alone</h2>
+## Part 2: Rapido Stand-Alone
+
 <p style="margin-bottom: 1rem; color: #777;">Presented by Katy Aranoff</p>
 
 <div class="section-list">
@@ -254,7 +204,8 @@
   <p><strong>Global community:</strong> Rapido is active across <strong>20 countries</strong> spanning USA/Canada, Latin America, EMEA, APAC, Africa, and Australia/New Zealand.</p>
 </div>
 
-<h2>Q&amp;A Highlights</h2>
+## Q&A Highlights
+
 <div class="section-list">
   <div class="section-item">
     <h3>Item type distinction</h3>
@@ -270,28 +221,10 @@
   </div>
 </div>
 
-<h2>Slide Photos</h2>
+## Slide Photos
+
 <div class="sources">
   <ol>
     <li><a href="https://photos.app.goo.gl/mxMfA6hJ36z1NLgo6">Slide photos &mdash; Google Photos album</a></li>
   </ol>
 </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Resource%20Sharing%20Update&body=Page:+resource-sharing.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sierra Sys Admin Forum — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more.">
-  <meta property="og:title" content="Sierra Sys Admin Forum">
-  <meta property="og:description" content="Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/sierra-sys-admin-forum.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sierra Sys Admin Forum">
-  <meta name="twitter:description" content="Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html" class="active">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="wednesday.html">Wednesday, April 15</a> / Sierra Sys Admin Forum</div>
-
-    
-<h1>Sierra Sys Admin Forum</h1>
-<p class="page-subtitle">Jeff Campbell (UNC Chapel Hill) & Stephanie Brew · 4:30–5:30 PM · Chicago Ballroom A · Sierra Track &middot; Wednesday, April 15
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#jeff-campbell">Jeff Campbell</a>
-    
-  </p>
-</div>
-
+---
+title: "Sierra Sys Admin Forum"
+template: session
+day: wednesday
+date: "April 15"
+speakers:
+  - jeff-campbell
+speakers_display: "Jeff Campbell (UNC Chapel Hill) & Stephanie Brew · 4:30–5:30 PM · Chicago Ballroom A · Sierra Track"
+description: "Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more."
+---
 
 <div class="card">
   <p>An open forum for Sierra system administrators &mdash; Jeff&rsquo;s last time hosting. Wide-ranging discussion covering Sierra-to-Polaris migration considerations, invoicing workarounds, Koha feasibility, bot protection strategies (Cloudflare, F5, fail2ban), locations served and paging configuration, SDA vs. Sierra Web, WebPAC accessibility challenges, and circ active date behavior with e-vendor APIs.</p>
@@ -451,22 +400,3 @@
 
 <div class="card">
   <p><strong>IUG 2027 will be in Boston.</strong></p>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Sierra%20Sys%20Admin%20Forum&body=Page:+sierra-sys-admin-forum.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

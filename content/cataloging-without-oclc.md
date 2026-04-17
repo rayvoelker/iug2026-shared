@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kicking the Elephant out of the Room: Cataloging without OCLC — IUG 2026 Conference Notes</title>
-  <meta name="description" content="How an 11-library Polaris consortium in Idaho left OCLC, transitioned through BTCat, and landed on BookWhere Suite — dropping cataloging costs from six figures to five.">
-  <meta property="og:title" content="Kicking the Elephant out of the Room: Cataloging without OCLC">
-  <meta property="og:description" content="How an 11-library Polaris consortium in Idaho left OCLC, transitioned through BTCat, and landed on BookWhere Suite — dropping cataloging costs from six figures to five.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/cataloging-without-oclc.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kicking the Elephant out of the Room: Cataloging without OCLC">
-  <meta name="twitter:description" content="How an 11-library Polaris consortium in Idaho left OCLC, transitioned through BTCat, and landed on BookWhere Suite — dropping cataloging costs from six figures to five.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html" class="active">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="wednesday.html">Wednesday, April 15</a> / Kicking the Elephant out of the Room: Cataloging without OCLC</div>
-
-    
-<h1>Kicking the Elephant out of the Room: Cataloging without OCLC</h1>
-<p class="page-subtitle">Elaine Sloan, Boise Public Library · 1:30–2:30 PM · Houston Room · General Track &middot; Wednesday, April 15
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#elaine-sloan">Elaine Sloan</a>
-    
-  </p>
-</div>
-
+---
+title: "Kicking the Elephant out of the Room: Cataloging without OCLC"
+template: session
+day: wednesday
+date: "April 15"
+speakers:
+  - elaine-sloan
+speakers_display: "Elaine Sloan, Boise Public Library · 1:30–2:30 PM · Houston Room · General Track"
+description: "How an 11-library Polaris consortium in Idaho left OCLC, transitioned through BTCat, and landed on BookWhere Suite — dropping cataloging costs from six figures to five."
+---
 
 <div class="card">
   <p>How an 11-library Polaris consortium in Idaho walked away from a six-figure OCLC contract, survived the collapse of BTCat when Baker &amp; Taylor filed for bankruptcy, and landed on <strong>BookWhere Suite</strong> &mdash; a Z39.50 copy cataloging client that dropped their total cataloging costs to five figures. A candid, at times fiery session covering the practical realities of cataloging without OCLC: ILL trade-offs, staff retraining, record quality, macro limitations, and the legal flashpoint of OCLC record ownership.</p>
@@ -440,22 +389,3 @@
       <li>OCLC laid off ~80 staff in July 2025, citing AI</li>
     </ul>
   </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Kicking%20the%20Elephant%20out%20of%20the%20Room%3A%20Cataloging%20without%20OCLC&body=Page:+cataloging-without-oclc.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sierra Roadmap — IUG 2026 Conference Notes</title>
-  <meta name="description" content="3-year Sierra roadmap: 22 releases, 98 new features. May and November 2026 releases, Admin Corner migration, ERM to Alma Starter transition, and API expansions.">
-  <meta property="og:title" content="Sierra Roadmap">
-  <meta property="og:description" content="3-year Sierra roadmap: 22 releases, 98 new features. May and November 2026 releases, Admin Corner migration, ERM to Alma Starter transition, and API expansions.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/sierra-roadmap.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sierra Roadmap">
-  <meta name="twitter:description" content="3-year Sierra roadmap: 22 releases, 98 new features. May and November 2026 releases, Admin Corner migration, ERM to Alma Starter transition, and API expansions.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html" class="active">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="monday.html">Monday, April 13</a> / Sierra Roadmap</div>
-
-    
-<h1>Sierra Roadmap</h1>
-<p class="page-subtitle">Mike Dicus &middot; Monday, April 13
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#mike-dicus">Mike Dicus</a>
-    
-  </p>
-</div>
-
+---
+title: "Sierra Roadmap"
+template: session
+day: monday
+date: "April 13"
+speakers:
+  - mike-dicus
+speakers_display: "Mike Dicus"
+description: "3-year Sierra roadmap: 22 releases, 98 new features. May and November 2026 releases, Admin Corner migration, ERM to Alma Starter transition, and API expansions."
+---
 
 <div class="card">
   <h3>By the Numbers</h3>
@@ -78,7 +27,8 @@
   </div>
 </div>
 
-<h2>EDI Vendor Update</h2>
+## EDI Vendor Update
+
 <div class="section-list">
   <div class="section-item">
     <h3>Amazon Integration</h3>
@@ -87,7 +37,8 @@
   </div>
 </div>
 
-<h2>Sierra Modernization</h2>
+## Sierra Modernization
+
 <div class="section-list">
   <div class="section-item">
     <h3>ERM &rarr; Alma Starter</h3>
@@ -103,8 +54,10 @@
   </div>
 </div>
 
-<h2>May 2026 Release</h2>
-<p>Theme: <strong>Customer-driven enhancements</strong> — sourced from MEEP, Idea Exchange, and market needs.</p>
+## May 2026 Release
+
+Theme: **Customer-driven enhancements** — sourced from MEEP, Idea Exchange, and market needs.
+
 <table>
   <thead>
     <tr>
@@ -148,7 +101,8 @@
   </tbody>
 </table>
 
-<h2>November 2026 Release</h2>
+## November 2026 Release
+
 <table>
   <thead>
     <tr>
@@ -186,7 +140,8 @@
   </tbody>
 </table>
 
-<h2>MEEP Enhancements — March 2026 Voting Results</h2>
+## MEEP Enhancements — March 2026 Voting Results
+
 <div class="card">
   <ul style="padding-left: 1.25rem; margin: 0;">
     <li>Apply barcode print specifications for labels generated from login and Automated EDI interface</li>
@@ -195,35 +150,18 @@
   </ul>
 </div>
 
-<h2>Knowledge Portal</h2>
+## Knowledge Portal
+
 <div class="section-list">
   <div class="section-item">
     <p>Just released April 2026 &mdash; along with a <strong>Known Issues Portal</strong>. Available for Sierra and Polaris now; Vega later.</p>
   </div>
 </div>
 
-<h2>Slide Photos</h2>
+## Slide Photos
+
 <div class="sources">
   <ol>
     <li><a href="https://photos.app.goo.gl/q3kijkqZeUPSS1Bw5">Slide photos &mdash; Google Photos album</a></li>
   </ol>
 </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Sierra%20Roadmap&body=Page:+sierra-roadmap.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>
