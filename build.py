@@ -51,8 +51,21 @@ def discover_content(content_dir=None):
 
 
 def render_markdown(text):
-    """Convert markdown text to HTML."""
-    return mistune.html(text)
+    """Convert markdown text to HTML.
+
+    Preprocesses to strip leading whitespace from HTML lines, preventing
+    mistune from treating indented HTML (common in nested structures)
+    as code blocks.
+    """
+    lines = text.split("\n")
+    processed = []
+    for line in lines:
+        stripped = line.lstrip()
+        if stripped.startswith("<") or stripped.startswith("</"):
+            processed.append(stripped)
+        else:
+            processed.append(line)
+    return mistune.html("\n".join(processed))
 
 
 def get_rarity(session_count):
