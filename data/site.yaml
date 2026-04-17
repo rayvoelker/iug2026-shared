@@ -1,0 +1,49 @@
+title: "IUG 2026 Conference Notes"
+subtitle: "Innovative Users Group · Chicago, IL"
+url: "https://rayvoelker.github.io/iug2026-shared"
+repo: "https://github.com/rayvoelker/iug2026-shared"
+schedule_url: "https://iug2026.sched.com/"
+og_image: "assets/iug2026-banner.png"
+banner_image: "assets/iug2026-banner.png"
+banner_alt: "IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15"
+footer_image: "assets/chicago-skyline.png"
+footer_links:
+  - label: "innovativeusers.org"
+    url: "https://www.innovativeusers.org/iug_2026.php"
+  - label: "View on GitHub"
+    url: "https://github.com/rayvoelker/iug2026-shared"
+
+nav:
+  - label: Home
+    url: index.html
+  - label: Sunday
+    url: sunday.html
+  - label: Monday
+    url: monday.html
+  - label: Tuesday
+    url: tuesday.html
+  - label: Wednesday
+    url: wednesday.html
+  - label: Speakers
+    url: speakers.html
+
+conference:
+  when: "April 12–15, 2026"
+  where: "Chicago Marriott Downtown Magnificent Mile"
+
+tracks:
+  - name: Gatherings
+    css_class: gatherings
+    description: "Social events, breaks & birds of a feather"
+  - name: General
+    css_class: general
+    description: "Cross-platform sessions & forums"
+  - name: Sierra
+    css_class: sierra
+    description: "Sierra ILS"
+  - name: Polaris
+    css_class: polaris
+    description: "Polaris ILS"
+  - name: Vega
+    css_class: vega
+    description: "Vega LX Platform"
