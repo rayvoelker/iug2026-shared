@@ -5,7 +5,7 @@ day: wednesday
 date: "April 15"
 speakers:
   - caitlin-spears
-speakers_display: "Wednesday, April 15, 9:00–10:00 AM · Chicago Ballroom A · General Track"
+speakers_display: "9:00–10:00 AM · Chicago Ballroom A · General Track"
 description: "Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community."
 ---
 
