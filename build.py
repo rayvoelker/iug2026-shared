@@ -127,7 +127,7 @@ def generate_llms_txt(site, pages, output_dir=None):
     sessions = [p for p in pages if p.get("template") == "session"]
     day_pages = [p for p in pages if p.get("template") == "day"]
     guides = [p for p in pages if p.get("template") == "page"]
-    special = [p for p in pages if p.get("template") in ("index", "speakers", "index-b")]
+    special = [p for p in pages if p.get("template") in ("index", "speakers")]
 
     lines = []
     lines.append(f"# {site['title']}")
