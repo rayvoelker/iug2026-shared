@@ -18,8 +18,46 @@ body {
   line-height: 1.6;
 }
 
-a { color: var(--teal); }
+a { color: var(--teal); text-decoration: none; }
 a:hover { color: #004d63; }
+
+/* Text links in content: faint underline at rest, solid on hover */
+.container a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 100, 130, 0.3);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s;
+}
+.container a:hover {
+  text-decoration-color: var(--teal);
+  color: #004d63;
+}
+
+/* Card links use card-level affordance, not underlines */
+.container a.day-card,
+.container a.day-card-header,
+.container a.day-session-link {
+  text-decoration: none;
+}
+
+/* Breadcrumbs: faint underline to distinguish from plain-text segment */
+.container .breadcrumb a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 100, 130, 0.3);
+  text-underline-offset: 2px;
+}
+.container .breadcrumb a:hover {
+  text-decoration-color: var(--teal);
+}
+
+/* Headings with links: no underline at rest, underline on hover */
+.container h1 a, .container h2 a, .container h3 a {
+  text-decoration: none;
+}
+.container h1 a:hover, .container h2 a:hover, .container h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--teal);
+}
 
 /* Banner */
 .banner { width: 100%; background: var(--navy); text-align: center; }
@@ -63,17 +101,6 @@ nav a.active {
 
 /* Container */
 .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
-
-/* Links in content areas — clearly underlined */
-.container a { text-decoration: underline; text-underline-offset: 2px; }
-.container a:hover { color: #004d63; }
-
-/* Exceptions: cards, nav elements, and headings shouldn't be underlined */
-.container a.day-card { text-decoration: none; }
-.container .breadcrumb a { text-decoration: none; }
-.container .breadcrumb a:hover { text-decoration: underline; }
-.container h1 a, .container h2 a, .container h3 a { text-decoration: none; }
-.container h1 a:hover, .container h2 a:hover, .container h3 a:hover { text-decoration: underline; }
 
 /* Typography */
 h1 { color: var(--navy); font-size: 2rem; margin-bottom: 0.25rem; }
@@ -132,6 +159,19 @@ a.day-card:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   text-decoration: none;
   border-left-color: var(--teal);
+}
+/* Directional arrow on interactive card titles */
+a.day-card .day-info h3::after,
+.day-card-expanded .day-info h3::after {
+  content: " \2192";
+  color: var(--teal);
+  font-weight: 400;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+a.day-card:hover .day-info h3::after,
+.day-card-expanded .day-card-header:hover .day-info h3::after {
+  opacity: 1;
 }
 .day-date { text-align: center; min-width: 60px; }
 .day-date .dow { font-size: 0.75rem; text-transform: uppercase; color: #999; }
@@ -226,10 +266,6 @@ tr.current { background: #fffde7; }
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   overflow: hidden;
-  transition: box-shadow 0.15s;
-}
-.speaker-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .speaker-card .card-top {
