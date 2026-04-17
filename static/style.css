@@ -178,3 +178,194 @@ tr.current { background: #fffde7; }
   padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem;
   font-weight: 600; margin-bottom: 0.5rem;
 }
+
+/* Speaker Cards */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.speaker-card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+.speaker-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.speaker-card .card-top {
+  height: 4px;
+}
+.speaker-card .card-top.sierra { background: var(--green); }
+.speaker-card .card-top.polaris { background: var(--gold); }
+.speaker-card .card-top.vega { background: var(--red); }
+.speaker-card .card-top.general { background: var(--teal); }
+.speaker-card .card-top.gatherings { background: var(--sky); }
+
+.speaker-card .card-body {
+  padding: 1.25rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.rarity-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
+.rarity-common { background: #e0e0e0; color: #666; }
+.rarity-uncommon { background: #e8f5e9; color: var(--green); }
+.rarity-rare { background: #e0f2f1; color: var(--teal); }
+.rarity-legendary {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  color: #b8860b;
+  box-shadow: 0 0 6px rgba(230, 185, 0, 0.3);
+}
+
+.track-icon {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.speaker-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.15rem;
+}
+.speaker-affiliation {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.1rem;
+}
+.speaker-type {
+  font-size: 0.8rem;
+  color: var(--teal);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.stat-blocks {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.stat-block {
+  background: var(--light);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  min-width: 50px;
+}
+.stat-block .stat-num {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.stat-block .stat-lbl {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #999;
+}
+
+.speaker-quote {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--gold);
+}
+.speaker-quote .quote-ctx {
+  display: block;
+  font-size: 0.7rem;
+  font-style: normal;
+  color: #aaa;
+  margin-top: 0.25rem;
+}
+
+.session-toggle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--teal);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.session-toggle:hover { text-decoration: underline; }
+.session-toggle .arrow {
+  transition: transform 0.15s;
+  font-size: 0.65rem;
+}
+.session-toggle.open .arrow { transform: rotate(90deg); }
+
+.session-list {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: #666;
+}
+.session-list.open { display: block; }
+.session-list .session-entry {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.session-list .session-entry:last-child { border-bottom: none; }
+.session-year { font-weight: 600; color: var(--navy); min-width: 35px; display: inline-block; }
+.session-role { font-size: 0.7rem; color: #aaa; }
+
+/* VibedAF Badge */
+.vibed-af-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+.vibed-af {
+  display: inline-block;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 0.3rem 0.85rem;
+  border-radius: 6px;
+  background-color: var(--navy);
+  position: relative;
+  user-select: none;
+}
+.vibed-af span {
+  background: linear-gradient(
+    90deg,
+    #ff6b6b, #ffa07a, #ffd700, #98fb98,
+    #7cc4e2, #9b8ec7, #ff69b4, #ff6b6b
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.5s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
