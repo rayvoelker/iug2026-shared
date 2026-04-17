@@ -1,0 +1,110 @@
+---
+title: "Monday, April 13"
+template: day
+date: "April 13"
+day: monday
+page_subtitle: "Opening Session · Day 1"
+description: "Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement."
+---
+
+<h2>Live Updates</h2>
+<div class="update-feed">
+
+  <div class="update highlight">
+    <div class="update-meta">AI Strategy</div>
+    <h3>Responsible AI Framework</h3>
+    <p>Clarivate presented AI principles guided by the public library community: <strong>Transparent, Ethical, Safe</strong> (human in the loop). 2026 AI focus: Polaris Data Explorer, Content Creation, Natural Language Analytics. Pursuing natural language search and AI agents/chat in Discover.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Vega Promote</div>
+    <h3>2026: Year of Promote</h3>
+    <p><strong>Vega Promote</strong> July release for libraries and consortia. Scaled mass email, 1000+ integrations, triggered automations, personalization. SSO with Vega Staff and AI tools.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Resource Sharing</div>
+    <h3>Rapido Resource Sharing &mdash; Live Since March</h3>
+    <p><strong>Rapido Consortial Borrowing</strong> with SearchOhio and OhioLINK. <strong>1,000 requests/day</strong> since launch, connecting 120+ libraries across 4 different ILSs. Vega Discover as the central request interface.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Support</div>
+    <h3>New Self-Service Portals</h3>
+    <p><strong>Known Issues Portal</strong> &mdash; AI-powered, went live April 12. Browse, subscribe, track issues. <strong>Unified Knowledge Portal</strong> &mdash; new docs experience, goes live April 15.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Year in Review</div>
+    <h3>"We Listen" &mdash; By the Numbers</h3>
+    <p>91 new Vega Discover features. 27 new Sierra features. 32% reduction in case resolution time. 42% reduction in case backlog (126 Discover PRs fixed). 60 Ideas Exchange suggestions implemented.</p>
+  </div>
+
+  <div class="update highlight">
+    <div class="update-meta">Innovation Awards</div>
+    <h3>Rochester Hills Public Library Wins Inaugural Innovation Award</h3>
+    <p>The first-ever <strong>Clarivate Library Innovation Awards</strong> &mdash; 50+ entries from 11 countries. Winner: <strong>Rochester Hills Public Library</strong> for themed Vega catalogs creating developmentally-appropriate discovery for children through teenagers. Finalists: Santa Clarita PL (mobile library) and Suffolk PL (rural branch expansion).
+      <span class="detail">(<a href="https://iii.com/whats-new/clarivate-library-innovation-awards-reveal-the-2026-finalists/">finalists</a>)</span></p>
+  </div>
+
+  <div class="update announcement">
+    <div class="update-meta">Announcement</div>
+    <h3>IUG 2027: Boston!</h3>
+    <p>Next year's conference: <strong>Boston, MA &mdash; April 1&ndash;3, 2027</strong>.</p>
+  </div>
+
+  <div class="update highlight">
+    <div class="update-meta">Beacon Award</div>
+    <h3>Rhonda Glazier Wins Beacon Award</h3>
+    <p>Presented by previous IUG Chair Jeff Campbell. Rhonda is Assistant Dean &amp; Associate Professor at Kraemer Family Library, UCCS, and former IUG Chair who led the first all-virtual conference in 2021.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Leadership</div>
+    <h3>New Clarivate Leadership</h3>
+    <p><strong>Yoel Goldenberg</strong>, new SVP &amp; GM of Library Software Solutions.</p>
+    <p class="detail">Joins from the enterprise AI space &mdash; previously CPO at Jacada (conversational AI) and SVP Product Management at Uniphore (AI agents &amp; conversational analytics).</p>
+  </div>
+
+  <div class="update highlight">
+    <div class="update-meta">Sierra Roadmap</div>
+    <h3>Sierra 2026 Roadmap &mdash; May &amp; November Releases</h3>
+    <p>Mike Dicus presented the Sierra roadmap: 22 releases and 98 new features over 3 years, serving 129M patrons. Two releases planned for 2026 with four pillars: customer-driven enhancements, simplified operations, modernized solutions (Admin Corner &rarr; Sierra client), and expanded APIs/integrations. ERM replaced by <strong>Alma Starter</strong>. <strong>Vega Interact</strong> for SMS/voice notifications. UPC-based cover images coming for non-book materials.
+      <a href="sierra-roadmap.html">Full writeup &rarr;</a></p>
+  </div>
+
+  <div class="update highlight">
+    <div class="update-meta">Hackathon Awards</div>
+    <h3>Six Projects Presented &mdash; "Shelf Defense" Wins</h3>
+    <p>Six teams demoed projects from the IUG Hackathon pre-conference. Winner: <strong>Shelf Defense</strong> (Wes &amp; Bryan) &mdash; a SIP2-based offline circulation tool built on PocketBase. Other projects: <strong>FindIt</strong> (shelf mapping for Vega), <strong>Browsr</strong> (collection browsing), <strong>Leap SQL Template Manager</strong> (parameterized SQL for consortia), <strong>Auto-Suggest-a-Purchase</strong> (patron requests), and <strong>Microprojects</strong> (Sierra bulk editing via API).
+      <a href="hackathon-awards.html">Full writeup &rarr;</a></p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Partner Announcements</div>
+    <h3>New Integrations</h3>
+    <p><strong><a href="amazon-business.html">Amazon Business</a></strong> EDI integration &mdash; CHPL (Cincinnati) launched mid-April as early adopter. <a href="amazon-business.html">Full writeup &rarr;</a></p>
+    <p><strong>Libby / OverDrive</strong> &mdash; print copy availability when eBook/audio unavailable; combined ILS + OverDrive circulation reporting. Seeking early access partners.</p>
+  </div>
+
+  <div class="update">
+    <div class="update-meta">Product News</div>
+    <h3>Vega Reports Launch</h3>
+    <p><strong>Vega Reports</strong> launched April 7, built on a <strong>data lakehouse</strong> architecture. Pre-built dashboards, custom reports, visitor engagement tracking.
+      <span class="detail">(<a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">iii.com</a>)</span></p>
+  </div>
+
+</div>
+
+<h2>Sources</h2>
+<div class="sources">
+  <ol>
+    <li><a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Vega Reports Launching Soon</a> &mdash; iii.com, Apr 1 2026</li>
+    <li><a href="https://iii.com/whats-new/clarivate-and-overdrive-partner-up-to-expand-library-discovery-and-reporting/">Clarivate + OverDrive Partnership</a> &mdash; iii.com, Apr 1 2026</li>
+    <li><a href="https://iii.com/whats-new/why-iug-remains-a-highlight-every-year/">IUG 2027 Boston Announcement</a> &mdash; iii.com, Apr 9 2026</li>
+    <li><a href="https://iii.com/whats-new/clarivate-library-innovation-awards-reveal-the-2026-finalists/">Innovation Awards Finalists</a> &mdash; iii.com, Mar 5 2026</li>
+    <li><a href="https://www.innovativeusers.org/beacon_award.php">IUG Beacon Award</a> &mdash; innovativeusers.org</li>
+    <li><a href="https://iii.com/whats-new/innovative-from-clarivate-collaborates-with-amazon-business-to-enable-edi-ordering-integration-for-sierra-libraries/">Amazon Business EDI Integration</a> &mdash; iii.com</li>
+    <li>Opening session slide photos &mdash; <a href="https://photos.app.goo.gl/jvbF72F849caaXmdA">Google Photos Album</a></li>
+  </ol>
+</div>

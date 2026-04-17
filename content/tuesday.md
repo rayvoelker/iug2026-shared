@@ -1,0 +1,136 @@
+---
+title: "Tuesday, April 14"
+template: day
+date: "April 14"
+day: tuesday
+page_subtitle: "Breakout Sessions · Day 2"
+description: "Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports."
+---
+
+<h2>Full Schedule</h2>
+<div class="section-list">
+
+  <div class="section-item">
+    <h3>9:00am &mdash; Vibe Coding with SQL for Fun and "Profit"</h3>
+    <p>Wes Osborn (CLC, Columbus OH) &middot; Kansas City Room &middot; General Track</p>
+    <p>Using AI tools (ChatGPT, Claude, Copilot) to generate SQL queries against library databases. The AI-forward entry point to Tuesday's SQL thread. <span class="detail">Wes is a former IUG Chair (2023) and 2018 Beacon Award winner.</span></p>
+  </div>
+
+  <div class="section-item">
+    <h3>9:00am &mdash; Sierra Cataloging Forum</h3>
+    <p>Emily Vieyra, Lynn Gates, Tim Mayse-Lillig &middot; McHenry Room &middot; Sierra Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>9:00am &mdash; Sierra Statistical Reports &mdash; Review of the Sierra Reporting Tool</h3>
+    <p>Michael McClellan &middot; Chicago Ballroom G &middot; Sierra Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>9:00am &mdash; Two Sierra Tricks</h3>
+    <p>Lloyd Chittenden, Sarah Furger &middot; Los Angeles Room &middot; Sierra Track</p>
+  </div>
+
+  <a class="day-card" href="resource-sharing.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>9:00am &mdash; Resource Sharing Update <span class="tag new">Notes</span></h3>
+      <p>Hope Harley, Katy Aranoff &middot; Denver Room &middot; General Track</p>
+      <p>Rapido CB deployment across SearchOhio/OhioLINK (110+ libraries, 4 ILSs), Rapido stand-alone for academics (5.5M requests, 96% fill rate). San Diego circuit next.</p>
+    </div>
+  </a>
+
+  <div class="section-item">
+    <h3>10:30am &mdash; Automating Reports with Python 2: Getting Modular</h3>
+    <p>Jeremy Goldstein (<a href="https://github.com/Minuteman-Library-Network">Minuteman Library Network</a>) &middot; Kansas City Room &middot; General Track</p>
+    <p>Presentation materials: <a href="https://github.com/jmgold/IUG2026--Automating-Reports-with-Python-2">GitHub repo</a></p>
+  </div>
+
+  <div class="section-item">
+    <h3>10:30am &mdash; Demystifying Sierra Authority Control</h3>
+    <p>Martha Rice Sanders &middot; Houston Room &middot; Sierra Track</p>
+  </div>
+
+  <a class="day-card" href="floating-collections-bof.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>10:30am &mdash; Floating Collections BoF: Analytics Tools for Multi-Branch Sierra Systems <span class="tag new">Notes</span></h3>
+      <p>Elizabeth Wright &middot; Cook Room &middot; Gatherings Track</p>
+      <p>Roundtable on floating collection management: smart routing at check-in, bulk hold workflows via Sierra API, item movement tracking gaps, Vega Reports preview, and Idea Exchange strategy.</p>
+    </div>
+  </a>
+
+  <div class="section-item">
+    <h3>10:30am &mdash; From Backlog to Breakthrough: Streamlining Technical Services</h3>
+    <p>Carolyn Bly, Kathleen Lince &middot; Chicago Ballroom G &middot; General Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>10:30am &mdash; Vega in Action: A Community Showcase of Customer Implementations</h3>
+    <p>Derek Brown, Sarah Kasprzak &middot; Kane Room &middot; Vega Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>1:30pm &mdash; Creating a Circ Stats Dashboard Using SQL and LibInsights</h3>
+    <p>Joel Tonyan (UCCS) &middot; Chicago Ballroom G &middot; Sierra Track</p>
+    <p><span class="detail">Joel is Director of User Experience at Kraemer Family Library, UCCS &mdash; colleague of Beacon Award winner Rhonda Glazier.</span></p>
+  </div>
+
+  <a class="day-card" href="sierra-year-in-review.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>1:30pm &mdash; Sierra Year in Review <span class="tag new">Notes</span></h3>
+      <p>Mike Dicus &middot; McHenry Room &middot; Sierra Track</p>
+      <p>Sierra 6.4 &amp; 6.5 release highlights: patron checkout limits (MEEP-driven), inventory check-in at circ desk, Admin Corner &rarr; client migration, Create Lists navigation, and more.</p>
+    </div>
+  </a>
+
+  <div class="section-item">
+    <h3>1:30pm &mdash; Collaborative Solutions for Technical Services Challenges</h3>
+    <p>Rhonda Glazier &middot; Houston Room &middot; General Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>3:00pm &mdash; Where Do I Start? Techniques for Large/Complex SQL Reports</h3>
+    <p>Bob Gaydos (Stark County District Library) &middot; Kansas City Room &middot; Sierra Track</p>
+    <p><span class="detail">Bob is a career database developer &amp; former DBA &mdash; professional-grade SQL background.</span></p>
+  </div>
+
+  <a class="day-card" href="meep.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>3:00pm &mdash; MEEP (Member-Exclusive Enhancement Process) <span class="tag new">Notes</span></h3>
+      <p>Katie LeBlanc, Alex Vancina &middot; Los Angeles Room &middot; General Track</p>
+      <p>Full lifecycle of an enhancement idea: Idea Exchange submissions, working group review, point sizing, ranked-choice elections (Hare algorithm), and guaranteed 12-month delivery.</p>
+    </div>
+  </a>
+
+  <div class="section-item">
+    <h3>3:00pm &mdash; There Are No Cataloging Police, Part 1</h3>
+    <p>Lynn Gates &middot; Houston Room &middot; General Track</p>
+  </div>
+
+  <div class="section-item">
+    <h3>3:00pm &mdash; Managing a Cohesive Circ Notice Strategy Across Channels</h3>
+    <p>Taylor Fisher &middot; Denver Room &middot; Vega Track</p>
+    <p><span class="detail">Related to the <a href="sierra-roadmap.html">Vega Interact</a> SMS/voice notification product announced in the Sierra Roadmap.</span></p>
+  </div>
+
+  <a class="day-card" href="ai-the-right-way.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>4:30pm &mdash; AI The Right Way: Smarter Tools, Stronger Outcomes <span class="tag new">Notes</span></h3>
+      <p>Ashley Barey (VP Product Management, Clarivate) &middot; Denver Room &middot; General Track</p>
+      <p>Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, Q&amp;A on vibe coding library catalogs. 25 sources.</p>
+    </div>
+  </a>
+
+  <a class="day-card" href="vega-reports.html" style="display: flex; margin-bottom: 0.75rem;">
+    <div class="day-info">
+      <h3>4:30pm &mdash; Vega Reports for Discover and Beyond <span class="tag new">Notes</span></h3>
+      <p>Jovana Raskovic (Product Manager, Clarivate) &middot; Kansas City Room &middot; Vega Track</p>
+      <p>Unified BI platform powered by Metabase: preset dashboards (visitor, search, marketing), query builder &amp; native SQL, OverDrive integration preview, Metabot AI proof of concept. Rollout: Discover live now, Polaris Q3&ndash;Q4, Sierra early 2027.</p>
+    </div>
+  </a>
+
+  <div class="section-item">
+    <h3>4:30pm &mdash; Sierra Circulation Forum</h3>
+    <p>Stephanie Ruhe, Alex Vancina &middot; McHenry Room &middot; Sierra Track</p>
+  </div>
+
+</div>

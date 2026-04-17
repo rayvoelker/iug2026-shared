@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ page.title }} — {{ site.title }}{% endblock %}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ site.url }}/{{ site.og_image }}">
+  <meta property="og:url" content="{{ site.url }}/{{ page.url }}">
+  <meta property="og:type" content="{% if page.template == 'session' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/{{ site.og_image }}">
+  <link rel="stylesheet" href="style.css">
+  <link rel="help" href="llms.txt" title="LLM site navigation">
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+
+  <div class="banner">
+    <img src="{{ site.banner_image }}" alt="{{ site.banner_alt }}">
+  </div>
+  <nav>
+    <ul>
+      {% for link in site.nav %}
+      <li><a href="{{ link.url }}"{% if link.url == nav_active %} class="active"{% endif %}>{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="container">
+    {% block breadcrumbs %}{% endblock %}
+    {% block content %}{% endblock %}
+  </div>
+
+  <div class="footer">
+    <img src="{{ site.footer_image }}" alt="Chicago skyline">
+    <div class="footer-text">
+      {% for link in site.footer_links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} &middot; {% endif %}
+      {% endfor %}
+       &middot; &#9999;&#65039; <a href="{{ site.repo }}/issues/new?title=Correction:+{{ page.title | urlencode }}&body=Page:+{{ page.url }}%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+</body>
+</html>

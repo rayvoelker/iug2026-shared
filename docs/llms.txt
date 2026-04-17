@@ -1,0 +1,47 @@
+# IUG 2026 Conference Notes
+> https://rayvoelker.github.io/iug2026-shared
+
+Conference knowledge base with session notes, technical guides, and speaker data.
+
+## Pages
+- [IUG 2026 Conference Notes](index.html): Notes from the Innovative Users Group 2026 conference in Chicago — 412 attendees, 4 days, 5 tracks covering Sierra, Polaris, and Vega platforms.
+- [Speaker Cards](speakers.html): IUG conference speaker cards — presentation history, stats, and personality across all IUG years.
+
+## Day Overviews
+- [Sunday, April 12](sunday.html): Pre-conference day: The Great ILS-Data Pre-Conference, Hackathon, Vega LX Academy, and Welcome Reception at Chicago Marriott.
+- [Monday, April 13](monday.html): Opening session highlights: Beacon Award, Responsible AI Framework, Innovation Awards, Sierra roadmap, hackathon awards, and IUG 2027 Boston announcement.
+- [Tuesday, April 14](tuesday.html): Breakout sessions across General, Sierra, Polaris, and Vega tracks: SQL/Python automation, floating collections, Sierra Year in Review, and Vega Reports.
+- [Wednesday, April 15](wednesday.html): Final day: Executive Leadership Panel, Lightning Rounds, forums (Acquisitions, Consortia, Public Services, System Admin), API onboarding, and Trivia Night.
+
+## Sessions
+- [Amazon Business EDI Integration](amazon-business.html): Amazon Business EDI integration with Sierra — Cincinnati Public Library as early adopter, implementation strategy and best practices for acquisitions workflows. [monday]
+- [IUG 2026 Hackathon Awards](hackathon-awards.html): Six hackathon projects solving real library problems: FindIt, Browsr, Shelf Defense (winner), Leap SQL, Auto-Suggest-a-Purchase, and Microprojects. [monday]
+- [Sierra Roadmap](sierra-roadmap.html): 3-year Sierra roadmap: 22 releases, 98 new features. May and November 2026 releases, Admin Corner migration, ERM to Alma Starter transition, and API expansions. [monday]
+- [AI The Right Way: Smarter Tools, Stronger Outcomes](ai-the-right-way.html): Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs. [tuesday]
+- [How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?](floating-collections-bof.html): Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential. [tuesday]
+- [MEEP (Member-Exclusive Enhancement Process)](meep.html): How IUG members vote on product enhancements: Idea Exchange submissions, working group review, point sizing, ranked-choice elections, and guaranteed 12-month delivery. [tuesday]
+- [Resource Sharing Update](resource-sharing.html): Rapido resource sharing: consortial borrowing across SearchOhio/OhioLINK (110+ libraries), Rapido stand-alone for academics (5.5M requests, 96% fill rate). [tuesday]
+- [Sierra Year in Review](sierra-year-in-review.html): Sierra 6.4 and 6.5 release highlights: patron checkout limits, inventory check-in at circulation, Admin Corner migration, Create Lists navigation, and IMMS enhancements. [tuesday]
+- [Vega Reports for Discover and Beyond](vega-reports.html): Jovana Raskovic introduces Vega Reports: a unified BI platform powered by Metabase for Discover, Polaris, and Sierra. Covers dashboards, custom SQL queries, OverDrive integration, Metabot AI proof of concept, and the 2026 rollout roadmap. [tuesday]
+- [Cloudflare Protection for Sierra ILS](cloudflare-sierra-guide.html): Practical guide for library sys admins on putting Sierra's web OPAC behind Cloudflare: what works, what breaks, and what to watch out for. [wednesday]
+- [Executive Leadership Panel](executive-panel.html): Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community. [wednesday]
+- [Kicking the Elephant out of the Room: Cataloging without OCLC](cataloging-without-oclc.html): How an 11-library Polaris consortium in Idaho left OCLC, transitioned through BTCat, and landed on BookWhere Suite — dropping cataloging costs from six figures to five. [wednesday]
+- [Sierra SSO Technical Implementation Guide](sierra-sso-guide.html): Technical deep-dive on SAML SSO for Sierra staff authentication: protocol fundamentals, IdP setup, Sierra configuration, Keycloak, SCIM provisioning, MFA, passwordless auth, conditional access, and SAML debugging. [wednesday]
+- [Sierra Staff and Single Sign-On](sierra-sso.html): Session recap from IUG 2026: implementing SAML SSO for Sierra staff and patron authentication, MFA practices, shared accounts, identity providers, and Keycloak as a potential unified identity layer. [wednesday]
+- [Sierra Sys Admin Forum](sierra-sys-admin-forum.html): Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more. [wednesday]
+
+## Guides
+- [Suggest-a-Purchase](suggest-a-purchase.html): Comparing two patron purchase suggestion systems: Jacksonville's Auto-Suggest-a-Purchase (Polaris) vs. chimpy-me (Sierra, Datasette-based evidence extraction).
+
+## Structured Data
+- [speakers.json](speakers-data.json): Full speaker database with session history
+
+## Corrections & Contributions
+
+Found an error or want to suggest a correction?
+
+- **File an issue:** https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction&body=Page:%20(which%20page)%0A%0ACorrection:%20(describe%20the%20issue)
+- **Browse open issues:** https://github.com/rayvoelker/iug2026-shared/issues
+- **Submit a pull request:** Fork https://github.com/rayvoelker/iug2026-shared, edit the relevant markdown file in `content/`, and open a PR.
+
+Content source files are markdown with YAML frontmatter in the `content/` directory.

@@ -1,0 +1,383 @@
+---
+title: "How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - elizabeth-wright
+speakers_display: "Elizabeth Wright · Cook Room · Gatherings Track"
+description: "Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential."
+---
+
+<div class="card">
+  <p>A roundtable discussion among Sierra libraries of varying sizes &mdash; from 12-branch systems to a 129-library consortium &mdash; sharing practical experience with floating collections, the tools they've built or adopted, and the gaps that remain. An Innovative staff member joined to gather input on <strong>Vega Reports</strong> priorities.</p>
+</div>
+
+## Who Was at the Table
+
+<table>
+  <thead>
+    <tr><th>System Size</th><th>Float Status</th><th>Key Tools</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>79 locations / 39 branches</td>
+      <td>Active float, fully mapped</td>
+      <td>Library IQ</td>
+    </tr>
+    <tr>
+      <td>24 branches (Tulsa City County)</td>
+      <td>Active float</td>
+      <td>Library IQ, vendor grids</td>
+    </tr>
+    <tr>
+      <td>12 locations (growing to 14)</td>
+      <td>Pilot projects</td>
+      <td>Custom Sierra API tools</td>
+    </tr>
+    <tr>
+      <td>129-library consortium</td>
+      <td>Exploring &mdash; potential new member</td>
+      <td>Sierra float rules</td>
+    </tr>
+    <tr>
+      <td>Cincinnati &amp; Hamilton County PL</td>
+      <td>API development</td>
+      <td>Custom bulk-hold web app</td>
+    </tr>
+  </tbody>
+</table>
+
+## Shelf Mapping & Collection Sizing
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The tools</h3>
+    <p>Multiple libraries use <a href="https://libraryiq.com">Library IQ</a> to map entire collections and set <strong>optimal shelf sizes per area</strong>. Librarians see which branches are "pooling" (over capacity) and which are in "drought" (under capacity). <a href="https://collectionhq.com">CollectionHQ</a> (Baker &amp; Taylor) is also in use for evidence-based stock management.</p>
+    <p>In 2024, Innovative partnered with Library IQ to offer analytics within the Vega LX portfolio. <a href="https://documentation.iii.com/product-documentation/decision-center.php">Decision Center</a> (Innovative's legacy analytics product) was discussed but is being de-emphasized.</p>
+  </div>
+  <div class="section-item">
+    <h3>The gap</h3>
+    <p>Knowing you need to move 10 items from branch A to B is helpful, but <strong>no tool provides good criteria for which specific items to move</strong>. Participants wanted filters based on: last checkout date, item created date, total circulations (including zero-circ items), and whether the receiving branch has seen the title recently.</p>
+  </div>
+</div>
+
+## Floating in Practice
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>How Tulsa does it (24 branches)</h3>
+    <p>All branches mapped with defined shelf capacity. Staff instructions for pulls: "Send 100 picture books. Pull A through Z. Don't pull everything from one area. Avoid duplicates." Typical float volume: <strong>50&ndash;300 items</strong> between branches. Title-level pick lists were abandoned &mdash; nobody has time to process item-by-item lists at that scale.</p>
+  </div>
+  <div class="section-item">
+    <h3>The resistance curve</h3>
+    <p><strong>Initial resistance is strong, but libraries don't want to go back.</strong> Branch staff have deep ownership of "their" shelves. If you say "pull 20 items," staff will pull the worst &mdash; they want to keep the best for their customers. One system avoided floating juvenile nonfiction because they feared staff would game the system.</p>
+    <p>But after about a year of floating, one system offered to let branches opt out. <strong>They unanimously refused.</strong> The constant refreshment of paperbacks, media, and large print was too valuable.</p>
+  </div>
+  <div class="section-item">
+    <h3>Delivery logistics drive everything</h3>
+    <p>Float timing is constrained by delivery schedules. One system sends requests Monday (busiest delivery day) so staff can start sending Wednesday when trucks are lighter. The day with the lowest delivery volume is the best day to trigger automated float requests.</p>
+  </div>
+</div>
+
+## Bulk Holds: Moving Collections via the Hold System
+
+<div class="card">
+  <p>When branches need items for programs, displays, or to fill collection gaps, the standard answer is "just place holds." But this is <strong>tedious</strong> &mdash; staff have to search individually, find available copies at other branches, and place holds one at a time. Several libraries have built API-driven tools to automate this.</p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Approach 1: Disposable patron accounts + barcode import</h3>
+    <p>A web application using the Sierra REST API allows staff to import a list of barcodes (a "shopping list") and place bulk item-level holds to route everything to a target branch.</p>
+    <p><strong>Key innovation:</strong> Sierra enforces a ~2,000 hold limit per patron card. Rather than juggling multiple admin cards, this tool creates a <strong>temporary patron account on the fly</strong> via the API &mdash; patron expiration and "not needed after" date both set to 30 days. Each batch is a self-contained, trackable unit. After 30 days, the patron and unfilled holds auto-expire.</p>
+  </div>
+  <div class="section-item">
+    <h3>Approach 2: Bib-based and patron-based bulk placement</h3>
+    <p>A consortium participant shared two complementary tools:</p>
+    <ul style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li><strong>Patron-to-bib:</strong> Bib record number + patron CSV &rarr; hold placed for every patron</li>
+      <li><strong>Bib-to-location:</strong> Items or bib + target location &rarr; all items sent to one branch</li>
+    </ul>
+    <p style="margin-top: 0.5rem;">For their floating pilot, they automated return-to-home with a weekly script: any item on the shelf longer than X days gets a hold placed to send it home. Set to run on the lowest-delivery day to avoid overwhelming staff.</p>
+  </div>
+  <div class="section-item">
+    <h3>Approach 3: Item status changes instead of holds</h3>
+    <p>Several participants raised concerns about hold contention &mdash; bulk holds can impact patron access and add paging burden. The group discussed using <strong>item status codes</strong> instead: a dynamic "shopping" status with auto-expiration (similar to how "missing" has stages). Sierra's <strong>Circa</strong> tool already supports batch status changes via barcode scanning.</p>
+    <p>The blocker: <strong>Sierra Scheduler can't currently execute API calls.</strong> If it could, libraries could chain Create Lists queries with API-driven status changes on a schedule.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Sierra API Limitation: Holds Are Not First-Class Citizens</h3>
+
+<div class="card">
+  <p>When you place a hold via the Sierra REST API's <a href="https://techdocs.iii.com/sierraapi/Content/zAPIs/patronAPI_holds.htm">POST endpoint</a>, the response is <strong>HTTP 204 No Content</strong> &mdash; the body is empty and <strong>no hold ID is returned</strong>. Since holds aren't a first-class record type in Sierra, there's no reliable way to programmatically track a specific hold after placement.</p>
+  <p><strong>Workaround:</strong> immediately GET the patron's hold list and identify the new hold by timestamp or record number. This is fragile and doesn't scale well for bulk operations.</p>
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #777;">Sierra API docs: <a href="https://techdocs.iii.com/sierraapi/Content/titlePage.htm">Documentation (v6.6)</a> &middot; <a href="https://techdocs.iii.com/sierraapi/Content/interactive.htm">Interactive sandbox</a> &middot; <a href="https://innovative.libguides.com/Developer/Sierra">Developer portal</a></p>
+</div>
+
+## The Biggest Gap: Tracking Where Items Have Been
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The core problem</h3>
+    <p>Sierra stores only <strong>current state</strong> for item locations. There is no built-in way to answer: Where has this item been over the last year? How long does it take to get from branch A to B? What is the actual flow pattern of our floating collection?</p>
+    <p><em>"Administration always asks how long it takes to get from A to B. And you can't answer that."</em></p>
+  </div>
+  <div class="section-item">
+    <h3>What's missing from transaction data</h3>
+    <p>Items passing through a <strong>sorter</strong> while already checked in produce <strong>no circulation transaction</strong> &mdash; no status change means nothing is recorded. There's no shipping/tracking log for physical items.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Workarounds in Use</h3>
+
+<table>
+  <thead>
+    <tr><th>Approach</th><th>How It Works</th><th>Limitations</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Collection snapshots</strong></td>
+      <td>Dump entire collection locations at regular intervals, diff over time</td>
+      <td>Storage-heavy, requires custom tooling</td>
+    </tr>
+    <tr>
+      <td><strong>Annual checkout rankings</strong></td>
+      <td>Rank branches by format checkout frequency to inform float decisions</td>
+      <td>Only annual granularity, reactive</td>
+    </tr>
+    <tr>
+      <td><strong>Inventory check-in analysis</strong></td>
+      <td>Check in every item over a month; analyze where things ended up</td>
+      <td>Recent improvement &mdash; now creates transactions</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The data lake hope: Vega Reports</h3>
+    <p><a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Vega Reports</a> (launched April 7, 2026) is expected to create a <strong>data lake</strong> with regular snapshots of ILS data. If it captures item location changes over time, it could solve the historical tracking problem. Currently surfaces Vega Discover data; Sierra ILS integration is on the roadmap.</p>
+  </div>
+</div>
+
+## Smart Routing at Check-In: The Feature Everyone Wants
+
+<div class="card">
+  <p><strong>The concept:</strong> Instead of float rules that simply say "this item type floats between these locations," the system makes <strong>intelligent routing decisions at check-in</strong> based on real-time collection state.</p>
+  <p><em>Example: A copy is returned at Branch A, which already has 8 copies. Branch B has only 2 and hasn't seen this title in 18 months. The system creates a transit request to send it to Branch B.</em></p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Proposed parameters</h3>
+    <ul style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li><strong>Maximum duplicates per branch</strong> &mdash; "this branch can only have 3 copies"</li>
+      <li><strong>Recency filter</strong> &mdash; "only send to branches that haven't had this title in X months"</li>
+      <li><strong>Capacity awareness</strong> &mdash; if no branch qualifies by title, send to the branch with the most available shelf space</li>
+      <li><strong>Format-aware</strong> &mdash; different rules for different material types</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>Precedents that prove it's possible</h3>
+    <p><strong>Automated sorters</strong> already implement routing logic at check-in. <strong>Polaris</strong> has related functionality. <a href="https://lyngsoesystems.com/library/intelligent-material-management-system">Lyngsoe Systems' IMMS</a> is an RFID-based platform that tracks every item movement and supports automated routing &mdash; a hardware-based version of what this group wants in software.</p>
+    <p>Sierra's own <a href="https://documentation.iii.com/sierrahelp/Content/sgcir/sgcir_floating_collection.html">floating collection configuration</a> supports rule-based float at check-in, but lacks the dupe-aware, capacity-aware intelligence discussed here.</p>
+  </div>
+  <div class="section-item">
+    <h3>Idea Exchange submission planned</h3>
+    <p>Elizabeth Wright committed to submitting this as an <a href="https://ideas.iii.com">Idea Exchange</a> enhancement request. The group's advice: don't just click the vote button &mdash; <strong>write a comment with your library's specific use case</strong>. Reach out to other floating libraries to build support. Even contact non-floating libraries: "You might want to float someday."</p>
+  </div>
+</div>
+
+## New Item Distribution in Floating Systems
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The challenge</h3>
+    <p>How do you ensure new acquisitions are distributed fairly when items naturally drift toward high-demand branches? Small branches with heavy reader populations see popular items float away quickly.</p>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Strategy</th><th>How It Works</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Rotating vendor grids</strong></td>
+      <td>Acquisitions grids cycle through branches &mdash; small branches get the same percentage of new items as large ones</td>
+    </tr>
+    <tr>
+      <td><strong>Assign to one branch</strong></td>
+      <td>For high-hold items (Lucky Day / Quick Picks), assign to one branch &mdash; holds will distribute them naturally</td>
+    </tr>
+    <tr>
+      <td><strong>Percentage-based allocation</strong></td>
+      <td>Allocate new items proportionally so no branch feels underserved</td>
+    </tr>
+  </tbody>
+</table>
+
+## Consortium Floating: Can One Library Float Inside a Non-Floating Consortium?
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The scenario</h3>
+    <p>A library with an existing floating collection wants to join a 129-library consortium where no one else floats.</p>
+  </div>
+  <div class="section-item">
+    <h3>The consensus: it would just work</h3>
+    <p>Sierra's float rules are scoped to the floating library's own locations. When a floating library's item is returned at a non-floating consortium member, it goes in transit back to its owning location &mdash; the same behavior that already happens for all non-floating consortium items. The floating library sets up float rules for their own branches; the rest of the consortium is unaffected.</p>
+  </div>
+</div>
+
+## Vega Reports: First Look and Feedback
+
+<p style="margin-bottom: 1rem; color: #777;">An Innovative staff member gathered input on reporting priorities. See also: <a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Vega Reports announcement</a></p>
+
+<table>
+  <thead>
+    <tr><th>Component</th><th>Detail</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Platform</strong></td>
+      <td><a href="https://www.metabase.com/">Metabase</a> &mdash; open-source BI tool (<a href="https://github.com/metabase/metabase">GitHub</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Query builder</strong></td>
+      <td>Visual drag-and-drop; generates SQL behind the scenes</td>
+    </tr>
+    <tr>
+      <td><strong>SQL access</strong></td>
+      <td>Direct SQL editor for power users (role-dependent)</td>
+    </tr>
+    <tr>
+      <td><strong>Current data</strong></td>
+      <td>Vega Discover metrics (visitors, engagement, search activity)</td>
+    </tr>
+    <tr>
+      <td><strong>Roadmap</strong></td>
+      <td>Polaris ILS, OverDrive checkout data, Sierra ILS</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Group feedback</h3>
+    <ul style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li><strong>Focus on smaller libraries first.</strong> Large systems have data analysts who can write SQL. The biggest impact would be standard, ready-to-use reports for libraries without technical staff.</li>
+      <li><strong>Speed is critical.</strong> Decision Center's biggest complaint: infinite loading loops with complex filters.</li>
+      <li><strong>Start with 10 standard Sierra reports</strong> and evolve from there.</li>
+      <li>The query builder's SQL transparency was praised &mdash; staff can build visually, then hand the generated SQL to an analyst for fine-tuning.</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>Comparable tool: Datasette</h3>
+    <p><a href="https://datasette.io/">Datasette</a> (<a href="https://github.com/simonw/datasette">GitHub</a>) by Simon Willison was mentioned as a comparable open-source tool already in use at one library. Publishes any SQLite database as an explorable website with faceted browsing, full-text search, and a JSON API. Companion tool <a href="https://sqlite-utils.datasette.io/">sqlite-utils</a> converts CSV/JSON into SQLite from the command line &mdash; a lightweight alternative to a full BI stack.</p>
+  </div>
+</div>
+
+## The Idea Exchange & MEEP: How Enhancement Requests Actually Work
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The process</h3>
+    <ol style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li><strong>Submit &amp; vote</strong> at <a href="https://ideas.iii.com">ideas.iii.com</a> (UserVoice) &mdash; open to all Innovative customers</li>
+      <li><strong>Working group review</strong> &mdash; IUG Working Groups review top-voted ideas each cycle</li>
+      <li><strong>Sizing</strong> &mdash; Innovative product owners estimate development effort in points</li>
+      <li><strong>Final vote</strong> &mdash; IUG member site contacts cast the deciding votes. Each cycle allocates <strong>500 development points</strong></li>
+      <li><strong>Implementation</strong> &mdash; Innovative commits to delivering winners within <strong>12 months</strong></li>
+    </ol>
+  </div>
+  <div class="section-item">
+    <h3>Recent Sierra 6.7 MEEP winners (Q4 2026)</h3>
+    <ol style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li>Automatic SSL Certificate Renewal</li>
+      <li>REST API endpoint to update patron "last circ activity date"</li>
+      <li>Allow use of spine label print templates in Create Lists</li>
+    </ol>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #777;"><a href="https://forum.innovativeusers.org/t/winning-ideas-from-sierra-6-7-meep-vote/2883">Announcement</a> &middot; <a href="https://www.innovativeusers.org/member_exclusive_enhancement_p.php">MEEP overview</a> &middot; <a href="https://www.innovativeusers.org/idea_exchange_-_faq.php">FAQ</a></p>
+  </div>
+  <div class="section-item">
+    <h3>Practical advice</h3>
+    <ul style="padding-left: 1.25rem; margin: 0.5rem 0 0;">
+      <li><strong>Know who votes at your library</strong> &mdash; each IUG member site has a designated voter</li>
+      <li><strong>Lobby directly</strong> when an idea you care about reaches the final round</li>
+      <li><strong>Bridge the knowledge gap</strong> &mdash; if your IT person votes, make sure they understand why a collection management feature matters</li>
+      <li><strong>Write substantive comments</strong> describing your library's specific use case</li>
+      <li><strong>Cross-pollinate</strong> &mdash; encourage peer libraries to vote for ideas that benefit everyone</li>
+    </ul>
+  </div>
+</div>
+
+## Key Themes
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>1. Floating works, but the tools haven't kept up</h3>
+    <p>Libraries that float are committed to it, but Sierra's tooling &mdash; especially around intelligent routing, item tracking, and bulk operations &mdash; lags behind operational needs.</p>
+  </div>
+  <div class="section-item">
+    <h3>2. Libraries are building their own tools</h3>
+    <p>Multiple participants have built custom applications using the Sierra REST API: bulk hold placement, automated return-to-home scripts, collection movement tracking. A testament to the API's value and an indicator of unmet product needs.</p>
+  </div>
+  <div class="section-item">
+    <h3>3. Historical item tracking is the biggest missing capability</h3>
+    <p>Every library at the table wanted to know where items <em>have been</em>, not just where they <em>are now</em>. Vega Reports' data lake could address this if it captures location snapshots over time.</p>
+  </div>
+  <div class="section-item">
+    <h3>4. Smart routing at check-in is the most-wanted feature</h3>
+    <p>Capacity-aware, dupe-aware routing that doesn't require hardware sorters was the consensus top priority for the Idea Exchange.</p>
+  </div>
+  <div class="section-item">
+    <h3>5. Analytics tools need to serve non-technical staff first</h3>
+    <p>Libraries with data analysts can get what they need via SQL. The first release of any new reporting tool should prioritize ready-to-use reports for smaller libraries without dedicated technical staff.</p>
+  </div>
+</div>
+
+## Further Reading
+
+<div class="sources">
+  <h3>Floating Collections</h3>
+  <ol>
+    <li><a href="https://www.libraryjournal.com/story/to-float-or-not-to-float-collection-management">To Float or Not To Float</a> &mdash; Library Journal</li>
+    <li><a href="https://www.urbanlibraries.org/innovations/rethinking-floating-in-collection-development">Rethinking Floating in Collection Development</a> &mdash; Urban Libraries Council</li>
+    <li><a href="https://www.urbanlibraries.org/innovations/floating-collections-review-and-change">Floating Collections Review and Change</a> &mdash; ULC case study</li>
+    <li><a href="https://cdr.lib.unc.edu/downloads/3b591d031?locale=en">Benefits and Drawbacks of Floating Collections</a> &mdash; UNC research paper</li>
+    <li><a href="https://www.collectionhq.com/are-floating-collections-the-answer/">Are Floating Collections the Answer?</a> &mdash; collectionHQ</li>
+    <li><a href="https://librarianpete.substack.com/p/floaters-are-floating-collections">Floaters: Are Floating Collections Really Delivering?</a> &mdash; critical perspective</li>
+    <li><em>Floating Collections</em> by Wendy K. Bartlett &mdash; <a href="https://journals.ala.org/lrts/article/view/2758/2739">ALA LRTS book review</a></li>
+  </ol>
+
+  <h3>Tools &amp; Platforms</h3>
+  <ol start="8">
+    <li><a href="https://libraryiq.com">Library IQ</a> &mdash; collection analytics and shelf mapping</li>
+    <li><a href="https://collectionhq.com">CollectionHQ</a> &mdash; evidence-based stock management (Baker &amp; Taylor)</li>
+    <li><a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Vega Reports announcement</a> &mdash; Innovative's new reporting platform</li>
+    <li><a href="https://www.metabase.com/">Metabase</a> &mdash; open-source BI platform powering Vega Reports</li>
+    <li><a href="https://datasette.io/">Datasette</a> &mdash; open-source data exploration and publishing</li>
+    <li><a href="https://sqlite-utils.datasette.io/">sqlite-utils</a> &mdash; companion CLI for Datasette</li>
+    <li><a href="https://lyngsoesystems.com/library/intelligent-material-management-system">Lyngsoe IMMS</a> &mdash; RFID-based intelligent material management</li>
+  </ol>
+
+  <h3>Sierra Technical References</h3>
+  <ol start="15">
+    <li><a href="https://techdocs.iii.com/sierraapi/Content/titlePage.htm">Sierra REST API docs (v6.6)</a></li>
+    <li><a href="https://techdocs.iii.com/sierraapi/Content/interactive.htm">Sierra API interactive sandbox</a></li>
+    <li><a href="https://innovative.libguides.com/Developer/Sierra">Sierra developer portal</a></li>
+    <li><a href="https://documentation.iii.com/sierrahelp/Content/sgcir/sgcir_floating_collection.html">Sierra floating collection configuration</a></li>
+    <li><a href="https://documentation.iii.com/product-documentation/decision-center.php">Decision Center documentation</a></li>
+  </ol>
+
+  <h3>Idea Exchange &amp; MEEP</h3>
+  <ol start="20">
+    <li><a href="https://ideas.iii.com">Idea Exchange</a> &mdash; submit and vote on enhancements</li>
+    <li><a href="https://www.innovativeusers.org/member_exclusive_enhancement_p.php">MEEP overview</a></li>
+    <li><a href="https://www.innovativeusers.org/idea_exchange_-_faq.php">Idea Exchange FAQ</a></li>
+    <li><a href="https://forum.innovativeusers.org/t/winning-ideas-from-sierra-6-7-meep-vote/2883">Sierra 6.7 MEEP winners</a></li>
+  </ol>
+</div>
