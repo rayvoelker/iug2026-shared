@@ -56,3 +56,26 @@ def test_get_rarity():
     assert get_rarity(3)["tier"] == "uncommon"
     assert get_rarity(5)["tier"] == "rare"
     assert get_rarity(8)["tier"] == "legendary"
+
+
+def test_generate_llms_txt(tmp_path):
+    """generate_llms_txt creates llms.txt from page metadata."""
+    site = {"title": "Test Site", "url": "https://example.com"}
+    pages = [
+        {"title": "Home", "url": "index.html", "template": "index", "description": "Home page"},
+        {"title": "Session A", "url": "session-a.html", "template": "session", "description": "A session", "day": "monday"},
+    ]
+    output_dir = tmp_path / "docs"
+    output_dir.mkdir()
+
+    from build import generate_llms_txt
+    generate_llms_txt(site, pages, output_dir)
+
+    llms = (output_dir / "llms.txt").read_text()
+    assert "Test Site" in llms
+    assert "session-a.html" in llms
+    assert "Session A" in llms
+
+    llms_full = (output_dir / "llms-full.txt").read_text()
+    assert "Test Site" in llms_full
+    assert "session-a.html" in llms_full
