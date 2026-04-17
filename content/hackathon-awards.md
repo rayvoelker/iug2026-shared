@@ -6,7 +6,7 @@ date: "April 13"
 speakers:
   - gabrielle-gosselin
   - mike-dicus
-speakers_display: "Monday, April 13 · 4:00–5:00 PM"
+speakers_display: "4:00–5:00 PM"
 description: "Six hackathon projects solving real library problems: FindIt, Browsr, Shelf Defense (winner), Leap SQL, Auto-Suggest-a-Purchase, and Microprojects."
 ---
 

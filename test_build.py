@@ -56,3 +56,18 @@ class TestContentIntegrity:
             if "<pre><code>&lt;div" in content or "<pre><code>&lt;p" in content:
                 failures.append(html_file.name)
         assert not failures, f"Pages with escaped HTML: {failures}"
+
+    def test_no_duplicate_dates_in_subtitles(self):
+        """Session subtitles should not repeat the date."""
+        failures = []
+        for html_file in get_html_files():
+            content = html_file.read_text()
+            match = re.search(
+                r'class="page-subtitle">(.*?)</p>', content, re.DOTALL
+            )
+            if match:
+                subtitle = match.group(1)
+                dates = re.findall(r"(?:Monday|Tuesday|Wednesday|Sunday),\s+April\s+\d+", subtitle)
+                if len(dates) != len(set(dates)):
+                    failures.append(f"{html_file.name}: {subtitle.strip()}")
+        assert not failures, f"Duplicate dates in subtitles:\n" + "\n".join(failures)
