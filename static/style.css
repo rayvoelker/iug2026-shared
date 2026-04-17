@@ -160,6 +160,19 @@ a.day-card:hover {
   text-decoration: none;
   border-left-color: var(--teal);
 }
+/* Directional arrow on interactive card titles */
+a.day-card .day-info h3::after,
+.day-card-expanded .day-info h3::after {
+  content: " \2192";
+  color: var(--teal);
+  font-weight: 400;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+a.day-card:hover .day-info h3::after,
+.day-card-expanded .day-card-header:hover .day-info h3::after {
+  opacity: 1;
+}
 .day-date { text-align: center; min-width: 60px; }
 .day-date .dow { font-size: 0.75rem; text-transform: uppercase; color: #999; }
 .day-date .num { font-size: 1.8rem; font-weight: 700; color: var(--navy); line-height: 1; }
@@ -253,10 +266,6 @@ tr.current { background: #fffde7; }
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   overflow: hidden;
-  transition: box-shadow 0.15s;
-}
-.speaker-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .speaker-card .card-top {
