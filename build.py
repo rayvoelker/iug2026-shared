@@ -58,12 +58,12 @@ def render_markdown(text):
 def get_rarity(session_count):
     """Compute speaker rarity tier from session count."""
     if session_count >= 8:
-        return {"tier": "legendary", "label": "\u2605 LEGENDARY"}
+        return {"tier": "legendary", "label": "Legendary"}
     if session_count >= 5:
-        return {"tier": "epic", "label": "\u25c6 Epic"}
+        return {"tier": "rare", "label": "Rare"}
     if session_count >= 3:
-        return {"tier": "rare", "label": "\u25cf Rare"}
-    return {"tier": "common", "label": "\u25cb Common"}
+        return {"tier": "uncommon", "label": "Uncommon"}
+    return {"tier": "common", "label": "Common"}
 
 
 def enrich_speakers(speakers):

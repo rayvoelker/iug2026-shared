@@ -53,6 +53,6 @@ def test_render_markdown():
 def test_get_rarity():
     """get_rarity returns correct tier labels."""
     assert get_rarity(1)["tier"] == "common"
-    assert get_rarity(3)["tier"] == "rare"
-    assert get_rarity(5)["tier"] == "epic"
+    assert get_rarity(3)["tier"] == "uncommon"
+    assert get_rarity(5)["tier"] == "rare"
     assert get_rarity(8)["tier"] == "legendary"
