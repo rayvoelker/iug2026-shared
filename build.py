@@ -151,6 +151,61 @@ def clean():
         print(f"Cleaned {OUTPUT_DIR}/")
 
 
+def serve_and_watch(port):
+    """Start HTTP server and file watcher. Blocks until Ctrl+C."""
+
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=str(OUTPUT_DIR), **kwargs)
+
+        def log_message(self, format, *args):
+            # Suppress per-request logs to keep rebuild output visible
+            pass
+
+    server = http.server.HTTPServer(("0.0.0.0", port), Handler)
+    server_thread = threading.Thread(target=server.serve_forever, daemon=True)
+    server_thread.start()
+    print(f"Serving on http://0.0.0.0:{port}")
+
+    try:
+        from watchdog.events import FileSystemEventHandler
+        from watchdog.observers import Observer
+
+        class RebuildHandler(FileSystemEventHandler):
+            def __init__(self):
+                self._timer = None
+
+            def on_any_event(self, event):
+                if event.src_path.startswith(str(OUTPUT_DIR)):
+                    return
+                if self._timer:
+                    self._timer.cancel()
+                self._timer = threading.Timer(0.3, self._rebuild)
+                self._timer.start()
+
+            def _rebuild(self):
+                print("\nChange detected, rebuilding...")
+                try:
+                    build_site()
+                    print("Ready.")
+                except Exception as e:
+                    print(f"Build error: {e}")
+
+        observer = Observer()
+        handler = RebuildHandler()
+        for watch_dir in [CONTENT_DIR, TEMPLATE_DIR, STATIC_DIR, DATA_DIR]:
+            if watch_dir.exists():
+                observer.schedule(handler, str(watch_dir), recursive=True)
+        observer.start()
+        print("Watching for changes... (Ctrl+C to stop)")
+
+        server_thread.join()
+    except KeyboardInterrupt:
+        print("\nStopping...")
+        observer.stop()
+        server.shutdown()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build the IUG conference site")
     parser.add_argument("--clean", action="store_true", help="Clean output before building")
