@@ -1,0 +1,587 @@
+happy to see you in this number today um so i'm just gonna try and move around the room as much
+
+as this mic allows me without caring um so we're here obviously today to talk a little bit about
+
+bigger reports and discover for bigger reports uh besides that i'm gonna introduce myself first for
+
+some of you you've met me already over some of the calls and things like that and we've been
+
+meeting at the corridor but my name is joanna i'm coming from serbia and i'm based in the belgian
+
+office so if anyone wants to know it's a long time it was very enjoyable a nice experience i would
+
+say we didn't have any layover luckily but it's like a full-on 11 hours and i've been with
+
+clarivate for a year so i've been with her with a little bit less than a year it's going to be
+
+here in like 20 days not that i'm counting
+
+and i'm working with analytics for i'd say a little bit more than six years i've been working
+
+with different business areas so really really i would say i'm adaptable to different different
+
+different areas within the businesses and i wanted to share with you a little something
+
+it's on a personal note and you're probably gonna start wondering what's that have to do with
+
+reports but i promise it it has like
+
+it resonates a little bit so um i used to play flute for 11 years okay and one of my dreams was
+
+playing with your harmonic orchestra i'm gonna travel the world play the flute and be amazing
+
+at it um that obviously didn't happen but uh how does it resonate is when you're really playing in
+
+whoever played anything in their life or really was really musically focused or artsy you have a
+
+lot of notes that you need to go through and you need to practice and you need to figure out the
+
+way how to compile them all together right it's absolutely the same with data just the different
+
+views on it you don't get music but you get your customers that i call you the pizza so it's it
+
+kind of resonates right um so without further review i'm going to be presenting you today
+
+with reports for this cover and overall our strategy so let's say that i don't really
+
+like data i don't want to deal with data but i want to get a hold of of my reports this is
+
+exactly what i will be showing you today and for me data is something that i use every day rather
+
+than like regardless of the work side even when i'm booking my vacation i will investigate the
+
+destination that i'm going to i'm going to pull all the hotels all the prices i'm going to do a
+
+full-on comparison what's included and what's not included and it's going to help me navigate
+
+toward
+
+the hotel that i want to go to right so our strategy is basically to try and provide you
+
+more with less of a doing and one of the key pillars i would say it's our data lake house
+
+so you must be hearing this coming from a different presentation
+
+data lake house data lake house we really love that term we're very proud of it um and
+
+that's our infrastructure so what does the data lake mean and what will what you're getting
+
+from it consider it as let's say a bucket that all of the different data points can be brought
+
+to that bucket so either it's a data so we're talking today about data discovery in specific
+
+we are going to cover a little bit about polaris and sierra as well so to that bucket you can get
+
+really any data point that you'll embark um so it requires a single login so basically
+
+you will be signing into the data um it has the automated and intelligent inside so we
+
+will talk a little bit about the tools not too much but just to kind of give you a brief
+
+context where where do we see this developing in the future um your data is protected so whether
+
+you're really based your library is based in the europe or in u.s really anywhere in the world
+
+your data is secure uh and lastly unique insights so it does allow us to bring a third party data
+
+as well so talk a little bit about our drivers before i move to vega reports rediscover i just
+
+really want to extend my gratitude to our early access customers which is stella mithatzen phoenix
+
+so thank you thank you thank you thank you very much for providing us valuable feedback we've
+
+been collaborating over the last couple of weeks together to enable the first 40 going and getting
+
+regular reports we will continue to do so after we do so um and we will continue based on that
+
+we will continue to enhance with the future releases so we are having the two next releases
+
+and everybody who will have the reports for discover will be the customers that they are
+
+currently subscribed to it we do have a demo available in our sales group but i really want to
+
+kind of give you a snapshot of what you're going to see in them and what you can experience so as
+
+i mentioned it does require an active subscription to vega discover there is a two rows that you can
+
+assign from the user management within discover it's reports admin and reports consumer hierarchy
+
+so basically you can assign any role to a main site or a collection site or a kiosk site level
+
+it really depends on your preference also i would like to mention so the admin will have let's say
+
+a two varieties of apartments if you're in the main site i mean for the report you will be able
+
+to either do a sql query or you can build your own reports by using query builder so it doesn't
+
+really limit you like if you're not a sql savvy person that's okay we hear you so we do have a
+
+query builder there that it can help you resolve any reporting issue and kind of help you build
+
+around it and consumer will be an individual within your library who will consume the reports
+
+you create so it's kind of a view license within the reports um and yeah i also wanted to mention
+
+that so big reports is basically uh powered by metabase metabase is basically a library that's
+
+basically a business intelligence tool same as like your um let's say tableau or your power bi
+
+or really any any bi tool with this we're giving you the full license to it and it's included in
+
+your subscription so there's no additional cost to it and the reason why we chose it is really
+
+because we found it useful for both case scenarios so whether you want to create custom reports for
+
+using sql or just using query builder this is just a little let's say snapshot
+
+how you can assign a role to your staff member um it's just from the user management as i mentioned
+
+you'll select the edit icon next to it and you can kind of pick the reports consumer or reports admin
+
+at any site level and once you say that it will show in your left-hand side navigation menu
+
+dashboard will show so let's talk a little bit about the dashboard so why did we discover that
+
+for you ready to cover dashboards
+
+dashboards provides your insights to your analytics in terms of mega discover usage
+
+so what are your features and your staff basically doing on the discover um so it's supported by a
+
+pando so pando is a tool that really collects your data and how we brought us in and i'm going to
+
+mention again the fancy work they like house we are bringing everything from pando by calling
+
+their api to bigger reports there is three sets of statistics that is built within the dashboard
+
+and the dashboard itself um cannot be edited so that is what you get regardless of your role
+
+whether you're a consumer or you're an admin but you can create or use the models from that
+
+dashboard to create your own reports visitor statistics it's basically your user's activity
+
+across discover search statistics your top searches performance and let's say weekly trends
+
+and the marketing statistics we focused a little bit on the
+
+home page interactions so whoever comes on the home page where are they clicking and what they're
+
+actually doing so what is what is the ones that they're taking the least and the most of the
+
+attention yeah um we do have some cool capabilities you can share by email or a pdf you can bookmark it
+
+for the easier access so in future once we start releasing many many more reports you can just
+
+easily bookmark it so it's kind of handy on your left hand side menu and filters right so
+
+um from the moment you get bigger reports for discovery we will back that data for a week
+
+more or less but then how you can start using it if data will just approve and it will stay there
+
+so over the course of time you will be able to see your weekly or monthly trends and definitely
+
+year on year within the site filter so this is quite handy i think for consortium also for the
+
+other libraries we're including all the collection sites or the kiosk sites are really a main site
+
+kind of really select whichever site you want to see the data for it's based on the site url so you
+
+might be wanting to tweak it a little bit to find it more convenient for a library but data is there
+
+so as long as there is there we can play around with it does anyone have any questions you are
+
+good in time so i can share my email or pdf because it did excel good question so we have
+
+exports by excel but not for the dashboard because definitely it's already set i will i will show you
+
+the slide what i meant it's already set and the best kind of way to download it it's either pdf or
+
+kind of shared by email but if you create your own reports you can download it in a csv or an excel
+
+file uh like what flavor of um sql is it using if you're writing your own queries
+
+that's a good question so for now no but we're exploring the capabilities
+
+it's something that we really want to establish with this kind of an infrastructure
+
+really allows us data lakehouse allows us to do anything which you would like to do with your data
+
+and that's something that we are thinking on we're not planning but let's say we are brainstorming
+
+now how we can respond to that requirement i know that many of you are using your own
+
+i would say tools so i met a couple of customers today they're using tableau very very heavily
+
+and as a previous very heavy tableau user i must tell you that it's easier to use a database
+
+talk a little bit about the content so this is this is what i was
+
+referring to when i was saying it's really easier to download a pdf or share it by an
+
+email rather than doing it in csv so that predict set in stone is there and you can download it and
+
+you can go every day and check the data each of these cards they are presenting a reporting card
+
+and behind it there is a calculation a sql population basically pulls the data in but
+
+for instance if you see it for the first time you will be like okay so what does it number
+
+interaction means why is your
+
+unique visitors how did they get to visitor frequencies what is medium what is high what is
+
+low so we have included like you see on the like kind of an eye information part if you hover over
+
+your mouse you will be able to see uh each description so unique visitors is obviously
+
+distinct count of users number if interactions equals to a click so really to any interaction
+
+of the page and visitor frequencies is how often a visitor um visited
+
+better discover uh we have done there is an explanation once you toggle and hover over it
+
+you will see what it takes into account for one two and three so what is medium what is high and
+
+what is low so i mentioned at the beginning that you really have two varieties of creating your own
+
+reports this is a snapshot of how the query builder looks like so these will be for those
+
+individuals they don't really want to interact with the sql in any way um so we in the data
+
+itself we have something called data models and data tables and please don't be frightened with
+
+all the expressions that i'm using they're all in the documentation and then here so i'm happy
+
+to show you how you can look around and how you can build your own reports uh data models it's
+
+basically we include the same data and data models like in data tables we created it for the purpose
+
+of controlling the data for your collection admins so if you have assigned a reports admin of a
+
+collection
+
+site on a single site or really any um we have had to create models that once they select that
+
+side they must be around for that particular site uh well main site admin obviously can't see
+
+everything um so the data to pick on the first i would say it's kind of for your table or your
+
+event you can join the data and then within the documentation that it was included in the last
+
+release you will find something that i named like a unique identifier so it can help you
+
+look for it and kind of it will be okay so this is the this is the field or attribute that i have
+
+to match it against to get a result that i want you can filter by different time frame we're usually
+
+using last time uh it turns to be the most convenient one because we're comparing data
+
+from beta discover but you also you can do a difference between first and last time as well
+
+um summarize it's really your aggregations way of aggregations how would you like to do it whether
+
+it's a count of rows or an average or a sum it has many many options and you can group by any name
+
+within that model or a table for those that they would like to use sql here is an example
+
+so it's using a postgres um i used it a couple of times i use really bold so and i maybe prefer
+
+a little bit more using query builder because it gets me i really get to play with it so i can
+
+see what the metabase is trying to show me in a way is it showing me the way that i want it or i
+
+really want to tweak it with sql you can but as long as your main site so if you're a main site
+
+admin and let's say you're querying data with a query builder on your right hand side you're
+
+going to see a full c4 query but if you are a collection site admin for reports you're just
+
+going to see a query builder and i'll show you like examples of visualizations so vega reports
+
+has a tendency to finish with a query builder and it's not going to finish with a query builder
+
+show you the best possible visualization based on your query whether it's a builder or a sql but you
+
+can change that you can change the colors you can really change the naming conventions of the table
+
+or the axis you can really like you see that the visualization at the bottom and then in the left
+
+hand side you have different visualizations options so whether you would like a bar a line
+
+or a pie chart really any and then once you once if you hover over those like left hand side there
+
+is a settings toggle if you click on it just explore it's a wonderful word at the end that
+
+you can really anything with it so before i move on i would just like to check if we have any questions
+
+so thank you for asking that um we initially are focusing to get the q2 with all the
+
+customers that have implemented data discover so they are currently using data discover
+
+within may we will focus on the ones that they're in implementation
+
+and after that we're going to focus on the customers uh pilates and sierra so polaris
+
+will be going first let's say or second and sierra will come in uh will become all right after that
+
+um essentially uh you i think that also polaris and sierra user they have their subscription alex
+
+starter and they have their subscription alex starter and they have their subscription alex starter
+
+so that helps us because we really need to have something called an id within our system to be
+
+able to expose reports but it's not essential you don't have to have a discover in order to
+
+get the reports did i answer your question thank you you can schedule reports to
+
+maybe for the individuals within your library to receive it on particular days yes you can you can
+
+do that right there please okay so we have also prepared a demo on sales boot and what
+
+we're very excited about this we are working on integrating with overdrive checkouts data so
+
+whether you're a pilates or you're a sierra user we will be integrating with their checkouts in
+
+order to respond some of the questions that they are on the screen so you can see on the
+
+demo kind of a slide that we wanted to show what is the unique number of pages that they've been
+
+checking out digital copies um what is the number of checkouts okay
+
+of course an average landing period is so it's like with within these three stats i was like okay
+
+so how can this really benefit libraries is if you see a number of digital checkouts in your library
+
+you will be like okay so let me see what are the printed copies they've been checked out or are
+
+they right so if they're not being checked out that would be maybe something to consider removing
+
+that collection maybe you're facing it with something that is circulating more more um
+
+on the checkout date print copy check that really resonates with what i was just saying is kind of a
+
+flag filter yes or no so whether a print copy has been checked out within the checkout time frame
+
+that you select and we also have a owning and the checkout branch
+
+so i i will assume that the next question will be when it is coming up right um so as i mentioned
+
+vega reports for discoverables first uh polaris and those second with circulation reports
+
+we will try to get early access customer in the q3 to test let's say circulation reports with a
+
+little bit of an overdrive and by the end of the year we could really have a first view of the
+
+product just let's say another visualization um and it's showing really what are the top hundreds
+
+checked out digital titles and also resumes without flat like if they have been checked
+
+out on the digitally or on the print copies as well different
+
+trends here it's shown like a daily or weekly trends but we can really do more depending on
+
+the data that we will inject from the overdrive and also to identify if there is any overlap
+
+with digital versus print copy how do you match the digital record with the print record we've
+
+had a lot of trouble with that in discovery so um i've been asking the same question myself
+
+there is a couple of ways that we are trying to do it so you probably know on the overdrive market
+
+share you can kind of download all of your checkouts there and you can try to map it what
+
+we will try to do is to map it in the backend with the patron id without really exposing it widely
+
+or we're just gonna try and do something to find like a product id that it will resonate with the
+
+title this is a little bit harder because every title is different but we're working on kind of
+
+that in the best possible way as a follow-up to that if you're working on it for the reports
+
+will that um potentially work with the roll-ups as well to make them
+
+maybe good idea well for now yeah for now we didn't consider any roll-ups but
+
+and also getting holes as well
+
+but yes we're a little bit far from that so i'm saying always with reports let's take one
+
+step at a time it's something that we're doing for the first time in this environment and reasoning
+
+for it it's also that this is why we're doing it gradually because we really want to be able
+
+to optimize it based on the feedback so any data ingestion now we're doing this cover so we are
+
+then adding ils data and based on the feedback and the performance of the tool we can kind of easily
+
+optimize it to customer needs let me just talk a little bit of what's coming next in terms of the
+
+roadmap so if i say one more time maybe reports for this cover i've been repeating myself but
+
+obviously we're gonna finish the um release for bigger reports for this cover um in the next
+
+couple of months so q2 is the aim to get it done uh you might be wondering hey are you gonna get
+
+any other bigger products in like for alex or starter
+
+and we're working on that for 2026 let's say our next half of 2027 we kind of outline the plan
+
+focusing on ils but we're definitely considering adding alex in it as well a little bit on polaris
+
+so we will be working on early access in q3 and we're speaking for partners i do have some of the
+
+lists um that some of you would like to be an early access partner but please feel free to come
+
+and volunteer for us
+
+uh simply simply reports and e-content data specifically so let me talk a little bit about
+
+that so i had sent out a survey a couple of months back and the response rate was 127
+
+which americados you've been forwarding to other people so which is great um so what did that tell
+
+me was you really want to get on circulation reports yeah okay so that's good um my plan and
+
+we have those circulation reports tested and if we manage to integrate it over driving that same
+
+timeline to kind of wrap those in but if not we're going to have the circulation reports in front of
+
+like in terms of a dashboard we're going to have your polaris dashboard and in your collection or
+
+a folder let's say reporting folder you'll have your list reports based on the circulations how
+
+we roll out we're going to be adding more and more but i think that it's a fair statement also for
+
+users and polaris that we start with uh circulation reports first i see you're not in
+
+your hat so okay uh on the sierra side we are gonna do the early access and coupling q4 that
+
+might be uh also um before i send out the survey so sierra folks didn't get it yet and i'm working
+
+on kind of collecting your feedback now and based on that feedback i will be sending out
+
+a survey on the reports my understanding is that not everybody really uses that management report
+
+they might be using it for some of kind of downloads but they're you're really really
+
+focused on the decision center um so what i'll be working on the sierra side in the next couple of
+
+weeks is just kind of compiling that survey and we'll be signing up to you any questions favorite
+
+ai this was a little bit of sarcasm in my voice as you can the reason for it is because i haven't
+
+heard like there are different opinions about ai somebody really likes it somebody is like running
+
+this is future as we just really can't run away from it as long as you run away from something
+
+it's gonna get you sooner rather than later um so in reports i think it's fairly good because it's
+
+gonna really enable you to don't really think about it that much it can help you create reports
+
+without really doing anything just clicking so we don't have a demo in the whole for it
+
+but i do have a screenshot and i did kind of manage to make my
+
+way around it a little bit so i can show you a video how it will maybe look like so it's a
+
+metabot we said at the beginning that vega reports is being powered by a metabase metabases their
+
+metabot is one of their ai tools and uh it's currently not supporting the self-hosted
+
+environment which we're in so we're working on getting that and this is only kind of approval
+
+concept we're not really doing anything
+
+this time so your ideas are welcome if you feel that it's a good or not so good you're
+
+feel free to share um so you can see the ai exploration right in the corner over there
+
+and once you're gonna click on it it will give you a full view and ask you like what can i
+
+happen with today it's similar to your target if you're really an ai tool would you like to see a
+
+video what does it look like my name is yuvana but i know that you're gonna like some so i just
+
+put my drawing right so you see i just found this video and i'm going to show you what it looks like
+
+on the kind of chat with the ai and let's just forget about this i was just testing it so i'm
+
+asking him a question folks in the back can see it so what is this sample data which is
+
+really made of data i asked him to kind of show me how i can create a report using query builder
+
+so it's now leading me through each step this resume is without whatever what i was showing
+
+you on the query builder so you can actually now see how you can create your own reports as well
+
+and give you a different options i mentioned that earlier so it's a couple of rows or some
+
+words really anything i checked out date only the name branch so now it's telling when i click on
+
+visualize it's going to show you the visualization obviously it's in a table mode but it's telling
+
+you really to choose your visualization if you would like to and i was kind of trying to show
+
+that you can see a bar or a chart or a pie chart to follow the steps you can save it and you can
+
+really change the name and save it to your analytics every person that it gets metabased
+
+you can save it to the personal call
+
+action and that's the place if you don't want to share it with anyone the background
+
+playground what i did next i really asked him to kind of do the report for me from a to zero first
+
+i have to summarize the main stats but i didn't really like it and then i was like can you break
+
+that down even further see it in the blue it already saved your model like the report that
+
+i've been asking for is already saved it there and if you click on it it will just leave it
+
+lead you to it
+
+can save it to your own folder so it's asking me now do you want me to do all of this
+
+circulation by format by a check application popular titles trends over time landing period
+
+and i'm like okay let's try it that's good you're taking my job but that's fine
+
+so i opened one of the models here that it created for me so i can see a sequel for it and i'm asking
+
+him can you show me a sequel for this model so in case that i want really to kind of use the sequel
+
+maybe for something else i can save it i'm just gonna open it i did one more thing so everything
+
+that it was doing it was not really showing me a sequel so i asked him can you help me generate
+
+the sql query to show and i just like a check out by title you don't get to write your phone
+
+i'm just writing it for you i'm gonna pause it here because there is another two or three minutes
+
+and how do you like it it's good so before we wrap it up i just want to extend my thanks to
+
+one of my i would say partners in crime in reports and that's jesse ryan he's there he is a
+
+development manager for labor reports he has a small documentary team and we've been working
+
+together since i joined so for 11 months he had to put up with me and he has to keep on putting up
+
+with me for the next amount of i don't know for how long but i'm sure how long yeah but it turns
+
+out we were great together and thank you jesse one more time for making this happen and that really
+
+really brings me to an end of the presentation so i just want to remind everyone on the beginning
+
+of this slide from the opening so what we get reports really gives you the streamlined staff
+
+focus it's automated and intelligent we just saw that coming it is secure and private provides
+
+unique insights and most importantly it is consortium international ready so we are rolling
+
+it out to the european customers to u.s customers to really any customer thank you very much
+
+i will stay here for any questions if you may have uh and i will definitely share my email so
+
+the reason why i didn't include my email of this is because it changed my last name so i got me
+
+but um my last name is the different on the email one so i will be sharing it with you thank you
