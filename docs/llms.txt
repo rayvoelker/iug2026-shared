@@ -31,6 +31,7 @@ Conference knowledge base with session notes, technical guides, and speaker data
 - [Sierra Sys Admin Forum](sierra-sys-admin-forum.html): Open forum for Sierra system administrators covering migration considerations, bot protection, paging lists, accessibility, SDA vs. Sierra Web, and more. [wednesday]
 
 ## Guides
+- [About This Site](about.html): About the IUG 2026 conference notes site — who built it, how it works, and what it contains.
 - [Suggest-a-Purchase](suggest-a-purchase.html): Comparing two patron purchase suggestion systems: Jacksonville's Auto-Suggest-a-Purchase (Polaris) vs. chimpy-me (Sierra, Datasette-based evidence extraction).
 
 ## Structured Data

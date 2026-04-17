@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Site — IUG 2026 Conference Notes</title>
+  <meta name="description" content="About the IUG 2026 conference notes site — who built it, how it works, and what it contains.">
+  <meta property="og:title" content="About This Site">
+  <meta property="og:description" content="About the IUG 2026 conference notes site — who built it, how it works, and what it contains.">
+  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IUG 2026 Conference Notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About This Site">
+  <meta name="twitter:description" content="About the IUG 2026 conference notes site — who built it, how it works, and what it contains.">
+  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="help" href="llms.txt" title="LLM site navigation">
+  
+</head>
+<body>
+
+  <div class="banner">
+    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
+  </div>
+  <nav>
+    <ul>
+      
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="sunday.html">Sunday</a></li>
+      
+      <li><a href="monday.html">Monday</a></li>
+      
+      <li><a href="tuesday.html">Tuesday</a></li>
+      
+      <li><a href="wednesday.html">Wednesday</a></li>
+      
+      <li><a href="speakers.html">Speakers</a></li>
+      
+      <li><a href="about.html" class="active">About</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    
+    
+<h1>About This Site</h1>
+<p class="subtitle">How this conference knowledge base was built</p>
+
+<div class="card">
+<h3>About the Author</h3>
+<p><strong>Ray Voelker</strong> is a library technology professional and IUG conference attendee. He works with Sierra ILS, library data systems, and open-source tools like Datasette. You can find him on GitHub at <a href="https://github.com/rayvoelker">@rayvoelker</a>.</p>
+<p style="margin-top: 0.5rem;">At IUG 2026, Ray presented two talks at the Great ILS-Data Pre-Conference: <a href="https://rayvoelker.github.io/iug2026/talk-combined-datasette-at-the-library.html">Datasette at the Library</a> and <a href="https://rayvoelker.github.io/iug2026/talk-datalake-building-a-data-lake.html">Building a Data Lake</a>.</p>
+</div>
+
+<h2>What This Site Contains</h2>
+<p>This is a conference knowledge base for IUG 2026 (Innovative Users Group), held April 12–15 at the Chicago Marriott Downtown Magnificent Mile. It contains:</p>
+<div class="section-list">
+<div class="section-item">
+<h3>Session Notes</h3>
+<p>Detailed notes from 15+ sessions across all four days &mdash; keynotes, breakout sessions, forums, and birds-of-a-feather discussions covering Sierra, Polaris, Vega, and cross-platform topics.</p>
+</div>
+<div class="section-item">
+<h3>Technical Guides</h3>
+<p>Deep-dive reference guides written up from session content &mdash; including a <a href="cloudflare-sierra-guide.html">Cloudflare protection guide for Sierra</a>, an <a href="sierra-sso-guide.html">SSO implementation guide</a>, and a <a href="suggest-a-purchase.html">Suggest-a-Purchase comparison</a>.</p>
+</div>
+<div class="section-item">
+<h3>Speaker Cards</h3>
+<p>A <a href="speakers.html">gallery of 150 speakers</a> with session history, stats, and rarity tiers spanning multiple IUG years.</p>
+</div>
+<div class="section-item">
+<h3>LLM Navigation</h3>
+<p>Auto-generated <a href="llms.txt">llms.txt</a> and <a href="llms-full.txt">llms-full.txt</a> files so AI agents can navigate and understand the site content.</p>
+</div>
+</div>
+
+<h2>How It Was Built</h2>
+<p>This site was built collaboratively with <a href="https://claude.ai/claude-code">Claude Code</a> (Anthropic's AI coding tool). The entire pipeline — from initial conference note-taking through the final published site — was a human-AI collaboration.</p>
+<div class="section-list">
+<div class="section-item">
+<h3>Architecture</h3>
+<p>A Python static site generator: 22 markdown+frontmatter content files, 6 Jinja2 templates, a ~350-line build script, and a YAML site config. Content is the source of truth; presentation is separated into templates and CSS.</p>
+</div>
+<div class="section-item">
+<h3>Speaker Data Pipeline</h3>
+<p>Speaker data was scraped from <a href="https://iug2026.sched.com/">sched.com</a>, parsed, enriched with rarity tiers and session history, and merged with hand-edited fields (quotes, affiliations). The result is a 150-speaker JSON database that powers the speaker cards gallery.</p>
+</div>
+<div class="section-item">
+<h3>Deployment</h3>
+<p>The build script outputs static HTML to a <code>docs/</code> directory, served by GitHub Pages. A dev server with file watching supports live editing.</p>
+</div>
+<div class="section-item">
+<h3>Testing</h3>
+<p>A pytest test suite verifies build completeness, catches HTML rendering issues, detects duplicate content, and validates all inter-page links and speaker references.</p>
+</div>
+</div>
+
+<div class="card" style="margin-top: 1.5rem;">
+<p>The source code is open: <a href="https://github.com/rayvoelker/iug2026-shared">github.com/rayvoelker/iug2026-shared</a>. Corrections and contributions welcome &mdash; file an issue or open a PR.</p>
+</div>
+
+
+
+  </div>
+
+  <div class="footer">
+    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
+    <div class="footer-text">
+      
+      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
+      
+      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
+      
+       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+About%20This%20Site&body=Page:+about.html%0A%0ACorrection:">Suggest a correction</a>
+    </div>
+  </div>
+
+</body>
+</html>

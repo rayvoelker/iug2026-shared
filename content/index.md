@@ -77,6 +77,9 @@ guides:
   - url: speakers.html
     title: Speaker Cards
     description: "Conference speaker gallery — history, stats, and rarity tiers"
+  - url: about.html
+    title: About This Site
+    description: "How this conference knowledge base was built — and who built it"
 attendance:
   - year: 2026
     location: Chicago

@@ -26,6 +26,8 @@ nav:
     url: wednesday.html
   - label: Speakers
     url: speakers.html
+  - label: About
+    url: about.html
 
 conference:
   when: "April 12–15, 2026"

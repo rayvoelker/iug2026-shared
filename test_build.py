@@ -42,6 +42,7 @@ class TestBuildCompleteness:
             "sierra-sso.html", "sierra-sys-admin-forum.html",
             "cloudflare-sierra-guide.html", "sierra-sso-guide.html",
             "suggest-a-purchase.html",
+            "about.html",
         }
         missing = expected - html_files
         assert not missing, f"Missing pages: {missing}"
