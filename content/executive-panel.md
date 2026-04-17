@@ -258,4 +258,5 @@ description: "Open Q&A with Clarivate executive leadership on Sierra's future, V
     <li><strong><a href="vega-reports.html">Vega Reports and Analytics</a></strong> &mdash; Tuesday session covering Vega Reports for Discover, Polaris, and Sierra</li>
     <li><strong><a href="ai-the-right-way.html">AI The Right Way</a></strong> &mdash; Tuesday session on Clarivate&rsquo;s responsible AI approach</li>
     <li><strong>UX Session</strong> &mdash; referenced by the VP of Product Management (time/room not specified in transcript)</li>
+    <li><strong>NYPL (New York Public Library)</strong> &mdash; also noted as an early adopter <em>(per Jeremy; specific product/initiative TBD)</em></li>
   </ul>
