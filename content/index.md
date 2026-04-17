@@ -11,61 +11,59 @@ stats:
     label: Days
   - number: "5"
     label: Tracks
-sessions_by_day:
-  - day: Sunday
-    day_url: sunday.html
+days:
+  - url: sunday.html
+    dow: Sun
+    num: "12"
+    month: Apr
+    title: Pre-Conference
     sessions:
       - url: "https://github.com/iug-ils-data-preconf/iug2026"
         title: The Great ILS-Data Preconference
-        description: "Data visualization, regex, APIs, Datasette, data lakes, privacy, AMH logs, Python CLI tools, and more"
-  - day: Monday
-    day_url: monday.html
+  - url: monday.html
+    dow: Mon
+    num: "13"
+    month: Apr
+    title: "Day 1 — Opening Session"
     sessions:
       - url: sierra-roadmap.html
         title: Sierra Roadmap
-        description: "May & November 2026 releases, Admin Corner migration, ERM → Alma Starter, Vega integrations"
       - url: amazon-business.html
-        title: Amazon Business EDI Integration
-        description: "CHPL (Cincinnati) as early adopter, Sierra acquisitions API, implementation advice"
+        title: Amazon Business EDI
       - url: hackathon-awards.html
         title: Hackathon Awards
-        description: "Six projects: FindIt, Browsr, Shelf Defense (winner), Leap SQL, Auto-Suggest-a-Purchase, Microprojects"
-  - day: Tuesday
-    day_url: tuesday.html
+  - url: tuesday.html
+    dow: Tue
+    num: "14"
+    month: Apr
+    title: "Day 2 — Breakout Sessions"
     sessions:
       - url: ai-the-right-way.html
         title: "AI The Right Way"
-        description: "Responsible AI framework, product roadmap, Pulse of the Library data, vibe coding Q&A"
       - url: vega-reports.html
         title: "Vega Reports & Analytics"
-        description: "Data lakehouse strategy, early access customers, future roadmap"
       - url: resource-sharing.html
         title: Resource Sharing Update
-        description: "Rapido across SearchOhio/OhioLINK, 110+ libraries, 96% fill rate"
       - url: sierra-year-in-review.html
         title: Sierra Year in Review
-        description: "Sierra 6.4 & 6.5: checkout limits, inventory check-in, Admin Corner, Create Lists"
       - url: floating-collections-bof.html
         title: Floating Collections BoF
-        description: "Smart routing, bulk holds, Sierra API gaps, Vega Reports analytics"
       - url: meep.html
         title: MEEP
-        description: "How ideas become guaranteed enhancements, voting, Idea Exchange tips"
-  - day: Wednesday
-    day_url: wednesday.html
+  - url: wednesday.html
+    dow: Wed
+    num: "15"
+    month: Apr
+    title: "Day 3 — Final Sessions"
     sessions:
       - url: executive-panel.html
         title: Executive Leadership Panel
-        description: "Sierra's future, Vega strategy, Alma Specto, mobile apps, 3-5 year vision"
       - url: cataloging-without-oclc.html
         title: Cataloging without OCLC
-        description: "Boise PL's journey: Sky River, BestMark, Bookware. Six digits to three."
       - url: sierra-sso.html
-        title: "Sierra Staff & Single Sign-On"
-        description: "SAML SSO at RIT, MFA, Keycloak, cyber insurance, passwordless"
+        title: "Sierra Staff & SSO"
       - url: sierra-sys-admin-forum.html
         title: Sierra Sys Admin Forum
-        description: "Migration debates, bot protection, Cloudflare, paging lists, WCAG"
 guides:
   - url: cloudflare-sierra-guide.html
     title: "Cloudflare Protection for Sierra"

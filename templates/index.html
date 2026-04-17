@@ -36,19 +36,30 @@
 </div>
 {% endif %}
 
-{% for day_group in page.sessions_by_day %}
-<h2><a href="{{ day_group.day_url }}">{{ day_group.day }}</a></h2>
-<div class="section-list">
-  {% for session in day_group.sessions %}
-  <a class="day-card" href="{{ session.url }}">
-    <div class="day-info">
-      <h3>{{ session.title }}</h3>
-      <p>{{ session.description }}</p>
+<h2>Session Notes</h2>
+<div class="day-grid">
+  {% for day in page.days %}
+  <div class="day-card day-card-expanded">
+    <a href="{{ day.url }}" class="day-card-header">
+      <div class="day-date">
+        <div class="dow">{{ day.dow }}</div>
+        <div class="num">{{ day.num }}</div>
+        <div class="month">{{ day.month }}</div>
+      </div>
+      <div class="day-info">
+        <h3>{{ day.title }}</h3>
+      </div>
+    </a>
+    {% if day.sessions %}
+    <div class="day-sessions">
+      {% for session in day.sessions %}
+      <a href="{{ session.url }}" class="day-session-link">{{ session.title }} &rarr;</a>
+      {% endfor %}
     </div>
-  </a>
+    {% endif %}
+  </div>
   {% endfor %}
 </div>
-{% endfor %}
 
 {% if page.guides %}
 <h2>Guides & References</h2>
