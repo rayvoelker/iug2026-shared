@@ -1,70 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections? — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential.">
-  <meta property="og:title" content="How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?">
-  <meta property="og:description" content="Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/floating-collections-bof.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?">
-  <meta name="twitter:description" content="Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="tuesday.html">Tuesday, April 14</a> / How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?</div>
-
-    
-<h1>How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?</h1>
-<p class="page-subtitle">Elizabeth Wright · Cook Room · Gatherings Track &middot; Tuesday, April 14
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#elizabeth-wright">Elizabeth Wright</a>
-    
-  </p>
-</div>
-
+---
+title: "How Could New Analytics Tools Help Multi-Branch Sierra Systems with Floating Collections?"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - elizabeth-wright
+speakers_display: "Elizabeth Wright · Cook Room · Gatherings Track"
+description: "Roundtable on floating collections in multi-branch Sierra systems: analytics gaps, bulk hold workflows via API, smart routing at check-in, and Vega Reports potential."
+---
 
 <div class="card">
   <p>A roundtable discussion among Sierra libraries of varying sizes &mdash; from 12-branch systems to a 129-library consortium &mdash; sharing practical experience with floating collections, the tools they've built or adopted, and the gaps that remain. An Innovative staff member joined to gather input on <strong>Vega Reports</strong> priorities.</p>
 </div>
 
-<h2>Who Was at the Table</h2>
+## Who Was at the Table
+
 <table>
   <thead>
     <tr><th>System Size</th><th>Float Status</th><th>Key Tools</th></tr>
@@ -98,7 +48,8 @@
   </tbody>
 </table>
 
-<h2>Shelf Mapping &amp; Collection Sizing</h2>
+## Shelf Mapping & Collection Sizing
+
 <div class="section-list">
   <div class="section-item">
     <h3>The tools</h3>
@@ -111,7 +62,8 @@
   </div>
 </div>
 
-<h2>Floating in Practice</h2>
+## Floating in Practice
+
 <div class="section-list">
   <div class="section-item">
     <h3>How Tulsa does it (24 branches)</h3>
@@ -128,7 +80,8 @@
   </div>
 </div>
 
-<h2>Bulk Holds: Moving Collections via the Hold System</h2>
+## Bulk Holds: Moving Collections via the Hold System
+
 <div class="card">
   <p>When branches need items for programs, displays, or to fill collection gaps, the standard answer is "just place holds." But this is <strong>tedious</strong> &mdash; staff have to search individually, find available copies at other branches, and place holds one at a time. Several libraries have built API-driven tools to automate this.</p>
 </div>
@@ -163,7 +116,8 @@
   <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #777;">Sierra API docs: <a href="https://techdocs.iii.com/sierraapi/Content/titlePage.htm">Documentation (v6.6)</a> &middot; <a href="https://techdocs.iii.com/sierraapi/Content/interactive.htm">Interactive sandbox</a> &middot; <a href="https://innovative.libguides.com/Developer/Sierra">Developer portal</a></p>
 </div>
 
-<h2>The Biggest Gap: Tracking Where Items Have Been</h2>
+## The Biggest Gap: Tracking Where Items Have Been
+
 <div class="section-list">
   <div class="section-item">
     <h3>The core problem</h3>
@@ -208,7 +162,8 @@
   </div>
 </div>
 
-<h2>Smart Routing at Check-In: The Feature Everyone Wants</h2>
+## Smart Routing at Check-In: The Feature Everyone Wants
+
 <div class="card">
   <p><strong>The concept:</strong> Instead of float rules that simply say "this item type floats between these locations," the system makes <strong>intelligent routing decisions at check-in</strong> based on real-time collection state.</p>
   <p><em>Example: A copy is returned at Branch A, which already has 8 copies. Branch B has only 2 and hasn't seen this title in 18 months. The system creates a transit request to send it to Branch B.</em></p>
@@ -235,7 +190,8 @@
   </div>
 </div>
 
-<h2>New Item Distribution in Floating Systems</h2>
+## New Item Distribution in Floating Systems
+
 <div class="section-list">
   <div class="section-item">
     <h3>The challenge</h3>
@@ -263,7 +219,8 @@
   </tbody>
 </table>
 
-<h2>Consortium Floating: Can One Library Float Inside a Non-Floating Consortium?</h2>
+## Consortium Floating: Can One Library Float Inside a Non-Floating Consortium?
+
 <div class="section-list">
   <div class="section-item">
     <h3>The scenario</h3>
@@ -275,7 +232,8 @@
   </div>
 </div>
 
-<h2>Vega Reports: First Look and Feedback</h2>
+## Vega Reports: First Look and Feedback
+
 <p style="margin-bottom: 1rem; color: #777;">An Innovative staff member gathered input on reporting priorities. See also: <a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Vega Reports announcement</a></p>
 
 <table>
@@ -322,7 +280,8 @@
   </div>
 </div>
 
-<h2>The Idea Exchange &amp; MEEP: How Enhancement Requests Actually Work</h2>
+## The Idea Exchange & MEEP: How Enhancement Requests Actually Work
+
 <div class="section-list">
   <div class="section-item">
     <h3>The process</h3>
@@ -355,7 +314,8 @@
   </div>
 </div>
 
-<h2>Key Themes</h2>
+## Key Themes
+
 <div class="section-list">
   <div class="section-item">
     <h3>1. Floating works, but the tools haven't kept up</h3>
@@ -379,7 +339,8 @@
   </div>
 </div>
 
-<h2>Further Reading</h2>
+## Further Reading
+
 <div class="sources">
   <h3>Floating Collections</h3>
   <ol>
@@ -420,22 +381,3 @@
     <li><a href="https://forum.innovativeusers.org/t/winning-ideas-from-sierra-6-7-meep-vote/2883">Sierra 6.7 MEEP winners</a></li>
   </ol>
 </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+How%20Could%20New%20Analytics%20Tools%20Help%20Multi-Branch%20Sierra%20Systems%20with%20Floating%20Collections%3F&body=Page:+floating-collections-bof.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

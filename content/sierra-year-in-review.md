@@ -1,72 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sierra Year in Review — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Sierra 6.4 and 6.5 release highlights: patron checkout limits, inventory check-in at circulation, Admin Corner migration, Create Lists navigation, and IMMS enhancements.">
-  <meta property="og:title" content="Sierra Year in Review">
-  <meta property="og:description" content="Sierra 6.4 and 6.5 release highlights: patron checkout limits, inventory check-in at circulation, Admin Corner migration, Create Lists navigation, and IMMS enhancements.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/sierra-year-in-review.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sierra Year in Review">
-  <meta name="twitter:description" content="Sierra 6.4 and 6.5 release highlights: patron checkout limits, inventory check-in at circulation, Admin Corner migration, Create Lists navigation, and IMMS enhancements.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="tuesday.html">Tuesday, April 14</a> / Sierra Year in Review</div>
-
-    
-<h1>Sierra Year in Review</h1>
-<p class="page-subtitle">Mike Dicus · McHenry Room · Sierra Track &middot; Tuesday, April 14
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#mike-dicus">Mike Dicus</a>
-    
-  </p>
-</div>
-
+---
+title: "Sierra Year in Review"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - mike-dicus
+speakers_display: "Mike Dicus · McHenry Room · Sierra Track"
+description: "Sierra 6.4 and 6.5 release highlights: patron checkout limits, inventory check-in at circulation, Admin Corner migration, Create Lists navigation, and IMMS enhancements."
+---
 
 <div class="card">
   <p>A walkthrough of features delivered in the Sierra <strong>6.4</strong> (June 2025) and <strong>6.5</strong> (November 2025) releases, with a focus on customer-driven enhancements sourced from MEEP, Idea Exchange, and direct user feedback. More than half of Sierra libraries worldwide are now running either 6.4 or 6.5.</p>
   <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #777;">See also: <a href="sierra-roadmap.html">Sierra Roadmap (Monday)</a> for the May and November 2026 release plans.</p>
 </div>
 
-<h2>Sierra 6.4 Highlights (June 2025)</h2>
-<h3>Return Date in Patron History</h3>
+## Sierra 6.4 Highlights (June 2025)
+
+### Return Date in Patron History
+
 <div class="card">
   <ul>
     <li>Added the <strong>return date</strong> as a new field in patron reading history (field group 38).</li>
@@ -74,8 +25,10 @@
   </ul>
 </div>
 
-<h2>Sierra 6.5 Highlights (November 2025)</h2>
-<h3>Patron Checkout Limits</h3>
+## Sierra 6.5 Highlights (November 2025)
+
+### Patron Checkout Limits
+
 <div class="card">
   <p>The headline feature of 6.5 &mdash; originated from MEEP / Idea Exchange requests to extend the category A&ndash;D values beyond four options.</p>
   <ul>
@@ -100,7 +53,8 @@
   </ol>
 </div>
 
-<h3>Print Locations Served Table</h3>
+### Print Locations Served Table
+
 <div class="card">
   <ul>
     <li>New option in the Sierra client to <strong>print the locations served table</strong> directly.</li>
@@ -108,7 +62,8 @@
   </ul>
 </div>
 
-<h3>Navigate to Patron Record from Item Record</h3>
+### Navigate to Patron Record from Item Record
+
 <div class="card">
   <ul>
     <li>From any item record (Acquisitions, Cataloging, or Circulation), staff can <strong>open the patron record</strong> for the current or last patron.</li>
@@ -123,7 +78,8 @@
   </ul>
 </div>
 
-<h3>Penalty Points for Unclaimed Holds</h3>
+### Penalty Points for Unclaimed Holds
+
 <div class="card">
   <ul>
     <li>Extended the penalty points / demerits system to support <strong>unclaimed holds</strong>.</li>
@@ -132,7 +88,8 @@
   </ul>
 </div>
 
-<h3>Create Lists — Delete Records Navigation</h3>
+### Create Lists — Delete Records Navigation
+
 <div class="card">
   <ul>
     <li>Continued the navigation enhancement started in 6.3 (Create Lists &rarr; Global Update, Rapid Update).</li>
@@ -141,7 +98,8 @@
   </ul>
 </div>
 
-<h3>Inventory Check-in via Circulation Desk</h3>
+### Inventory Check-in via Circulation Desk
+
 <div class="card">
   <ul>
     <li>Uses the standard check-in screen with a configurable switch in the SDA.</li>
@@ -159,7 +117,8 @@
   </ul>
 </div>
 
-<h3>Admin Corner — Sierra Client / Admin App Migration</h3>
+### Admin Corner — Sierra Client / Admin App Migration
+
 <div class="card">
   <table>
     <thead>
@@ -178,7 +137,8 @@
   <p><strong>Scope Menu Maintenance:</strong> Update scope names and numbers directly in the client, eliminating the need for support tickets or Admin Corner.</p>
 </div>
 
-<h3>Create Lists Without Patron Data</h3>
+### Create Lists Without Patron Data
+
 <div class="card">
   <ul>
     <li>New permission allows staff to use Create Lists <strong>without access to patron data</strong>.</li>
@@ -187,7 +147,8 @@
   </ul>
 </div>
 
-<h3>IMMS (Intelligent Materials Management System) Enhancements</h3>
+### IMMS (Intelligent Materials Management System) Enhancements
+
 <div class="card">
   <p>For libraries using automated materials handling:</p>
   <ul>
@@ -196,7 +157,8 @@
   </ul>
 </div>
 
-<h3>Other Changes</h3>
+### Other Changes
+
 <div class="card">
   <table>
     <thead>
@@ -211,7 +173,8 @@
   </table>
 </div>
 
-<h2>Library Engagement &amp; Feedback Channels</h2>
+## Library Engagement & Feedback Channels
+
 <div class="card">
   <ul>
     <li><strong>Product Roadmap Portal</strong> &mdash; vote on features from &ldquo;not important&rdquo; to &ldquo;critically important&rdquo; and add comments <em>(customer login required)</em></li>
@@ -235,29 +198,12 @@
   </ul>
 </div>
 
-<h2>Slide Photos</h2>
+## Slide Photos
+
 <div class="sources">
   <ol>
     <li><a href="https://photos.app.goo.gl/zoPBpkxfebk75eiQ8">Slide photos &mdash; Google Photos album</a></li>
   </ol>
 </div>
 
-<p><em>Note: These notes begin mid-presentation during the 6.4 return-date feature discussion. The first portion of the session (likely covering earlier 6.4 features and overall statistics) was not captured.</em></p>
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Sierra%20Year%20in%20Review&body=Page:+sierra-year-in-review.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>
+*Note: These notes begin mid-presentation during the 6.4 return-date feature discussion. The first portion of the session (likely covering earlier 6.4 features and overall statistics) was not captured.*

@@ -1,71 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI The Right Way: Smarter Tools, Stronger Outcomes — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs.">
-  <meta property="og:title" content="AI The Right Way: Smarter Tools, Stronger Outcomes">
-  <meta property="og:description" content="Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/ai-the-right-way.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI The Right Way: Smarter Tools, Stronger Outcomes">
-  <meta name="twitter:description" content="Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="tuesday.html">Tuesday, April 14</a> / AI The Right Way: Smarter Tools, Stronger Outcomes</div>
-
-    
-<h1>AI The Right Way: Smarter Tools, Stronger Outcomes</h1>
-<p class="page-subtitle">Ashley Barey (VP Product Management, Clarivate) · 4:30–5:30 PM · Denver Room · General Track &middot; Tuesday, April 14
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#ashley-barey">Ashley Barey</a>
-    
-  </p>
-</div>
-
+---
+title: "AI The Right Way: Smarter Tools, Stronger Outcomes"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - ashley-barey
+speakers_display: "Ashley Barey (VP Product Management, Clarivate) · 4:30–5:30 PM · Denver Room · General Track"
+description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs."
+---
 
 <div class="card">
   <p>Ashley Barey presented Clarivate&rsquo;s approach to AI across the Innovative product suite &mdash; the Responsible AI framework (Transparent, Ethical, Safe), current and upcoming AI capabilities, and data from the 2025 Pulse of the Library survey. The session tied into Joel Goldenberg&rsquo;s AI direction from Monday&rsquo;s opening session and included an active Q&amp;A with audience discussion on proof of concepts, vibe coding, and AI cost models.</p>
   <p style="margin-top: 0.75rem;"><strong>Context:</strong> Clarivate outlined the same three Responsible AI principles during <a href="monday.html">Monday&rsquo;s opening session</a>. This session expanded on the framework with data, product details, and audience discussion.</p>
 </div>
 
-<h2>AI Is Fundamentally Different from Prior Tech Waves</h2>
+## AI Is Fundamentally Different from Prior Tech Waves
+
 <div class="card">
   <p>Ashley opened by challenging the common comparison of AI to cloud computing or Google search, arguing that AI is fundamentally different in three ways:</p>
 </div>
@@ -89,7 +39,8 @@
   <p><strong>Jobs &amp; displacement:</strong> The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/">World Economic Forum Future of Jobs Report 2025</a> projects a <strong>net increase of 78 million jobs</strong> by 2030 (170M created, 92M displaced). AI specifically is expected to create 11M jobs while displacing 9M. It&rsquo;s reskilling and job transformation, not wholesale replacement. Ashley referenced the <a href="https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3">Displacement Theory framework</a> (Acemoglu &amp; Restrepo, 2019) &mdash; historically, the reinstatement effect (creation of new tasks) has outpaced displacement.</p>
 </div>
 
-<h2>Literary &amp; Cultural Influences on AI Perception</h2>
+## Literary & Cultural Influences on AI Perception
+
 <div class="card">
   <p>Ashley showed a slide of book covers and made the point that our collective perception of AI is deeply shaped by fiction &mdash; from <a href="https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/ch23.htm">Samuel Butler&rsquo;s <em>Erewhon</em></a> (1872) imagining machine consciousness, to Asimov&rsquo;s <a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics">Three Laws of Robotics</a> (1942), to <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)">Arthur C. Clarke&rsquo;s HAL 9000</a> (1968), to <em>The Terminator</em>.</p>
   <p style="margin-top: 0.75rem;">&ldquo;Your patrons have been watching all of that too. They don&rsquo;t know how to interpret AI. Libraries are the best civic hub &mdash; the place to go to get good information, to use those trusted advisors for teaching and leadership.&rdquo;</p>
@@ -104,7 +55,8 @@
   </ol>
 </div>
 
-<h2>2025 Pulse of the Library</h2>
+## 2025 Pulse of the Library
+
 <div class="card">
   <p>Data from the <a href="https://clarivate.com/pulse-of-the-library/">Clarivate Pulse of the Library 2025</a> survey (2,000+ librarians across 109 countries; 400+ public library responses). <a href="https://clarivate.com/wp-content/uploads/dlm_uploads/2025/10/BXD1675689689-Pulse-of-the-Library-2025-v9.0.pdf">Full PDF report</a>.</p>
 </div>
@@ -147,7 +99,8 @@
   <p><strong>Key quote from survey:</strong> <em>&ldquo;Getting beyond initial exploration and into problem solving with AI will therefore be essential to libraries taking a positive long term strategic approach.&rdquo;</em></p>
 </div>
 
-<h2>Keys to Successful AI Adoption</h2>
+## Keys to Successful AI Adoption
+
 <div class="section-list">
   <div class="section-item">
     <h3>1. Strategic leadership</h3>
@@ -163,7 +116,8 @@
   </div>
 </div>
 
-<h2>Clarivate's Responsible AI Framework</h2>
+## Clarivate's Responsible AI Framework
+
 <div class="section-list">
   <div class="section-item">
     <h3>Transparent</h3>
@@ -183,7 +137,8 @@
   <p><strong>AI model:</strong> Clarivate uses a smaller, closed AI model (&ldquo;Mini&rdquo;) as part of their controlled environment. Intentionally keeping the model contained as part of responsible AI practice.</p>
 </div>
 
-<h2>New Public AI Advisory Board</h2>
+## New Public AI Advisory Board
+
 <div class="card">
   <p>Launching in the latter half of 2026. Clarivate&rsquo;s academic side already has an AI Advisory Board; the public board follows that model.</p>
   <ul style="margin: 0.75rem 0 0 1.5rem;">
@@ -195,8 +150,10 @@
   </ul>
 </div>
 
-<h2>AI Product Roadmap</h2>
-<h3>Already in the Vega Suite</h3>
+## AI Product Roadmap
+
+### Already in the Vega Suite
+
 <div class="section-list">
   <div class="section-item">
     <h3>Vega Promote &amp; LX Starter</h3>
@@ -208,7 +165,8 @@
   </div>
 </div>
 
-<h3>Coming to the ILS — Intelligent Automation</h3>
+### Coming to the ILS — Intelligent Automation
+
 <div class="section-list">
   <div class="section-item">
     <h3>Polaris Data Explorer <span class="tag new">Coming EOY</span></h3>
@@ -220,7 +178,8 @@
   </div>
 </div>
 
-<h3>Accelerating in 2026</h3>
+### Accelerating in 2026
+
 <div class="section-list">
   <div class="section-item">
     <h3>Vega Reports</h3>
@@ -236,13 +195,15 @@
   </div>
 </div>
 
-<h2>Academic AI Cross-Pollination</h2>
+## Academic AI Cross-Pollination
+
 <div class="card">
   <p>Clarivate&rsquo;s academic side is ahead on AI adoption, and the public side benefits from their learnings. Key product:</p>
   <p style="margin-top: 0.75rem;"><strong><a href="https://clarivate.com/academia-government/nexus-academic-assistant/">Nexus</a></strong> &mdash; a browser extension that works inside ChatGPT, Claude, and Gemini. Scans AI responses for scholarly references and verifies them against Web of Science, ProQuest, and Primo/Summon. Addresses the AI citation hallucination problem (e.g., the legal industry incidents where AI-generated case citations turned out to be fabricated). <a href="https://clarivate.com/news/clarivate-introduces-nexus-connecting-ai-users-to-trusted-academic-resources/">Announced January 2026</a>.</p>
 </div>
 
-<h2>Audience Q&amp;A</h2>
+## Audience Q&A
+
 <div class="section-list">
   <div class="section-item">
     <h3>Proof of concepts &amp; &ldquo;failing fast&rdquo;</h3>
@@ -259,7 +220,8 @@
   </div>
 </div>
 
-<h2>Related: Simon Willison's Principles for Responsible AI</h2>
+## Related: Simon Willison's Principles for Responsible AI
+
 <div class="card">
   <p><a href="https://simonwillison.net">Simon Willison</a> (developer, blogger) has been a prominent voice on practical responsible AI use. His principles complement Clarivate&rsquo;s framework:</p>
   <ul style="margin: 0.75rem 0 0 1.5rem;">
@@ -273,8 +235,10 @@
   <p style="margin-top: 0.75rem;">Core theme: <strong>the human stays in the loop and stays accountable.</strong></p>
 </div>
 
-<h2>Sources &amp; Further Reading</h2>
-<h3>AI Risk Management &amp; Governance</h3>
+## Sources & Further Reading
+
+### AI Risk Management & Governance
+
 <div class="sources">
   <ol>
     <li><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10">NIST AI Risk Management Framework (AI RMF 1.0)</a> &mdash; January 2023. Four core functions: Govern, Map, Measure, Manage. (<a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf">PDF</a>)</li>
@@ -284,7 +248,8 @@
   </ol>
 </div>
 
-<h3>Library-Specific AI Guidance</h3>
+### Library-Specific AI Guidance
+
 <div class="sources">
   <ol start="5">
     <li><a href="https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/">ARL Research Libraries Guiding Principles for AI</a> &mdash; April 2024</li>
@@ -294,7 +259,8 @@
   </ol>
 </div>
 
-<h3>Library AI Policy &amp; Experimentation</h3>
+### Library AI Policy & Experimentation
+
 <div class="sources">
   <ol start="9">
     <li>Gupta, Varun. <a href="https://www.tandfonline.com/doi/full/10.1080/01616846.2024.2445356">&ldquo;AI Experimentation Policy for Libraries.&rdquo;</a> <em>Public Library Quarterly</em>, December 2024</li>
@@ -302,7 +268,8 @@
   </ol>
 </div>
 
-<h3>AI Environmental Impact</h3>
+### AI Environmental Impact
+
 <div class="sources">
   <ol start="11">
     <li><a href="https://www.iea.org/reports/energy-and-ai/executive-summary">IEA: Energy and AI</a> &mdash; projects data centre electricity doubling to 945 TWh by 2030, April 2025</li>
@@ -311,7 +278,8 @@
   </ol>
 </div>
 
-<h3>Responsible AI Commentary</h3>
+### Responsible AI Commentary
+
 <div class="sources">
   <ol start="14">
     <li>Willison, Simon. <a href="https://simonwillison.net/2024/Dec/31/llms-in-2024/">&ldquo;Things We Learned about LLMs in 2024.&rdquo;</a> December 2024</li>
@@ -320,7 +288,8 @@
   </ol>
 </div>
 
-<h3>AI &amp; Jobs / Economic Frameworks</h3>
+### AI & Jobs / Economic Frameworks
+
 <div class="sources">
   <ol start="17">
     <li><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/">The Future of Jobs Report 2025</a> &mdash; World Economic Forum, January 2025. Net increase of 78M jobs by 2030; AI creates 11M, displaces 9M; 39% of key skills will change by 2030 (<a href="https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/">press release</a>)</li>
@@ -328,14 +297,16 @@
   </ol>
 </div>
 
-<h3>Clarivate Academic AI Products</h3>
+### Clarivate Academic AI Products
+
 <div class="sources">
   <ol start="19">
     <li><a href="https://clarivate.com/news/clarivate-introduces-nexus-connecting-ai-users-to-trusted-academic-resources/">Clarivate Introduces Nexus</a> &mdash; January 2026. Browser extension for AI citation verification (<a href="https://clarivate.com/academia-government/nexus-academic-assistant/">product page</a>)</li>
   </ol>
 </div>
 
-<h3>Literary &amp; Historical AI Framing</h3>
+### Literary & Historical AI Framing
+
 <div class="sources">
   <ol start="20">
     <li>Asimov, Isaac. &ldquo;Runaround.&rdquo; <em>Astounding Science Fiction</em>, March 1942. First appearance of the Three Laws of Robotics; collected in <em>I, Robot</em> (1950). (<a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics">Wikipedia</a>)</li>
@@ -345,7 +316,8 @@
   </ol>
 </div>
 
-<h3>Vibe Coding &amp; AI Scraping of Library Catalogs</h3>
+### Vibe Coding & AI Scraping of Library Catalogs
+
 <div class="sources">
   <ol start="24">
     <li>Walz, Riley. <a href="https://walzr.com/library-spy">Library Spy</a> &mdash; real-time visualization of NYPL checkouts via catalog scraping, March 2025 (<a href="https://news.ycombinator.com/item?id=43384453">Hacker News</a>) (<a href="https://x.com/rtwlz/status/1901717264707330074">X announcement</a>). Walz also created Bop Spotter; works at OpenAI.</li>
@@ -353,22 +325,3 @@
     <li>Willison, Simon. <a href="https://simonwillison.net/2025/Jul/17/vibe-scraping/">&ldquo;Vibe Scraping.&rdquo;</a> July 2025</li>
   </ol>
 </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+AI%20The%20Right%20Way%3A%20Smarter%20Tools%2C%20Stronger%20Outcomes&body=Page:+ai-the-right-way.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

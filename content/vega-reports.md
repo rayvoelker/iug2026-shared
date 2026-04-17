@@ -1,70 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vega Reports for Discover and Beyond — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Jovana Raskovic introduces Vega Reports: a unified BI platform powered by Metabase for Discover, Polaris, and Sierra. Covers dashboards, custom SQL queries, OverDrive integration, Metabot AI proof of concept, and the 2026 rollout roadmap.">
-  <meta property="og:title" content="Vega Reports for Discover and Beyond">
-  <meta property="og:description" content="Jovana Raskovic introduces Vega Reports: a unified BI platform powered by Metabase for Discover, Polaris, and Sierra. Covers dashboards, custom SQL queries, OverDrive integration, Metabot AI proof of concept, and the 2026 rollout roadmap.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/vega-reports.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vega Reports for Discover and Beyond">
-  <meta name="twitter:description" content="Jovana Raskovic introduces Vega Reports: a unified BI platform powered by Metabase for Discover, Polaris, and Sierra. Covers dashboards, custom SQL queries, OverDrive integration, Metabot AI proof of concept, and the 2026 rollout roadmap.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html" class="active">Tuesday</a></li>
-      
-      <li><a href="wednesday.html">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="tuesday.html">Tuesday, April 14</a> / Vega Reports for Discover and Beyond</div>
-
-    
-<h1>Vega Reports for Discover and Beyond</h1>
-<p class="page-subtitle">Jovana Raskovic (Product Manager, Clarivate) · 4:30–5:30 PM · Kansas City Room · Vega Track &middot; Tuesday, April 14
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#jovana-raskovic">Jovana Raskovic</a>
-    
-  </p>
-</div>
-
+---
+title: "Vega Reports for Discover and Beyond"
+template: session
+day: tuesday
+date: "April 14"
+speakers:
+  - jovana-raskovic
+speakers_display: "Jovana Raskovic (Product Manager, Clarivate) · 4:30–5:30 PM · Kansas City Room · Vega Track"
+description: "Jovana Raskovic introduces Vega Reports: a unified BI platform powered by Metabase for Discover, Polaris, and Sierra. Covers dashboards, custom SQL queries, OverDrive integration, Metabot AI proof of concept, and the 2026 rollout roadmap."
+---
 
 <div class="card">
   <p>Jovana Raskovic presented Vega Reports &mdash; Clarivate&rsquo;s new unified business intelligence platform that brings reporting and analytics to the entire Public ecosystem. Built on Metabase (an open-source BI tool comparable to Tableau or Power BI) with a Postgres backend and a secure data lakehouse architecture, Vega Reports is included at no additional cost with a Vega Discover subscription. The session covered preset dashboards, the query builder and native SQL interfaces, an OverDrive integration preview, a Metabot AI proof of concept, and detailed rollout timelines for Discover, Polaris, and Sierra.</p>
 </div>
 
-<h2>What Is Vega Reports</h2>
+## What Is Vega Reports
+
 <div class="card">
   <p>One intelligent BI platform unifying reporting and analytics across the Public ecosystem. Powered by a secure data lakehouse and built on <a href="https://www.metabase.com/">Metabase</a> &mdash; an open-source BI tool comparable to Tableau or Power BI &mdash; with a Postgres database backend. Vega Reports is <strong>included with every Vega Discover subscription at no additional cost</strong>. The platform is consortia and international ready.</p>
 </div>
@@ -88,12 +38,14 @@
   </div>
 </div>
 
-<h2>Early Adopters</h2>
+## Early Adopters
+
 <div class="card">
   <p>Three early adopter partners &mdash; <strong>Phoenix Public Library</strong>, <strong>STELLA</strong>, and <strong>Mid-Hudson Library System</strong> &mdash; collaborated with the Vega Reports team over several weeks, providing hands-on feedback that shaped the product before general availability.</p>
 </div>
 
-<h2>Setup &amp; Access</h2>
+## Setup & Access
+
 <div class="card">
   <p>Vega Reports requires an active <strong>Vega Discover subscription</strong>. Polaris and Sierra users need at minimum <strong>Vega LX Starter</strong> to access the platform. Once roles are assigned, Vega Reports appears in the left-hand navigation menu within Vega Discover.</p>
 </div>
@@ -113,7 +65,8 @@
   </div>
 </div>
 
-<h2>Dashboards</h2>
+## Dashboards
+
 <div class="card">
   <p>Three preset dashboard categories ship with Vega Reports. These dashboards <strong>cannot be edited</strong> and are the same for both admins and consumers. Data is collected via the <strong>Pando</strong> tool, brought into the data lakehouse via API, and <strong>refreshed every 24 hours</strong>. Data begins backfilling from the moment a library gets Vega Reports &mdash; it builds over time for trend analysis.</p>
 </div>
@@ -137,7 +90,8 @@
   <p><strong>Sharing &amp; filtering:</strong> Dashboards can be shared via email or PDF, and bookmarked for quick access. A <strong>site filter</strong> allows filtering by site URL &mdash; especially useful for consortia with multiple locations. Each card on the dashboard includes an info tooltip explaining the metric.</p>
 </div>
 
-<h2>Building Custom Reports</h2>
+## Building Custom Reports
+
 <div class="card">
   <p>Beyond the preset dashboards, Vega Reports offers three approaches for building custom reports. Custom reports can be exported as <strong>CSV or Excel</strong>.</p>
 </div>
@@ -172,7 +126,8 @@ GROUP BY tt.track_type_name
 ORDER BY tt.track_type_name ASC</code></pre>
 </div>
 
-<h2>OverDrive Integration Preview</h2>
+## OverDrive Integration Preview
+
 <div class="card">
   <p>Clarivate is working on integrating <strong>OverDrive checkouts data</strong> into Vega Reports for both Polaris and Sierra users. A demo was shown at the sales booth during the conference.</p>
 </div>
@@ -196,7 +151,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </div>
 </div>
 
-<h2>Metabot AI (Proof of Concept)</h2>
+## Metabot AI (Proof of Concept)
+
 <div class="card">
   <p>Metabase includes an AI tool called <strong>Metabot</strong> that enables natural language interaction with reports and data. Currently, Metabot does <strong>not support self-hosted environments</strong> (which is how Vega Reports operates), so this is a <strong>proof of concept only &mdash; not shipping yet</strong>. Jovana showed a video demo using sample data to illustrate the capabilities.</p>
 </div>
@@ -224,7 +180,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   <p><strong>Jovana on AI:</strong> &ldquo;This is the future. We can&rsquo;t run away from it. As long as you run away from something, it&rsquo;s gonna get you sooner rather than later.&rdquo;</p>
 </div>
 
-<h2>2026 Roadmap</h2>
+## 2026 Roadmap
+
 <div class="section-list">
   <div class="section-item">
     <h3>Vega Reports for Discover</h3>
@@ -243,7 +200,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </div>
 </div>
 
-<h2>Key Takeaways for Sierra Libraries</h2>
+## Key Takeaways for Sierra Libraries
+
 <div class="card">
   <p>What Sierra-specific users should know about Vega Reports:</p>
   <ul style="margin: 0.75rem 0 0 1.5rem;">
@@ -255,7 +213,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </ul>
 </div>
 
-<h2>Team</h2>
+## Team
+
 <div class="section-list">
   <div class="section-item">
     <h3>Jovana Raskovic</h3>
@@ -267,7 +226,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </div>
 </div>
 
-<h2>Audience Q&amp;A</h2>
+## Audience Q&A
+
 <div class="section-list">
   <div class="section-item">
     <h3>Export formats</h3>
@@ -291,7 +251,8 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </div>
 </div>
 
-<h2>References</h2>
+## References
+
 <div class="sources">
   <ol>
     <li><a href="https://iii.com/whats-new/smarter-insights-ahead-vega-reports-launching-soon/">Smarter Insights Ahead: Vega Reports Launching Soon</a> &mdash; Innovative Interfaces, April 1, 2026</li>
@@ -301,22 +262,3 @@ ORDER BY tt.track_type_name ASC</code></pre>
     <li><a href="https://www.metabase.com/">Metabase</a> &mdash; Open Source Business Intelligence</li>
   </ol>
 </div>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Vega%20Reports%20for%20Discover%20and%20Beyond&body=Page:+vega-reports.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>

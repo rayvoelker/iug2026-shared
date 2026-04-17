@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Executive Leadership Panel — IUG 2026 Conference Notes</title>
-  <meta name="description" content="Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community.">
-  <meta property="og:title" content="Executive Leadership Panel">
-  <meta property="og:description" content="Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community.">
-  <meta property="og:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <meta property="og:url" content="https://rayvoelker.github.io/iug2026-shared/executive-panel.html">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="IUG 2026 Conference Notes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Executive Leadership Panel">
-  <meta name="twitter:description" content="Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community.">
-  <meta name="twitter:image" content="https://rayvoelker.github.io/iug2026-shared/assets/iug2026-banner.png">
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-
-  <div class="banner">
-    <img src="assets/iug2026-banner.png" alt="IUG 2026 — Chicago Marriott Downtown Magnificent Mile — April 12-15">
-  </div>
-  <nav>
-    <ul>
-      
-      <li><a href="index.html">Home</a></li>
-      
-      <li><a href="sunday.html">Sunday</a></li>
-      
-      <li><a href="monday.html">Monday</a></li>
-      
-      <li><a href="tuesday.html">Tuesday</a></li>
-      
-      <li><a href="wednesday.html" class="active">Wednesday</a></li>
-      
-      <li><a href="speakers.html">Speakers</a></li>
-      
-    </ul>
-  </nav>
-
-  <div class="container">
-    
-<div class="breadcrumb"><a href="index.html">Home</a> / <a href="wednesday.html">Wednesday, April 15</a> / Executive Leadership Panel</div>
-
-    
-<h1>Executive Leadership Panel</h1>
-<p class="page-subtitle">Wednesday, April 15, 9:00–10:00 AM · Chicago Ballroom A · General Track &middot; Wednesday, April 15
-</p>
-
-
-<div class="card">
-  <p><strong>Speaker:</strong>
-    
-    <a href="speakers.html#caitlin-spears">Caitlin Spears</a>
-    
-  </p>
-</div>
-
+---
+title: "Executive Leadership Panel"
+template: session
+day: wednesday
+date: "April 15"
+speakers:
+  - caitlin-spears
+speakers_display: "Wednesday, April 15, 9:00–10:00 AM · Chicago Ballroom A · General Track"
+description: "Open Q&A with Clarivate executive leadership on Sierra's future, Vega platform strategy, public library headwinds, AI investments, mobile apps, and improved communication with the customer community."
+---
 
 <div class="card">
   <p>An open Q&amp;A session with Clarivate&rsquo;s executive leadership team for the Innovative/public-library side of the Software Group. Topics ranged from Sierra&rsquo;s future and the Vega platform strategy to public library headwinds, AI investments, and conference feedback. Multiple panelists emphasized a theme of <strong>improved communication</strong> with the customer community.</p>
@@ -310,22 +259,3 @@
     <li><strong><a href="ai-the-right-way.html">AI The Right Way</a></strong> &mdash; Tuesday session on Clarivate&rsquo;s responsible AI approach</li>
     <li><strong>UX Session</strong> &mdash; referenced by the VP of Product Management (time/room not specified in transcript)</li>
   </ul>
-
-
-
-  </div>
-
-  <div class="footer">
-    <img src="assets/chicago-skyline.png" alt="Chicago skyline">
-    <div class="footer-text">
-      
-      <a href="https://www.innovativeusers.org/iug_2026.php">innovativeusers.org</a> &middot; 
-      
-      <a href="https://github.com/rayvoelker/iug2026-shared">View on GitHub</a>
-      
-       &middot; &#9999;&#65039; <a href="https://github.com/rayvoelker/iug2026-shared/issues/new?title=Correction:+Executive%20Leadership%20Panel&body=Page:+executive-panel.html%0A%0ACorrection:">Suggest a correction</a>
-    </div>
-  </div>
-
-</body>
-</html>
