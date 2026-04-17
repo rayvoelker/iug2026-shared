@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+{% if page.page_subtitle %}<p class="page-subtitle">{{ page.page_subtitle }}</p>{% endif %}
+
+{% set all_speakers = speakers.values() | sort(attribute='name') %}
+{% set all_sessions = [] %}
+{% for s in all_speakers %}{% for sess in s.sessions %}{% if all_sessions.append(sess) %}{% endif %}{% endfor %}{% endfor %}
+{% set legendary_count = all_speakers | selectattr('rarity.tier', 'equalto', 'legendary') | list | length %}
+
+<div class="stats-row">
+  <div class="stat"><div class="number">{{ all_speakers | length }}</div><div class="stat-label">Speakers</div></div>
+  <div class="stat"><div class="number">{{ all_sessions | length }}</div><div class="stat-label">Sessions Tracked</div></div>
+  <div class="stat"><div class="number">{{ all_speakers | map(attribute='year_count') | max }}</div><div class="stat-label">Years Covered</div></div>
+  <div class="stat"><div class="number">{{ legendary_count }}</div><div class="stat-label">Legendary</div></div>
+</div>
+
+<div class="speaker-grid">
+  {% for speaker in all_speakers | sort(attribute='session_count', reverse=true) %}
+  <div class="speaker-card" id="{{ speaker.id }}">
+    <div class="card-top {{ speaker.primaryTrack or speaker.unique_tracks[0] or 'general' }}"></div>
+    <div class="card-body">
+      <div class="card-header">
+        <span class="rarity-badge rarity-{{ speaker.rarity.tier }}">{{ speaker.rarity.label }}</span>
+        <span class="track-icon">{{ speaker.primaryTrack or speaker.unique_tracks[0] or 'general' }}</span>
+      </div>
+      <div class="speaker-name">{{ speaker.name }}</div>
+      {% if speaker.affiliation %}<div class="speaker-affiliation">{{ speaker.affiliation }}</div>{% endif %}
+      {% if speaker.type %}<div class="speaker-type">{{ speaker.type }}</div>{% else %}<div class="speaker-type">&nbsp;</div>{% endif %}
+      <div class="stat-blocks">
+        <div class="stat-block"><div class="stat-num">{{ speaker.sessions | length }}</div><div class="stat-lbl">sessions</div></div>
+        <div class="stat-block"><div class="stat-num">{{ speaker.unique_years | length }}</div><div class="stat-lbl">years</div></div>
+        <div class="stat-block"><div class="stat-num">{{ speaker.unique_tracks | length }}</div><div class="stat-lbl">tracks</div></div>
+      </div>
+      {% if speaker.quote %}
+      <div class="speaker-quote">"{{ speaker.quote }}"{% if speaker.quoteContext %}<span class="quote-ctx">&mdash; {{ speaker.quoteContext }}</span>{% endif %}</div>
+      {% endif %}
+      <button class="session-toggle" onclick="this.classList.toggle('open'); this.nextElementSibling.classList.toggle('open')">
+        <span class="arrow">&#9656;</span> Session History ({{ speaker.sessions | length }})
+      </button>
+      <div class="session-list">
+        {% for s in speaker.sessions_sorted %}
+        <div class="session-entry">
+          <span class="session-year">{{ s.year }}</span>
+          {% if s.schedUrl %}<a href="{{ s.schedUrl }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}
+          <span class="session-role">({{ s.role }})</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
