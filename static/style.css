@@ -429,3 +429,44 @@ table.compare td:first-child { font-weight: 600; color: var(--navy); white-space
 .complement-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
 .complement-card p { font-size: 0.85rem; color: #777; }
 .unlisted-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.8rem; color: #856404; margin-bottom: 1.5rem; }
+
+/* Variant B: Expanded day cards with session links */
+.day-card-expanded {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.day-card-expanded .day-card-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+.day-card-expanded .day-card-header:hover {
+  background: var(--light);
+}
+.day-sessions {
+  border-top: 1px solid #eee;
+  padding: 0.5rem 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.day-session-link {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--teal);
+  text-decoration: none;
+  transition: background 0.1s;
+}
+.day-session-link:hover {
+  background: var(--light);
+  text-decoration: none;
+}
