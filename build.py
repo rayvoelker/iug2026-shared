@@ -131,6 +131,18 @@ def generate_llms_txt(site, pages, output_dir=None):
     lines.append("- [speakers.json](speakers-data.json): Full speaker database with session history")
     lines.append("")
 
+    repo = site.get("repo", "")
+    lines.append("## Corrections & Contributions")
+    lines.append("")
+    lines.append("Found an error or want to suggest a correction?")
+    lines.append("")
+    lines.append(f"- **File an issue:** {repo}/issues/new?title=Correction&body=Page:%20(which%20page)%0A%0ACorrection:%20(describe%20the%20issue)")
+    lines.append(f"- **Browse open issues:** {repo}/issues")
+    lines.append(f"- **Submit a pull request:** Fork {repo}, edit the relevant markdown file in `content/`, and open a PR.")
+    lines.append("")
+    lines.append("Content source files are markdown with YAML frontmatter in the `content/` directory.")
+    lines.append("")
+
     (output_dir / "llms.txt").write_text("\n".join(lines))
 
     # llms-full.txt: include rendered content
