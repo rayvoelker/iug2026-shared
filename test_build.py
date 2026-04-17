@@ -71,3 +71,30 @@ class TestContentIntegrity:
                 if len(dates) != len(set(dates)):
                     failures.append(f"{html_file.name}: {subtitle.strip()}")
         assert not failures, f"Duplicate dates in subtitles:\n" + "\n".join(failures)
+
+    def test_internal_links_resolve(self):
+        """All internal .html links should point to files that exist."""
+        failures = []
+        for html_file in get_html_files():
+            content = html_file.read_text()
+            for href in re.findall(r'href="([^"#][^"]*?\.html)', content):
+                if href.startswith("http"):
+                    continue
+                target = OUTPUT_DIR / href
+                if not target.exists():
+                    failures.append(f"{html_file.name} -> {href}")
+        assert not failures, f"Broken internal links:\n" + "\n".join(failures)
+
+    def test_speaker_anchor_links_resolve(self):
+        """Speaker anchor links should reference IDs in speakers.html."""
+        speakers_html = (OUTPUT_DIR / "speakers.html").read_text()
+        speaker_ids = set(re.findall(r'id="([^"]+)"', speakers_html))
+        failures = []
+        for html_file in get_html_files():
+            if html_file.name == "speakers.html":
+                continue
+            content = html_file.read_text()
+            for anchor in re.findall(r'href="speakers\.html#([^"]+)"', content):
+                if anchor not in speaker_ids:
+                    failures.append(f"{html_file.name} -> speakers.html#{anchor}")
+        assert not failures, f"Broken speaker links:\n" + "\n".join(failures)
