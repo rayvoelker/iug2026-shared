@@ -1,0 +1,1071 @@
+---
+title: "Cloudflare Protection for Sierra ILS"
+template: session
+day: wednesday
+date: "April 15"
+description: "Practical guide for library sys admins on putting Sierra's web OPAC behind Cloudflare: what works, what breaks, and what to watch out for."
+speakers_display: "Practical Guide for Library Sys Admins &middot; From the IUG 2026 Sys Admin Forum"
+---
+
+<div class="vibed-af-wrap"><div class="vibed-af"><span>vibedAF</span></div></div>
+
+<div class="card">
+  <p>A comprehensive guide to putting Sierra&rsquo;s web OPAC behind Cloudflare: what works, what breaks, and what to watch out for. Compiled from the IUG 2026 Sys Admin Forum discussion and follow-up research.</p>
+</div>
+
+<!-- Table of Contents -->
+
+<h2>Table of Contents</h2>
+
+<div class="section-list">
+  <div class="section-item">
+    <ol style="margin: 0.25rem 0 0 1.5rem;">
+      <li><a href="#why-this-matters-now">Why This Matters Now</a></li>
+      <li><a href="#architecture-overview">Architecture Overview</a></li>
+      <li><a href="#dns-and-ssl-tls-setup">DNS and SSL/TLS Setup</a></li>
+      <li><a href="#cloudflare-waf-rules-for-sierra">Cloudflare WAF Rules for Sierra</a></li>
+      <li><a href="#bot-management">Bot Management</a></li>
+      <li><a href="#caching-strategy">Caching Strategy</a></li>
+      <li><a href="#rate-limiting">Rate Limiting</a></li>
+      <li><a href="#page-rules-and-transform-rules">Page Rules and Transform Rules</a></li>
+      <li><a href="#known-issues-and-gotchas">Known Issues and Gotchas</a></li>
+      <li><a href="#free-vs-paid-tiers">Free vs. Paid Tiers</a></li>
+      <li><a href="#comparison-cloudflare-vs-f5-fail2ban">Comparison: Cloudflare vs. F5/fail2ban</a></li>
+      <li><a href="#alternative-anubis">Alternative: Anubis (Proof of Work)</a></li>
+      <li><a href="#practical-recommendations">Practical Recommendations</a></li>
+      <li><a href="#sources-and-further-reading">Sources and Further Reading</a></li>
+    </ol>
+  </div>
+</div>
+
+<!-- Why This Matters Now -->
+
+<h2 id="why-this-matters-now">Why This Matters Now</h2>
+
+<div class="card">
+  <p>AI bot scraping became a serious problem for libraries starting in late 2024. The scale is unprecedented.</p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>The scope of the problem</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Biodiversity Heritage Library</strong> saw traffic spike to 10x normal levels, periodically making the site inaccessible. Bots loaded pages as a human would (using real browser user-agents), making them hard to distinguish. Traffic came from distributed IPs worldwide, defeating simple IP-based blocking.</li>
+      <li><strong>UNC Chapel Hill</strong> library catalog was &ldquo;receiving so much traffic that it was periodically shutting out students, faculty, and staff.&rdquo;</li>
+      <li><strong>Project Gutenberg</strong> and <strong>OAPEN</strong> both had outages directly caused by AI scraper bots.</li>
+      <li><strong>ByWater Solutions</strong> (hosting provider for Koha and Aspen Discovery) responded by deploying Cloudflare across all hosted customers &mdash; 95% of Aspen and 60% of Koha libraries as of mid-2025.</li>
+      <li><strong>Open Fifth</strong> (UK Koha hosting) reported some sites receiving over 1 million requests per week, with only a few thousand being genuine.</li>
+      <li><strong>Duke University</strong> rolled out Anubis (proof-of-work challenge) in June 2025.</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>The common pattern</h3>
+    <p>Bots don&rsquo;t identify themselves as GPTBot/GoogleBot/BingBot, they ignore <code>robots.txt</code>, they use residential proxies, and they crawl at rates that overwhelm library infrastructure not designed for that load.</p>
+    <p><strong>Bottom line:</strong> Any library running a public-facing OPAC or catalog is a target. Sierra WebPAC is no exception.</p>
+  </div>
+</div>
+
+<!-- Architecture Overview -->
+
+<h2 id="architecture-overview">Architecture Overview</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">What Cloudflare Does</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Reverse proxy model</h3>
+    <p>Cloudflare acts as a reverse proxy. All HTTP/HTTPS traffic to your OPAC domain flows through Cloudflare&rsquo;s network before reaching your Sierra server. This gives Cloudflare the ability to:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Filter malicious requests (WAF)</li>
+      <li>Challenge suspected bots</li>
+      <li>Cache static content (reducing load on Sierra)</li>
+      <li>Absorb DDoS attacks</li>
+      <li>Provide analytics on traffic patterns</li>
+      <li>Block AI scrapers</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">What Cloudflare Does NOT Protect</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Non-HTTP protocols and limitations</h3>
+    <p>Cloudflare&rsquo;s standard proxy only handles <strong>HTTP/HTTPS</strong> traffic on specific ports. It does <strong>not</strong> protect:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Z39.50</strong> (port 210) &mdash; non-HTTP protocol, passes through DNS-only</li>
+      <li><strong>SIP2</strong> (port 6001 typically) &mdash; non-HTTP protocol, passes through DNS-only</li>
+      <li><strong>Sierra API</strong> on non-standard ports &mdash; only if on a supported port</li>
+      <li><strong>MARC file downloads</strong> &mdash; these work through HTTP but may be affected by JS challenges (see Known Issues)</li>
+    </ul>
+    <p>Cloudflare-supported HTTP ports: <code>80, 8080, 8880, 2052, 2082, 2086, 2095</code></p>
+    <p>Cloudflare-supported HTTPS ports: <code>443, 2053, 2083, 2087, 2096, 8443</code></p>
+    <p><strong>Note:</strong> Sierra&rsquo;s WebPAC staging server runs on port 2082, which happens to be a Cloudflare-supported HTTP port. The live WebPAC typically runs on port 80/443.</p>
+    <p>For non-HTTP protocols on arbitrary ports, <strong>Cloudflare Spectrum</strong> (Enterprise only) can proxy TCP/UDP traffic. This is the only way to protect Z39.50 or SIP2 through Cloudflare &mdash; and it requires an Enterprise plan.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Sierra Deployment Models</h3>
+
+<table>
+  <thead>
+    <tr><th>Deployment</th><th>Cloudflare Setup</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Self-hosted / on-premise</strong></td>
+      <td>Full control &mdash; point DNS to Cloudflare, configure as needed</td>
+    </tr>
+    <tr>
+      <td><strong>III cloud-hosted</strong></td>
+      <td>May need to coordinate with III &mdash; you may not control DNS or the web server directly</td>
+    </tr>
+    <tr>
+      <td><strong>Vega Discover (SaaS)</strong></td>
+      <td>Likely already behind III&rsquo;s own CDN/WAF &mdash; limited customization</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- DNS and SSL/TLS Setup -->
+
+<h2 id="dns-and-ssl-tls-setup">DNS and SSL/TLS Setup</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Step 1: Move DNS to Cloudflare</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Initial setup</h3>
+    <ol style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Create a Cloudflare account and add your OPAC domain</li>
+      <li>Cloudflare will scan existing DNS records</li>
+      <li>Update your domain&rsquo;s nameservers to Cloudflare&rsquo;s assigned nameservers</li>
+      <li>Set your Sierra OPAC&rsquo;s A/AAAA/CNAME record to <strong>Proxied</strong> (orange cloud) &mdash; this routes traffic through Cloudflare</li>
+    </ol>
+    <p><strong>Critical:</strong> Only proxy the web OPAC record. Leave other records as DNS-only (gray cloud) for:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Z39.50 hostname (if separate)</li>
+      <li>SIP2 hostname (if separate)</li>
+      <li>Mail (MX) records</li>
+      <li>Any non-HTTP services</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Step 2: SSL/TLS Configuration</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Encryption mode</h3>
+    <p>Set encryption mode to <strong>Full (Strict)</strong>. This encrypts traffic both:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Browser &harr; Cloudflare (Cloudflare&rsquo;s free universal SSL cert)</li>
+      <li>Cloudflare &harr; your Sierra origin server (requires a valid cert on origin)</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>Origin certificate options</h3>
+    <ol style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Cloudflare Origin CA certificate</strong> (free, 15-year validity) &mdash; only trusted by Cloudflare, so only works when traffic comes through Cloudflare</li>
+      <li><strong>Standard CA certificate</strong> (e.g., Let&rsquo;s Encrypt) &mdash; works whether or not traffic routes through Cloudflare</li>
+    </ol>
+    <p><strong>Recommendation:</strong> Use a Cloudflare Origin CA cert if you&rsquo;re committed to keeping all traffic through Cloudflare. Use Let&rsquo;s Encrypt if you want flexibility to bypass Cloudflare temporarily for troubleshooting.</p>
+    <p><strong>Never use &ldquo;Flexible&rdquo; SSL mode</strong> &mdash; this leaves the Cloudflare-to-origin connection unencrypted, which is a security risk, especially for patron login traffic.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Step 3: Restore Real Visitor IPs</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Why this matters</h3>
+    <p>When Sierra sits behind Cloudflare, all requests appear to come from Cloudflare&rsquo;s IP addresses. You need to restore the real visitor IP for:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Sierra&rsquo;s session management (which can fall back to IP-based sessions)</li>
+      <li>Access logs and security monitoring</li>
+      <li>Any IP-based access controls</li>
+    </ul>
+    <p>Cloudflare sends the real IP in the <code>CF-Connecting-IP</code> header and also appends to <code>X-Forwarded-For</code>. Configure your web server (Apache/Nginx in front of Sierra) to trust these headers from Cloudflare&rsquo;s IP ranges.</p>
+  </div>
+</div>
+
+<!-- Cloudflare WAF Rules for Sierra -->
+
+<h2 id="cloudflare-waf-rules-for-sierra">Cloudflare WAF Rules for Sierra</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Sierra WebPAC URL Patterns to Know</h3>
+
+<table>
+  <thead>
+    <tr><th>Path Pattern</th><th>Function</th><th>Sensitivity</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/</code></td>
+      <td>Main menu, resets session</td>
+      <td>Public</td>
+    </tr>
+    <tr>
+      <td><code>/search/...</code></td>
+      <td>Catalog search (by index)</td>
+      <td>Public, high traffic</td>
+    </tr>
+    <tr>
+      <td><code>/patroninfo/...</code></td>
+      <td>Patron account (My Account)</td>
+      <td><strong>Authenticated &mdash; protect</strong></td>
+    </tr>
+    <tr>
+      <td><code>/record/...</code></td>
+      <td>Individual bib/item records</td>
+      <td>Public</td>
+    </tr>
+    <tr>
+      <td><code>/xrecord/...</code></td>
+      <td>XML record export</td>
+      <td>Public but abusable</td>
+    </tr>
+    <tr>
+      <td><code>/iii/sierra-api/...</code></td>
+      <td>REST API (v5/v6)</td>
+      <td><strong>Authenticated &mdash; protect</strong></td>
+    </tr>
+    <tr>
+      <td><code>/screens/...</code></td>
+      <td>WebPAC template files</td>
+      <td>Static assets</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Recommended Custom WAF Rules</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Rule 1: Challenge non-browser traffic to patron login</h3>
+    <p class="detail">Action: Managed Challenge</p>
+    <p><code>(http.request.uri.path contains "/patroninfo" and not cf.bot_management.verified_bot)</code></p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 2: Block direct access to API from non-allowlisted IPs</h3>
+    <p class="detail">Action: Block</p>
+    <p><code>(http.request.uri.path contains "/iii/sierra-api" and not ip.src in {YOUR_TRUSTED_IPS})</code></p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 3: Challenge suspicious user agents on search pages</h3>
+    <p class="detail">Action: Block</p>
+    <p><code>(http.request.uri.path contains "/search" and (http.user_agent contains "python" or http.user_agent contains "curl" or http.user_agent contains "wget" or http.user_agent contains "scrapy") and not cf.bot_management.verified_bot)</code></p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 4: Block XML record bulk harvesting (unless from known partners)</h3>
+    <p class="detail">Action: Managed Challenge</p>
+    <p><code>(http.request.uri.path contains "/xrecord" and not ip.src in {OCLC_IPS DISCOVERY_IPS})</code></p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Managed Rulesets</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Enable these (available on all plans at varying levels)</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Cloudflare Free Managed Ruleset</strong> &mdash; basic protection against high-profile CVEs, SQLi, XSS (all plans)</li>
+      <li><strong>Cloudflare OWASP Core Ruleset</strong> &mdash; broader SQLi/XSS/command injection protection (Pro plan and above)</li>
+      <li><strong>Cloudflare Managed Ruleset</strong> &mdash; Cloudflare&rsquo;s proprietary rules (Pro+)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Bot Management -->
+
+<h2 id="bot-management">Bot Management</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Tier Comparison for Bot Protection</h3>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Free</th><th>Pro (~$20&ndash;25/mo)</th><th>Business (~$200&ndash;250/mo)</th><th>Enterprise</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bot Fight Mode</td>
+      <td>Basic</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+    </tr>
+    <tr>
+      <td>Super Bot Fight Mode</td>
+      <td>&mdash;</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>&mdash;</td>
+    </tr>
+    <tr>
+      <td>Bot Management (full)</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+      <td>&mdash;</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Verified bot allowlist</td>
+      <td>&mdash;</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bot score analytics</td>
+      <td>&mdash;</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AI Scrapers one-click block</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">AI Scraper Blocking (All Plans)</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>One-click AI crawler blocking</h3>
+    <p>Navigate to <strong>Security &rarr; Bots</strong> and enable &ldquo;AI Scrapers and Crawlers&rdquo; toggle. This blocks known AI crawlers (GPTBot, CCBot, etc.) and is updated by Cloudflare as new bot signatures are identified. <strong>Available on all plans including free.</strong></p>
+    <p>As of July 2025, Cloudflare blocks AI crawlers by default for new zones.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Verified Bots &mdash; The Library-Specific Challenge</h3>
+
+<div class="card">
+  <p>Cloudflare maintains a <a href="https://radar.cloudflare.com/bots/directory">verified bots directory</a> of known good bots (Googlebot, Bingbot, etc.) verified via reverse DNS. The concern for libraries is that <strong>library-specific bots are generally NOT on this list</strong>.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Service</th><th>Bot Behavior</th><th>On Cloudflare Verified List?</th><th>Mitigation</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Googlebot</strong></td>
+      <td>Crawls OPAC for search indexing</td>
+      <td>Yes</td>
+      <td>Auto-allowed</td>
+    </tr>
+    <tr>
+      <td><strong>Bingbot</strong></td>
+      <td>Same</td>
+      <td>Yes</td>
+      <td>Auto-allowed</td>
+    </tr>
+    <tr>
+      <td><strong>OCLC WorldCat harvesting</strong></td>
+      <td>Harvests MARC records</td>
+      <td>Unlikely</td>
+      <td>Allowlist by IP</td>
+    </tr>
+    <tr>
+      <td><strong>EBSCO EDS connector</strong></td>
+      <td>Queries OPAC for discovery</td>
+      <td>No</td>
+      <td>Allowlist by IP</td>
+    </tr>
+    <tr>
+      <td><strong>Ex Libris Primo/Summon</strong></td>
+      <td>Queries OPAC for discovery</td>
+      <td>No</td>
+      <td>Allowlist by IP</td>
+    </tr>
+    <tr>
+      <td><strong>EZproxy</strong></td>
+      <td>Proxies patron requests</td>
+      <td>No</td>
+      <td><strong>Allowlist by IP</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Link resolvers</strong> (SFX, 360 Link)</td>
+      <td>Checks availability</td>
+      <td>No</td>
+      <td>Allowlist by IP</td>
+    </tr>
+    <tr>
+      <td><strong>Google Scholar</strong></td>
+      <td>Crawls for academic citations</td>
+      <td>Check verified list</td>
+      <td>Usually verified</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Critical: EZproxy + Cloudflare</h3>
+    <p>OCLC explicitly documents this: &ldquo;You can use Cloudflare with EZproxy. Make sure you list your on-campus IP addresses, EZproxy Server IP address, and EZproxy name with Cloudflare.&rdquo; If you don&rsquo;t allowlist your EZproxy server IP, Cloudflare will challenge EZproxy traffic and potentially block patron access to the catalog from off-campus.</p>
+    <p>Create a WAF rule:</p>
+    <p><code>(ip.src in {EZPROXY_IP ON_CAMPUS_RANGES OCLC_IPS DISCOVERY_LAYER_IPS})</code></p>
+    <p class="detail">Action: Skip (all remaining rules)</p>
+    <p>Place this rule <strong>first</strong> in your rule order so trusted traffic bypasses all challenges.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Super Bot Fight Mode (Pro+) Configuration</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Recommended settings for a library OPAC</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Definitely automated:</strong> Challenge</li>
+      <li><strong>Likely automated:</strong> Challenge</li>
+      <li><strong>Verified bots:</strong> Allow</li>
+      <li><strong>Static resource protection:</strong> On (protects images, CSS, JS)</li>
+      <li><strong>JavaScript detections:</strong> On</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Caching Strategy -->
+
+<h2 id="caching-strategy">Caching Strategy</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">What to Cache</h3>
+
+<div class="card">
+  <p>Sierra serves a mix of public catalog pages and authenticated patron content. The caching strategy must be careful.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Content Type</th><th>Cache?</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Static assets (CSS, JS, images)</td>
+      <td><strong>Yes</strong></td>
+      <td>Long TTL (1 day+)</td>
+    </tr>
+    <tr>
+      <td><code>/screens/...</code> template files</td>
+      <td><strong>Yes</strong></td>
+      <td>WebPAC templates</td>
+    </tr>
+    <tr>
+      <td>Catalog search results <code>/search/...</code></td>
+      <td><strong>Maybe</strong></td>
+      <td>Short TTL (5 min) if desired, but dynamic content &mdash; test carefully</td>
+    </tr>
+    <tr>
+      <td>Individual bib records <code>/record/...</code></td>
+      <td><strong>Maybe</strong></td>
+      <td>Short TTL, but patron-specific elements may appear</td>
+    </tr>
+    <tr>
+      <td><code>/patroninfo/...</code></td>
+      <td><strong>NEVER</strong></td>
+      <td>Authenticated patron data</td>
+    </tr>
+    <tr>
+      <td><code>/iii/sierra-api/...</code></td>
+      <td><strong>NEVER</strong></td>
+      <td>API responses with patron PII</td>
+    </tr>
+    <tr>
+      <td>MARC downloads</td>
+      <td><strong>No</strong></td>
+      <td>Dynamic, binary content</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Cache Rules Configuration</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Rule 1: Bypass cache for authenticated paths</h3>
+    <p>Match: URI path contains <code>/patroninfo</code> OR URI path contains <code>/sierra-api</code></p>
+    <p class="detail">Setting: Bypass Cache</p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 2: Bypass cache when session cookie present</h3>
+    <p>Match: Cookie contains <code>III_SESSION</code> (or your Sierra session cookie name)</p>
+    <p class="detail">Setting: Bypass Cache</p>
+    <p class="detail">Note: &ldquo;Bypass Cache on Cookie&rdquo; requires a <strong>Business plan</strong> or a Cloudflare Worker on lower plans.</p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 3: Cache static assets aggressively</h3>
+    <p>Match: URI path contains <code>/screens/</code> OR file extension in <code>{css js png jpg gif ico svg woff woff2}</code></p>
+    <p class="detail">Setting: Cache Everything, Edge TTL 1 day, Browser TTL 4 hours</p>
+  </div>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Default behavior</h3>
+    <p>By default, Cloudflare only caches static file extensions (images, CSS, JS, fonts). It does <strong>not</strong> cache HTML pages unless you explicitly tell it to. This is actually a safe default for Sierra &mdash; it means patron pages won&rsquo;t be accidentally cached.</p>
+  </div>
+</div>
+
+<!-- Rate Limiting -->
+
+<h2 id="rate-limiting">Rate Limiting</h2>
+
+<div class="card">
+  <p>Rate limiting rules are available on all plans (IP-based). Advanced grouping by cookie/header/ASN requires Business+. Here are sensible defaults for a library OPAC.</p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Rule 1: Protect patron login</h3>
+    <p><code>(http.request.uri.path contains "/patroninfo" and http.request.method eq "POST")</code></p>
+    <p class="detail">Characteristics: IP &middot; Period: 1 minute &middot; Requests: 5 &middot; Action: Managed Challenge &middot; Duration: 15 minutes</p>
+    <p>Mirrors Cloudflare&rsquo;s built-in &ldquo;Protect My Login&rdquo; pattern: 5 attempts per minute, then challenge for 15 minutes.</p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 2: Rate limit catalog searches</h3>
+    <p><code>(http.request.uri.path contains "/search")</code></p>
+    <p class="detail">Characteristics: IP &middot; Period: 1 minute &middot; Requests: 30 &middot; Action: Managed Challenge &middot; Duration: 10 minutes</p>
+    <p>A human doing catalog searches will rarely exceed 30 per minute. A scraper will hit this quickly.</p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 3: Rate limit API requests (if API is exposed)</h3>
+    <p><code>(http.request.uri.path contains "/iii/sierra-api")</code></p>
+    <p class="detail">Characteristics: IP &middot; Period: 1 minute &middot; Requests: 60 &middot; Action: Block &middot; Duration: 10 minutes</p>
+  </div>
+  <div class="section-item">
+    <h3>Rule 4: Global rate limit (DDoS backstop)</h3>
+    <p><code>(http.request.uri.path ne "/")</code></p>
+    <p class="detail">Characteristics: IP &middot; Period: 10 seconds &middot; Requests: 50 &middot; Action: Managed Challenge &middot; Duration: 10 minutes</p>
+    <p>Any single IP making 50+ requests in 10 seconds is almost certainly not a human.</p>
+  </div>
+</div>
+
+<div class="card">
+  <p><strong>Important:</strong> Rate limiting counters may have a delay of a few seconds. Don&rsquo;t rely on rate limiting for precise request counts &mdash; it&rsquo;s a backstop, not a metering system.</p>
+</div>
+
+<!-- Page Rules and Transform Rules -->
+
+<h2 id="page-rules-and-transform-rules">Page Rules and Transform Rules</h2>
+
+<div class="card">
+  <p>Cloudflare is migrating from legacy Page Rules to the newer Rules products (Cache Rules, Configuration Rules, Transform Rules, Origin Rules, Redirect Rules). Use the new system if available.</p>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Useful Rules for Sierra</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Security Level for patron pages (Configuration Rule)</h3>
+    <p>Match: URI path contains <code>/patroninfo</code></p>
+    <p class="detail">Setting: Security Level = High</p>
+    <p>Sets a higher threshold for challenges on authenticated pages.</p>
+  </div>
+  <div class="section-item">
+    <h3>Force HTTPS (Redirect Rule)</h3>
+    <p>Match: <code>scheme eq "http"</code></p>
+    <p class="detail">Action: Redirect to HTTPS (301)</p>
+    <p>All OPAC traffic should be HTTPS, especially patron login.</p>
+  </div>
+  <div class="section-item">
+    <h3>Custom error pages (Configuration Rule)</h3>
+    <p>Present a library-branded error page instead of Cloudflare&rsquo;s generic challenge page. This reduces patron confusion when they encounter a bot challenge.</p>
+  </div>
+  <div class="section-item">
+    <h3>Disable apps/features on API paths (Configuration Rule)</h3>
+    <p>Match: URI path contains <code>/iii/sierra-api</code></p>
+    <p class="detail">Settings: Disable Performance, Disable Apps, Disable Minification</p>
+    <p>API responses should not be modified by Cloudflare&rsquo;s optimization features.</p>
+  </div>
+</div>
+
+<!-- Known Issues and Gotchas -->
+
+<h2 id="known-issues-and-gotchas">Known Issues and Gotchas</h2>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>1. Session cookie handling</h3>
+    <p>Sierra WebPAC uses cookies for session management, falling back to IP-based sessions if cookies aren&rsquo;t available. Behind Cloudflare:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Cloudflare adds its own cookies</strong> (<code>__cflb</code> for load balancing, <code>__cf_bm</code> for bot management, <code>cf_clearance</code> for challenge bypass). These should not conflict with Sierra&rsquo;s session cookies but increase cookie header size.</li>
+      <li><strong>If you&rsquo;re using Cloudflare + F5:</strong> F5 BIG-IP sets a session cookie at the beginning of a TCP connection and then ignores cookies on subsequent requests on the same TCP connection. Cloudflare multiplexes HTTP sessions over single TCP connections, which <strong>breaks F5 session affinity</strong>. This is a documented incompatibility.</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>2. Z39.50 traffic (port 210)</h3>
+    <p>Cloudflare&rsquo;s proxy <strong>cannot handle Z39.50</strong>. It&rsquo;s not HTTP. Options:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Use a separate DNS record (gray-clouded / DNS-only) for Z39.50</li>
+      <li>Use Cloudflare Spectrum (Enterprise only) for TCP proxy</li>
+      <li>Accept that Z39.50 traffic bypasses Cloudflare protection</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>3. SIP2 traffic (typically port 6001)</h3>
+    <p>Same situation as Z39.50 &mdash; SIP2 is a raw TCP protocol. Self-checkout machines, automated materials handling, and other SIP2 clients must connect to a DNS-only record or directly to the server IP.</p>
+  </div>
+  <div class="section-item">
+    <h3>4. Sierra REST API</h3>
+    <p>The Sierra API (v5/v6) runs over HTTPS, so it <em>can</em> go through Cloudflare. However:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Disable Cloudflare&rsquo;s minification and optimization</strong> for API paths (it can corrupt JSON responses)</li>
+      <li><strong>Disable Rocket Loader</strong> (Cloudflare&rsquo;s JS optimization) on API paths</li>
+      <li><strong>Watch for <code>X-Forwarded-For</code> issues</strong> &mdash; if your API implementation uses client IP for anything, ensure you&rsquo;re reading <code>CF-Connecting-IP</code></li>
+      <li><strong>Rate limiting on the API</strong> must account for your own automated processes (cronjobs pulling data, middleware polling, etc.)</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>5. MARC record downloads</h3>
+    <p>MARC downloads from the OPAC (<code>.mrc</code> binary files) should work through Cloudflare, but:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Ensure Cloudflare&rsquo;s JavaScript challenge isn&rsquo;t triggered for these paths &mdash; MARC download clients (MarcEdit, automated scripts) typically can&rsquo;t solve JS challenges</li>
+      <li>Consider a skip rule for known MARC harvesting IPs</li>
+      <li>Binary content types pass through Cloudflare fine, but non-browser clients will fail challenges</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>6. JavaScript challenges and non-browser clients</h3>
+    <p>Cloudflare&rsquo;s Managed Challenges and JS Challenges require a browser environment to solve. Any service that accesses your OPAC without a full browser will fail:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Link resolvers checking holdings</li>
+      <li>Discovery layer connectors</li>
+      <li>MARC harvesters</li>
+      <li>Screen scrapers used for ILL</li>
+      <li>Automated monitoring tools</li>
+    </ul>
+    <p><strong>You must allowlist these services by IP</strong> before enabling aggressive bot protection.</p>
+  </div>
+  <div class="section-item">
+    <h3>7. WebPAC staging server (port 2082)</h3>
+    <p>Sierra&rsquo;s staging WebPAC runs on port 2082. This is a Cloudflare-supported HTTP port, so it <em>could</em> be proxied. However, you probably want to keep staging access restricted &mdash; either leave it DNS-only or add a WAF rule blocking external access to port 2082.</p>
+  </div>
+  <div class="section-item">
+    <h3>8. Encore/Vega compatibility</h3>
+    <p>If you&rsquo;re running Encore or Vega Discover in addition to WebPAC:</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Encore</strong> makes heavy AJAX calls &mdash; test thoroughly that Cloudflare&rsquo;s optimization features (Rocket Loader, Auto Minify) don&rsquo;t break JavaScript</li>
+      <li><strong>Vega</strong> is III&rsquo;s cloud SaaS product &mdash; you likely can&rsquo;t put it behind your own Cloudflare instance since III controls the infrastructure</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Free vs. Paid Tiers -->
+
+<h2 id="free-vs-paid-tiers">Free vs. Paid Tiers</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">What Matters for a Library Protecting Sierra</h3>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Free</th><th>Pro (~$20&ndash;25/mo)</th><th>Business (~$200&ndash;250/mo)</th><th>Enterprise</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDoS protection</td>
+      <td>Unmetered</td>
+      <td>Unmetered</td>
+      <td>Unmetered</td>
+      <td>Unmetered</td>
+    </tr>
+    <tr>
+      <td>SSL/TLS (Universal)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AI Scraper blocking (1-click)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bot Fight Mode</td>
+      <td>Basic</td>
+      <td>Super Bot Fight Mode</td>
+      <td>Super Bot Fight Mode</td>
+      <td>Full Bot Management</td>
+    </tr>
+    <tr>
+      <td>WAF custom rules</td>
+      <td>5</td>
+      <td>20</td>
+      <td>100</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>WAF managed rules (free ruleset)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>OWASP Core Ruleset</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Rate limiting (IP-based)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Rate limiting (advanced grouping)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bypass cache on cookie</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Custom error pages</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Spectrum (non-HTTP proxy)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bot score analytics</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Recommendation by Library Size</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Small public library, limited budget</h3>
+    <p>Free tier gives you DDoS protection, basic bot fighting, AI scraper blocking, 5 WAF rules, and rate limiting. This is already a massive improvement over no protection.</p>
+  </div>
+  <div class="section-item">
+    <h3>Medium library or academic library</h3>
+    <p>Pro (~$20&ndash;25/mo) adds OWASP rules, 20 WAF rules, Super Bot Fight Mode with verified bot allowlisting, and bot analytics. Best value for most Sierra installations.</p>
+  </div>
+  <div class="section-item">
+    <h3>Large academic or consortium</h3>
+    <p>Business (~$200&ndash;250/mo) adds bypass-cache-on-cookie (important for patron sessions), 100 WAF rules, advanced rate limiting, and custom error pages.</p>
+  </div>
+  <div class="section-item">
+    <h3>Major research library</h3>
+    <p>Enterprise if you need Spectrum for Z39.50/SIP2 protection or full Bot Management with bot score granularity.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Project Galileo</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Free Business-tier features for qualifying organizations</h3>
+    <p>Cloudflare&rsquo;s <a href="https://www.cloudflare.com/galileo/">Project Galileo</a> provides <strong>Business and Enterprise-tier features for free</strong> to qualifying organizations facing cyber threats. Participants get Bot Management, AI Crawl Control, and Zero Trust security products at no cost. It&rsquo;s designed for journalism, human rights, and civil society groups. Public libraries <em>may</em> qualify depending on circumstances &mdash; worth applying if your library has been targeted by attacks.</p>
+  </div>
+</div>
+
+<!-- Comparison: Cloudflare vs. F5/fail2ban -->
+
+<h2 id="comparison-cloudflare-vs-f5-fail2ban">Comparison: Cloudflare vs. F5/fail2ban</h2>
+
+<div class="card">
+  <p>This was discussed at the IUG 2026 Sys Admin Forum. Jeff reported his library uses F5 with fail2ban and has &ldquo;had good luck.&rdquo; Here&rsquo;s how the approaches compare.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Aspect</th><th>Cloudflare</th><th>F5 + fail2ban</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cost</strong></td>
+      <td>Free tier available; Pro ~$20&ndash;25/mo</td>
+      <td>F5 hardware: $10K&ndash;$100K+; fail2ban: free</td>
+    </tr>
+    <tr>
+      <td><strong>Setup complexity</strong></td>
+      <td>DNS change + dashboard config</td>
+      <td>Network appliance + Linux server + custom filters</td>
+    </tr>
+    <tr>
+      <td><strong>DDoS protection</strong></td>
+      <td>Absorbs at edge (Cloudflare network)</td>
+      <td>Limited to your bandwidth/hardware</td>
+    </tr>
+    <tr>
+      <td><strong>Bot intelligence</strong></td>
+      <td>Global threat data, ML models, verified bot list</td>
+      <td>Pattern matching on your logs only</td>
+    </tr>
+    <tr>
+      <td><strong>AI scraper blocking</strong></td>
+      <td>One-click, continuously updated signatures</td>
+      <td>Manual rules, you maintain signatures</td>
+    </tr>
+    <tr>
+      <td><strong>Rate limiting</strong></td>
+      <td>Built-in, configurable per path</td>
+      <td>Custom fail2ban jails per log pattern</td>
+    </tr>
+    <tr>
+      <td><strong>WAF rules</strong></td>
+      <td>Managed rulesets + custom rules</td>
+      <td>F5 ASM (separate license) or manual</td>
+    </tr>
+    <tr>
+      <td><strong>Handles distributed bots</strong></td>
+      <td>Yes (global anycast network)</td>
+      <td>Poorly (each IP seen briefly, jail never triggers)</td>
+    </tr>
+    <tr>
+      <td><strong>Non-HTTP protocols</strong></td>
+      <td>No (unless Enterprise Spectrum)</td>
+      <td>Yes (F5 handles any TCP/UDP)</td>
+    </tr>
+    <tr>
+      <td><strong>Latency</strong></td>
+      <td>Adds ~1&ndash;5ms (edge PoP nearby)</td>
+      <td>Depends on network topology</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance</strong></td>
+      <td>Cloudflare updates rules/signatures</td>
+      <td>You maintain fail2ban filters and F5 configs</td>
+    </tr>
+    <tr>
+      <td><strong>fail2ban + Cloudflare</strong></td>
+      <td>Can combine: fail2ban triggers Cloudflare API to block IPs at edge</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Key Advantage of Cloudflare for the Current Threat</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Distributed bots defeat IP-based blocking</h3>
+    <p>The AI bot problem is <strong>distributed</strong> &mdash; bots use thousands of residential proxy IPs, each making only a few requests. fail2ban&rsquo;s strength is banning IPs that show repeated bad behavior, but if each IP only makes 5 requests before rotating, the jail threshold is never reached.</p>
+    <p>Cloudflare&rsquo;s ML-based bot detection looks at behavioral signals beyond IP: TLS fingerprint, HTTP/2 settings, mouse movement patterns, JavaScript execution behavior. This catches distributed bots that fail2ban misses.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Can You Combine Them?</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Defense in depth</h3>
+    <p>Yes. fail2ban can call the Cloudflare API to push blocks to the Cloudflare edge. This gives you defense-in-depth:</p>
+    <ol style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Cloudflare catches known bots and AI scrapers at the edge</li>
+      <li>fail2ban monitors Sierra&rsquo;s logs for patterns that slip through</li>
+      <li>fail2ban pushes offending IPs to Cloudflare&rsquo;s blocklist via API</li>
+    </ol>
+    <p>The Cloudflare API for fail2ban is documented but has had compatibility issues (check the <a href="https://community.cloudflare.com/t/does-cloudflares-fail2ban-action-still-work/640904">Cloudflare Community thread</a> for current status).</p>
+  </div>
+</div>
+
+<!-- Alternative: Anubis -->
+
+<h2 id="alternative-anubis">Alternative: Anubis (Proof of Work)</h2>
+
+<div class="card">
+  <p><a href="https://github.com/TecharoHQ/anubis">Anubis</a> is an open-source reverse proxy that presents a proof-of-work JavaScript challenge before allowing access. It&rsquo;s being adopted by libraries as a Cloudflare alternative or complement.</p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Library adoption</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Duke University</strong> deployed Anubis in June 2025</li>
+      <li><strong>Open Fifth</strong> uses Anubis for Koha instances where they don&rsquo;t control DNS (Cloudflare requires DNS control)</li>
+      <li><strong>BHL</strong> used Cloudflare + other mitigations</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>How it works</h3>
+    <p>Anubis sits in front of your web server. First-time visitors get a small JS challenge (SHA-256 proof of work, ~2 seconds in a browser). Bots running with minimal compute resources can&rsquo;t solve it economically at scale.</p>
+  </div>
+  <div class="section-item">
+    <h3>Pros</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Free and open source</li>
+      <li>Self-hosted, no third-party dependency</li>
+      <li>Works when you don&rsquo;t control DNS</li>
+      <li>Being considered as a Koha plugin/default option</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>Cons</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Requires JavaScript &mdash; breaks all non-browser clients</li>
+      <li>Adds friction for legitimate patrons (brief delay on first visit)</li>
+      <li>Skeptics argue the compute cost for bots is negligible at scale</li>
+      <li>Doesn&rsquo;t provide DDoS protection, caching, or WAF features</li>
+    </ul>
+  </div>
+  <div class="section-item">
+    <h3>Verdict</h3>
+    <p>Anubis is a good complement to Cloudflare for specific high-traffic paths, or a standalone option when Cloudflare isn&rsquo;t feasible. It&rsquo;s not a full replacement for Cloudflare&rsquo;s broader security suite.</p>
+  </div>
+</div>
+
+<!-- Practical Recommendations -->
+
+<h2 id="practical-recommendations">Practical Recommendations</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">If You&rsquo;re Starting from Zero</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Step-by-step deployment</h3>
+    <ol style="margin: 0.75rem 0 0 1.5rem;">
+      <li><strong>Sign up for Cloudflare Free</strong> and point your OPAC DNS to Cloudflare</li>
+      <li><strong>Set SSL/TLS to Full (Strict)</strong> with a Cloudflare Origin CA cert</li>
+      <li><strong>Enable AI Scrapers and Crawlers blocking</strong> (one click, immediate effect)</li>
+      <li><strong>Create IP allowlist rules</strong> for EZproxy, discovery layer, OCLC, and other trusted services BEFORE enabling any blocking rules</li>
+      <li><strong>Add rate limiting</strong> on <code>/patroninfo</code> (login) and <code>/search</code> paths</li>
+      <li><strong>Keep Z39.50 and SIP2 on DNS-only records</strong></li>
+      <li><strong>Test thoroughly</strong> &mdash; especially patron login, MARC downloads, discovery layer integration, and any automated processes that query the OPAC</li>
+    </ol>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">If You&rsquo;re Already Behind an F5</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Layered approach</h3>
+    <p>Consider adding Cloudflare in front of the F5 (Cloudflare &rarr; F5 &rarr; Sierra):</p>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Cloudflare handles DDoS and bot filtering at the edge</li>
+      <li>F5 handles application-level load balancing and non-HTTP protocols</li>
+      <li><strong>Watch for session affinity issues</strong> between Cloudflare and F5 cookies</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">The Minimum Viable Protection (15 Minutes)</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>For a sys admin who needs something deployed today</h3>
+    <ol style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Cloudflare Free account</li>
+      <li>Change DNS nameservers</li>
+      <li>Orange-cloud your OPAC A record</li>
+      <li>Enable &ldquo;AI Scrapers and Crawlers&rdquo; toggle</li>
+      <li>Done &mdash; you now have DDoS protection and AI bot blocking</li>
+    </ol>
+    <p>Then iterate on WAF rules, rate limiting, and caching as time allows.</p>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Monitoring</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>After deploying Cloudflare</h3>
+    <ul style="margin: 0.75rem 0 0 1.5rem;">
+      <li>Check the <strong>Security &rarr; Overview</strong> dashboard for blocked threats</li>
+      <li>Review <strong>Bot Analytics</strong> (Pro+) to understand your traffic mix</li>
+      <li>Monitor Sierra&rsquo;s own logs &mdash; if you see high traffic from Cloudflare IPs, you may need to configure <code>CF-Connecting-IP</code> header restoration</li>
+      <li>Set up Cloudflare notifications for DDoS attacks and rate limit triggers</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Sources and Further Reading -->
+
+<h2 id="sources-and-further-reading">Sources and Further Reading</h2>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Library-Specific</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <ul style="margin: 0.25rem 0 0 1.5rem;">
+      <li><a href="https://www.libraryjournal.com/story/ai-bots-swarm-library-cultural-heritage-sites-causing-slowdowns-and-crashes">AI Bots Swarm Library, Cultural Heritage Sites, Causing Slowdowns and Crashes</a> &mdash; Library Journal</li>
+      <li><a href="https://blog.biodiversitylibrary.org/2026/04/battling-bots">BHL Battling a Barrage of Bots</a> &mdash; Biodiversity Heritage Library</li>
+      <li><a href="https://blog.biodiversitylibrary.org/2025/07/bhl-traffic-challenges">BHL Traffic Challenges</a> &mdash; BHL</li>
+      <li><a href="https://library.duke.edu/using/off-campus/impact-of-bots">Impact of AI Bots on Library Websites</a> &mdash; Duke University Libraries</li>
+      <li><a href="https://openfifth.co.uk/fighting-the-ai-bots/">Fighting the AI Bots</a> &mdash; Open Fifth (Koha hosting)</li>
+      <li><a href="https://www.glamelab.org/products/are-ai-bots-knocking-cultural-heritage-offline/">Are AI Bots Knocking Cultural Heritage Offline?</a> &mdash; GLAM-E Lab</li>
+      <li><a href="https://help.oclc.org/Library_Management/EZproxy/Troubleshooting/Can_I_use_EZproxy_with_Cloudflare">Can I use EZproxy with Cloudflare?</a> &mdash; OCLC Support</li>
+      <li><a href="https://help.oclc.org/Library_Management/EZproxy/Troubleshooting/How_do_i_resolve_issues_with_Cloudflare_on_websites_with_EZproxy">How do I resolve issues with Cloudflare on websites with EZproxy</a> &mdash; OCLC Support</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Sierra/Innovative Documentation</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <ul style="margin: 0.25rem 0 0 1.5rem;">
+      <li><a href="https://documentation.iii.com/sierrahelp/Content/sril/sril_command_links.html">Sierra Command Links</a> &mdash; III</li>
+      <li><a href="https://iii-itlc.s3.amazonaws.com/LibGuides/LibGuides+Articles+and+Docs/Sierra/WebPAC_Discovery/Articles/SYS+Sierra+HTG+My+Account+FAQ+20220301.pdf">WebPAC My Account FAQ</a> &mdash; III</li>
+      <li><a href="https://github.com/NYPL-Simplified/Simplified/wiki/Sierra-REST-API">Sierra REST API</a> &mdash; NYPL wiki</li>
+      <li><a href="https://innovative.libguides.com/sierra/sysadmin">Sierra System Administration</a> &mdash; Innovative LibGuides</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Cloudflare Documentation</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <ul style="margin: 0.25rem 0 0 1.5rem;">
+      <li><a href="https://developers.cloudflare.com/waf/rate-limiting-rules/best-practices/">Cloudflare WAF Rate Limiting Best Practices</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/waf/rate-limiting-rules/use-cases/">Rate Limiting Rule Examples</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/bots/get-started/super-bot-fight-mode/">Super Bot Fight Mode</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/">Block AI Bots</a> &mdash; Cloudflare</li>
+      <li><a href="https://radar.cloudflare.com/bots/directory">Verified Bots Directory</a> &mdash; Cloudflare Radar</li>
+      <li><a href="https://developers.cloudflare.com/waf/custom-rules/use-cases/allow-traffic-from-verified-bots/">Allow Verified Bot Traffic</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/fundamentals/reference/network-ports/">Network Ports</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/">SSL/TLS Full (Strict)</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/ssl/origin-configuration/origin-ca/">Origin CA Certificates</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/cache/how-to/cache-rules/">Cache Rules</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/waf/custom-rules/">Custom WAF Rules</a> &mdash; Cloudflare</li>
+      <li><a href="https://developers.cloudflare.com/spectrum/">Cloudflare Spectrum</a> &mdash; Cloudflare</li>
+      <li><a href="https://www.cloudflare.com/galileo/">Project Galileo</a> &mdash; Cloudflare</li>
+      <li><a href="https://www.cloudflare.com/ai-crawl-control/">AI Crawl Control</a> &mdash; Cloudflare</li>
+    </ul>
+  </div>
+</div>
+
+<h3 style="color: var(--navy); margin-bottom: 0.75rem;">Alternative Tools</h3>
+
+<div class="section-list">
+  <div class="section-item">
+    <ul style="margin: 0.25rem 0 0 1.5rem;">
+      <li><a href="https://github.com/TecharoHQ/anubis">Anubis &mdash; Proof of Work Anti-Bot</a> &mdash; GitHub</li>
+      <li><a href="https://community.cloudflare.com/t/does-cloudflares-fail2ban-action-still-work/640904">fail2ban with Cloudflare</a> &mdash; Cloudflare Community</li>
+      <li><a href="https://community.cloudflare.com/t/cloudflare-f5-cookie-based-session-affinity/175684">Cloudflare + F5 Session Affinity</a> &mdash; Cloudflare Community</li>
+    </ul>
+  </div>
+</div>
