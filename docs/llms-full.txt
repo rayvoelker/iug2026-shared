@@ -55,7 +55,7 @@ Description: About the IUG 2026 conference notes site — who built it, how it w
 
 <div class="card">
   <h3>About the Author</h3>
-  <p><strong>Ray Voelker</strong> is a library technology professional and IUG conference attendee. He works with Sierra ILS, library data systems, and open-source tools like Datasette. You can find him on GitHub at <a href="https://github.com/rayvoelker">@rayvoelker</a>.</p>
+  <p><strong>Ray Voelker</strong> is a library technology professional and IUG conference attendee. He works with Sierra ILS, library data systems, and open-source tools like Datasette. You can find him on GitHub at <a href="https://github.com/rayvoelker">@rayvoelker</a>, or reach him at <a href="mailto:ray.voelker@gmail.com">ray.voelker@gmail.com</a> / <a href="mailto:ray.voelker@chp.org">ray.voelker@chp.org</a>.</p>
   <p style="margin-top: 0.5rem;">At IUG 2026, Ray presented two talks at the Great ILS-Data Pre-Conference: <a href="https://rayvoelker.github.io/iug2026/talk-combined-datasette-at-the-library.html">Datasette at the Library</a> and <a href="https://rayvoelker.github.io/iug2026/talk-datalake-building-a-data-lake.html">Building a Data Lake</a>.</p>
 </div>
 

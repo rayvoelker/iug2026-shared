@@ -506,3 +506,10 @@ table.compare td:first-child { font-weight: 600; color: var(--navy); white-space
   background: var(--light);
   text-decoration: none;
 }
+
+@media (max-width: 640px) {
+  .day-card-expanded {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
