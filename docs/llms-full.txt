@@ -4770,10 +4770,6 @@ Description: Session recap from IUG 2026: implementing SAML SSO for Sierra staff
 
 <div class="section-list">
   <div class="section-item">
-    
-    <!-- redacted -->
-  </div>
-  <div class="section-item">
     <h3>Insurance implications</h3>
     <p>Attendees noted that <strong>any shared account</strong> can move a library into a more expensive cyber-insurance tier, even if the account&rsquo;s permissions are heavily restricted. The cheapest rate typically requires every user to be a single signer with no shared service accounts &mdash; which has pushed some libraries to phase out shared accounts for programs and provision per-person accounts instead.</p>
   </div>
