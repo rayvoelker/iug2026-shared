@@ -73,7 +73,7 @@ This is just a snapshot of how you can assign a role to your staff member. It's 
 
 **Jovana:** So let's talk a little bit about the dashboard.
 
-Dashboards provide your insights to your analytics in terms of Vega Discover usage -- what are your patrons and your staff basically doing on Discover. It's supported by **Pando** -- Pando is a tool that really collects your data. And I'm going to mention again the fancy word "data lakehouse" -- we are bringing everything from Pando by calling their API to Vega Reports.
+Dashboards provide your insights to your analytics in terms of Vega Discover usage -- what are your patrons and your staff basically doing on Discover. It's supported by **Pendo** -- Pendo is a tool that really collects your data. And I'm going to mention again the fancy word "data lakehouse" -- we are bringing everything from Pendo by calling their API to Vega Reports.
 
 There are **three sets of statistics** that are built within the dashboard, and the dashboard itself **cannot be edited** -- that is what you get regardless of your role, whether you're a Consumer or an Admin. But you can create or use the models from that dashboard to create your own reports:
 
