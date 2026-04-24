@@ -5979,7 +5979,7 @@ Description: Jovana Raskovic introduces Vega Reports: a unified BI platform powe
 ## Dashboards
 
 <div class="card">
-  <p>Three preset dashboard categories ship with Vega Reports. These dashboards are <strong>read-only</strong> and are the same for both admin and consumer roles. Data is collected using <strong>Pendo</strong>, ingested into the data lakehouse via API, and <strong>refreshed every 24 hours</strong>. Data collection begins as soon as a library enables Vega Reports, with <strong>up to one week of historical data backfilled</strong>. From there, data continues to accumulate over time to support trend analysis.</p>
+  <p>Three preset dashboard categories ship with Vega Reports. These dashboards are <strong>read-only</strong> and are the same for both admin and consumer roles. Data is collected using <strong><a href="https://www.pendo.io/">Pendo</a></strong>, ingested into the data lakehouse via API, and <strong>refreshed every 24 hours</strong>. Data collection begins as soon as a library enables Vega Reports, with <strong>up to one week of historical data backfilled</strong>. From there, data continues to accumulate over time to support trend analysis.</p>
 </div>
 
 <div class="section-list">
@@ -6162,6 +6162,31 @@ ORDER BY tt.track_type_name ASC</code></pre>
   </div>
 </div>
 
+## About Pendo
+
+<div class="card">
+  <p><a href="https://www.pendo.io/">Pendo</a> is a product analytics and user-engagement platform used by SaaS companies to understand how customers interact with their software. Clarivate uses Pendo to instrument <strong>Vega Discover</strong> &mdash; capturing the usage events that ultimately flow into Vega Reports. Pendo is the <strong>instrumentation layer</strong> in the pipeline; Metabase is the BI layer that surfaces it.</p>
+</div>
+
+<div class="section-list">
+  <div class="section-item">
+    <h3>Company snapshot</h3>
+    <p>Founded in 2013, headquartered in Raleigh, North Carolina. Publicly referenced customers include Verizon, Morgan Stanley, Salesforce, Okta, LabCorp, OpenTable, and Zendesk. Pendo competes with Mixpanel, Amplitude, and Heap in the product-analytics space.</p>
+  </div>
+  <div class="section-item">
+    <h3>What Pendo actually does</h3>
+    <p>Pendo embeds a tracking snippet into a web or mobile application to capture user behavior &mdash; page views, clicks, search terms, feature usage, and session patterns. Beyond analytics, the platform also offers <strong>in-app guidance</strong> (tooltips, walkthroughs, announcements) and <strong>user feedback</strong> collection (NPS, in-app surveys). For the Vega Reports pipeline, the behavioral-analytics capture is the piece that matters.</p>
+  </div>
+  <div class="section-item">
+    <h3>Where Pendo sits in the Vega Reports pipeline</h3>
+    <p>Pendo captures raw Vega Discover usage events. Clarivate pulls those events out via Pendo&rsquo;s API into the <strong>data lakehouse</strong> on a 24-hour cadence. <strong>Metabase</strong> then queries the lakehouse to power the dashboards and custom reports that library staff see inside Vega Reports. Understanding this layering helps explain a few behaviors: the 24-hour refresh is set by the ingest job from Pendo into the lakehouse, and the &ldquo;up to one week of historical backfill&rdquo; on enablement reflects how far back Clarivate can pull existing Pendo events when a library turns Vega Reports on.</p>
+  </div>
+  <div class="section-item">
+    <h3>Simplified data flow</h3>
+    <p>Activity in <strong>Vega Discover</strong> &rarr; captured by the <strong>Pendo</strong> snippet &rarr; ingested via Pendo&rsquo;s API into Clarivate&rsquo;s <strong>data lakehouse</strong> (refreshed every 24 hours) &rarr; queried and visualized by <strong>Metabase</strong> &rarr; surfaced to admins and consumers as <strong>Vega Reports</strong>.</p>
+  </div>
+</div>
+
 ## References
 
 <div class="sources">
@@ -6171,6 +6196,7 @@ ORDER BY tt.track_type_name ASC</code></pre>
     <li><a href="https://iug2026.sched.com/">IUG 2026 Annual Conference Schedule</a> &mdash; iug2026.sched.com</li>
     <li><a href="https://innovative.libguides.com/Vega">Vega Discover Documentation</a> &mdash; Innovative LibGuides</li>
     <li><a href="https://www.metabase.com/">Metabase</a> &mdash; Open Source Business Intelligence</li>
+    <li><a href="https://www.pendo.io/">Pendo</a> &mdash; Product analytics and user-engagement platform (the instrumentation layer behind Vega Reports)</li>
   </ol>
 </div>
 
