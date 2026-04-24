@@ -4986,7 +4986,7 @@ Description: Open forum for Sierra system administrators covering migration cons
     <ol style="margin: 0.75rem 0 0 1.5rem;">
       <li>Go to <strong>Funds function</strong> &rarr; <strong>Tools dropdown</strong> &rarr; <strong>&ldquo;Clear payment history&rdquo;</strong> and force clear</li>
       <li>Ideal method: run a <strong>Fund Activity Report</strong> first to get a printout of all transaction info, then clear</li>
-      <li>The shortcut clear may take <strong>30&ndash;45 minutes</strong> to complete</li>
+      <li>The <strong>Fund Activity Report</strong> (the ideal method in step 2) may take <strong>30&ndash;45 minutes</strong> to run</li>
       <li>Once invoices are cleared, order records become unlocked</li>
       <li>Put order records into a <strong>review file</strong> and use <strong>batch cancel</strong> to clear them in bulk</li>
       <li>If the clear doesn&rsquo;t work, Innovative support can help via a support ticket</li>
@@ -5007,7 +5007,7 @@ Description: Open forum for Sierra system administrators covering migration cons
   <div class="section-item">
     <h3>Koha struggles with scale</h3>
     <p>Jeff (UNC): &ldquo;We have 20 million records, almost 23 million&hellip; large library consortiums struggle with Koha and they could not handle our records.&rdquo;</p>
-    <p>Jeremy (Minuteman Library Network, MA): other MA consortiums are on Koha/Evergreen; as staff move between libraries there&rsquo;s &ldquo;an influx of staff who are used to open source systems&hellip; Sierra is sort of railing to them.&rdquo; But their libraries &ldquo;are extremely happy.&rdquo;</p>
+    <p>Jeremy (Minuteman Library Network &mdash; a Sierra consortium in Massachusetts): other MA consortiums are on Koha/Evergreen; as staff move between libraries there&rsquo;s &ldquo;an influx of staff who are used to open source systems&hellip; Sierra is sort of railing to them.&rdquo; That said, the <strong>Minuteman Consortia office staff</strong> &ldquo;are extremely happy&rdquo; with Sierra.</p>
   </div>
   <div class="section-item">
     <h3>Vendor lock-in considerations</h3>
