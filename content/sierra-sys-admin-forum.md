@@ -211,7 +211,7 @@ description: "Open forum for Sierra system administrators covering migration con
   </div>
   <div class="section-item">
     <h3>New API enhancement</h3>
-    <p><strong>Mike Dykus (Clarivate) confirmed a new API enhancement coming:</strong> for e-vendors (Hoopla, Overdrive) validating patrons, the record won&rsquo;t get its &ldquo;last updated&rdquo; date changed, but the circ active date can be set to indicate the patron is using e-resources. However, it does <strong>not</strong> take a date parameter to backdate. Toggle is &ldquo;all or nothing.&rdquo;</p>
+    <p><strong>Mike Dicus (Clarivate) confirmed a new API enhancement coming:</strong> for e-vendors (Hoopla, Overdrive) validating patrons, the record won&rsquo;t get its &ldquo;last updated&rdquo; date changed, but the circ active date can be set to indicate the patron is using e-resources. However, it does <strong>not</strong> take a date parameter to backdate. Toggle is &ldquo;all or nothing.&rdquo;</p>
     <p><strong>Action item:</strong> everyone should contact Hoopla/Overdrive to push them to adopt the new validation method.</p>
     <p>Someone has a script workaround for this issue.</p>
   </div>
