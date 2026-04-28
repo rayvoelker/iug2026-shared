@@ -178,8 +178,8 @@ Product managers work with their teams to estimate development effort in points:
 
 ### Sierra 6.6
 
-- Ability to cover/apply for multi-volume records
-- Add permission to prevent bulk deletion of notice table
+- View history of item and volume records
+- Separate permissions to create/edit/delete notice jobs and prepare/run notices
 
 ### Sierra 6.7
 

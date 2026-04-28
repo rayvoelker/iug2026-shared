@@ -78,10 +78,10 @@ Theme: **Customer-driven enhancements** — sourced from MEEP, Idea Exchange, an
       <td>New permissions to delete notice jobs</td>
       <td>Run notice jobs automatically</td>
       <td>Admin Console for Vega Reports</td>
-      <td>Enhanced consortial workflow support</td>
+      <td>Enhance support for exhibitions in IMMS</td>
     </tr>
     <tr>
-      <td>Customize SAML login forms (webmaster-controlled branding). Keycloak (currently powering Vega identity) may become a shared service across Sierra/Polaris/Vega.</td>
+      <td>Customize SAML login forms (webmaster-controlled branding).</td>
       <td>Accessibility improvements in staff client and WebPAC</td>
       <td>Group call numbers for statistical reports (stat groups)</td>
       <td>Rapido / consortial borrowing &mdash; pickup location data, filling gaps</td>
@@ -144,9 +144,9 @@ Theme: **Customer-driven enhancements** — sourced from MEEP, Idea Exchange, an
 
 <div class="card">
   <ul style="padding-left: 1.25rem; margin: 0;">
-    <li>Apply barcode print specifications for labels generated from login and Automated EDI interface</li>
-    <li>No title due on verify slips when patron has a hold/ILL</li>
-    <li>Generate clean and automated reporting for statistics</li>
+    <li>Apply reusable print templates to spine labels generated from Create Lists</li>
+    <li>Automatic SSL certificate renewal</li>
+    <li>Update last circ activity date when patrons use eVendors</li>
   </ul>
 </div>
 
