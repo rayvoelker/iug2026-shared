@@ -21,5 +21,11 @@
 </div>
 {% endif %}
 
+{% if page.supplemental %}
+<div class="card supplemental-banner">
+  <p>&#128206; <strong>These notes contain only what was directly presented.</strong> For background research, references, and Ray&rsquo;s commentary that came up while taking these notes, see <a href="{{ page.supplemental }}">Ray&rsquo;s research notes &#8599;</a>.</p>
+</div>
+{% endif %}
+
 {{ content }}
 {% endblock %}
