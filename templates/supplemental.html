@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block breadcrumbs %}
+<div class="breadcrumb"><a href="index.html">Home</a> / <a href="{{ page.day }}.html">{{ page.day | title }}, {{ page.date }}</a> / <a href="{{ page.primary }}">{{ page.session_title }}</a> / Ray's Notes</div>
+{% endblock %}
+
+{% block content %}
+<h1>Ray's Research Notes</h1>
+<p class="page-subtitle">For &ldquo;<a href="{{ page.primary }}">{{ page.session_title }}</a>&rdquo; &middot; {{ page.day | title }}, {{ page.date }}</p>
+
+<div class="card supplemental-header">
+  <p>&#128221; <strong>Ray&rsquo;s research notes for &ldquo;{{ page.session_title }}&rdquo;</strong></p>
+  <p><em>These are personal research notes I (Ray) gathered with Claude&rsquo;s help while attending the session &mdash; background context, citations I looked up, related links, and my own commentary. <strong>They are not part of what the speaker presented.</strong> For the actual session content, see <a href="{{ page.primary }}">the session page &#8599;</a>.</em></p>
+</div>
+
+{{ content }}
+{% endblock %}
