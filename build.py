@@ -179,11 +179,13 @@ def generate_llms_txt(site, pages, output_dir=None):
 
     (output_dir / "llms.txt").write_text("\n".join(lines))
 
-    # llms-full.txt: include rendered content
+    # llms-full.txt: include rendered content (excludes supplemental pages — reachable only via primary)
     full_lines = list(lines)
     full_lines.append("---")
     full_lines.append("")
     for p in pages:
+        if p.get("template") == "supplemental":
+            continue
         full_lines.append(f"# {p['title']}")
         full_lines.append(f"URL: {p['url']}")
         if p.get("description"):

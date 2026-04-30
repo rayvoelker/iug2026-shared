@@ -513,3 +513,23 @@ table.compare td:first-child { font-weight: 600; color: var(--navy); white-space
     align-items: stretch;
   }
 }
+
+/* Supplemental notes — vendor session attribution */
+.supplemental-banner {
+  background: #fff8e7;
+  border-left: 3px solid var(--gold);
+}
+.supplemental-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.supplemental-header {
+  background: #f0f4ff;
+  border-left: 3px solid var(--teal);
+}
+.supplemental-header p {
+  margin: 0 0 0.5rem 0;
+}
+.supplemental-header p:last-child {
+  margin-bottom: 0;
+}

@@ -6,12 +6,12 @@ date: "April 14"
 speakers:
   - ashley-barey
 speakers_display: "Ashley Barey (VP Product Management, Clarivate) · 4:30–5:30 PM · Denver Room · General Track"
-description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A on vibe coding library catalogs."
+description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A."
+supplemental: ai-the-right-way-ray-notes.html
 ---
 
 <div class="card">
-  <p>Ashley Barey presented Clarivate&rsquo;s approach to AI across the Innovative product suite &mdash; the Responsible AI framework (Transparent, Ethical, Safe), current and upcoming AI capabilities, and data from the 2025 Pulse of the Library survey. The session tied into Joel Goldenberg&rsquo;s AI direction from Monday&rsquo;s opening session and included an active Q&amp;A with audience discussion on proof of concepts, vibe coding, and AI cost models.</p>
-  <p style="margin-top: 0.75rem;"><strong>Context:</strong> Clarivate outlined the same three Responsible AI principles during <a href="monday.html">Monday&rsquo;s opening session</a>. This session expanded on the framework with data, product details, and audience discussion.</p>
+  <p>Ashley Barey presented Clarivate&rsquo;s approach to AI across the Innovative product suite &mdash; the Responsible AI framework (Transparent, Ethical, Safe), current and upcoming AI capabilities, and data from the 2025 Pulse of the Library survey.</p>
 </div>
 
 ## AI Is Fundamentally Different from Prior Tech Waves
@@ -23,7 +23,7 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
 <div class="section-list">
   <div class="section-item">
     <h3>Different error profile</h3>
-    <p>A bad Google search just returns wrong results &mdash; you can tell. A bad AI output can come across as <strong>very convincing and fluent</strong>. The errors are &ldquo;symmetric&rdquo; (they look correct) versus search errors which are obviously wrong. Not knowing whether the AI is wrong is the real danger.</p>
+    <p>A bad Google search just returns wrong results &mdash; you can tell. A bad AI output can come across as <strong>very convincing and fluent</strong>. Not knowing whether the AI is wrong is the real danger.</p>
   </div>
   <div class="section-item">
     <h3>Agentic by nature</h3>
@@ -31,34 +31,25 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
   </div>
   <div class="section-item">
     <h3>Different regulatory surface area</h3>
-    <p>AI raises all the prior concerns (antitrust, privacy) plus new ones: bias, autonomy, misinformation at scale, and existential risks. The ethical surface area is larger than any prior technology wave.</p>
+    <p>AI raises all the prior concerns (antitrust, privacy) plus new ones: bias, autonomy, misinformation at scale, and existential risks.</p>
   </div>
 </div>
 
 <div class="card">
-  <p><strong>Jobs &amp; displacement:</strong> The <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/">World Economic Forum Future of Jobs Report 2025</a> projects a <strong>net increase of 78 million jobs</strong> by 2030 (170M created, 92M displaced). AI specifically is expected to create 11M jobs while displacing 9M. It&rsquo;s reskilling and job transformation, not wholesale replacement. Ashley referenced the <a href="https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3">Displacement Theory framework</a> (Acemoglu &amp; Restrepo, 2019) &mdash; historically, the reinstatement effect (creation of new tasks) has outpaced displacement.</p>
+  <p>Ashley referenced jobs and AI displacement &mdash; reskilling and job transformation, not wholesale replacement. <a href="ai-the-right-way-ray-notes.html#wef-jobs-report">&#128206;</a></p>
 </div>
 
 ## Literary & Cultural Influences on AI Perception
 
 <div class="card">
-  <p>Ashley showed a slide of book covers and made the point that our collective perception of AI is deeply shaped by fiction &mdash; from <a href="https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/ch23.htm">Samuel Butler&rsquo;s <em>Erewhon</em></a> (1872) imagining machine consciousness, to Asimov&rsquo;s <a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics">Three Laws of Robotics</a> (1942), to <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)">Arthur C. Clarke&rsquo;s HAL 9000</a> (1968), to <em>The Terminator</em>.</p>
+  <p>Ashley showed a slide of book covers and made the point that our collective perception of AI is deeply shaped by fiction &mdash; from Samuel Butler&rsquo;s <em>Erewhon</em>, to Asimov&rsquo;s Three Laws of Robotics, to Arthur C. Clarke&rsquo;s HAL 9000, to <em>The Terminator</em>. <a href="ai-the-right-way-ray-notes.html#literary-references">&#128206;</a></p>
   <p style="margin-top: 0.75rem;">&ldquo;Your patrons have been watching all of that too. They don&rsquo;t know how to interpret AI. Libraries are the best civic hub &mdash; the place to go to get good information, to use those trusted advisors for teaching and leadership.&rdquo;</p>
-</div>
-
-<div class="card">
-  <p><strong>Asimov&rsquo;s Three Laws</strong> (still cited in AI ethics papers today):</p>
-  <ol style="margin: 0.75rem 0 0 1.5rem;">
-    <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm</li>
-    <li>A robot must obey orders given by human beings, except where such orders would conflict with the First Law</li>
-    <li>A robot must protect its own existence, as long as such protection does not conflict with the First or Second Law</li>
-  </ol>
 </div>
 
 ## 2025 Pulse of the Library
 
 <div class="card">
-  <p>Data from the <a href="https://clarivate.com/pulse-of-the-library/">Clarivate Pulse of the Library 2025</a> survey (2,000+ librarians across 109 countries; 400+ public library responses). <a href="https://clarivate.com/wp-content/uploads/dlm_uploads/2025/10/BXD1675689689-Pulse-of-the-Library-2025-v9.0.pdf">Full PDF report</a>.</p>
+  <p>Data from the <a href="https://clarivate.com/pulse-of-the-library/">Clarivate Pulse of the Library 2025</a> survey (2,000+ librarians across 109 countries; 400+ public library responses). <a href="ai-the-right-way-ray-notes.html#pulse-2025-pdf">&#128206;</a></p>
 </div>
 
 <div class="stats-row">
@@ -91,7 +82,7 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
   </div>
   <div class="section-item">
     <h3>Budget concerns</h3>
-    <p>All current Clarivate AI features (Data Explorer, Metadata Assistant, etc.) are <strong>included under existing licenses</strong> &mdash; no extra cost. Ashley acknowledged this is a &ldquo;golden age&rdquo; of cost vs. value, and that AI providers are already &ldquo;turning up the dial.&rdquo;</p>
+    <p>All current Clarivate AI features (Data Explorer, Metadata Assistant, etc.) are <strong>included under existing licenses</strong> &mdash; no extra cost. Ashley acknowledged this is a &ldquo;golden age&rdquo; of cost vs. value.</p>
   </div>
 </div>
 
@@ -112,7 +103,7 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
   </div>
   <div class="section-item">
     <h3>3. Close the implementation gap</h3>
-    <p>Don&rsquo;t dive in with scattershot AI adoption. Understand your business problems first, then run focused proof of concepts. <strong>It&rsquo;s OK if a POC isn&rsquo;t successful</strong> &mdash; that&rsquo;s the point. 2&ndash;3 recent contract renewals already include AI transparency policies.</p>
+    <p>Don&rsquo;t dive in with scattershot AI adoption. Understand your business problems first, then run focused proof of concepts. <strong>It&rsquo;s OK if a POC isn&rsquo;t successful</strong> &mdash; that&rsquo;s the point.</p>
   </div>
 </div>
 
@@ -129,12 +120,12 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
   </div>
   <div class="section-item">
     <h3>Safe</h3>
-    <p>Human in the loop. Uphold privacy &amp; security standards. Adherence to evolving global regulations. Referenced the <a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10">NIST AI Risk Management Framework</a> (Govern, Map, Measure, Manage).</p>
+    <p>Human in the loop. Uphold privacy &amp; security standards. Adherence to evolving global regulations. Referenced the NIST AI Risk Management Framework. <a href="ai-the-right-way-ray-notes.html#nist-framework">&#128206;</a></p>
   </div>
 </div>
 
 <div class="card">
-  <p><strong>AI model:</strong> Clarivate uses a smaller, closed AI model (&ldquo;Mini&rdquo;) as part of their controlled environment. Intentionally keeping the model contained as part of responsible AI practice.</p>
+  <p><strong>AI model:</strong> Clarivate uses a smaller, closed AI model (&ldquo;Mini&rdquo;) as part of their controlled environment.</p>
 </div>
 
 ## New Public AI Advisory Board
@@ -157,11 +148,11 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
 <div class="section-list">
   <div class="section-item">
     <h3>Vega Promote &amp; LX Starter</h3>
-    <p>AI-assisted content generation for newsletters and community outreach. On-demand AI image generation. Making marketing communications &ldquo;both creative and efficient.&rdquo;</p>
+    <p>AI-assisted content generation for newsletters and community outreach. On-demand AI image generation.</p>
   </div>
   <div class="section-item">
     <h3>Vega WebBuilder</h3>
-    <p>AI-enhanced web experiences (available as an option). Helps libraries create visually engaging sites.</p>
+    <p>AI-enhanced web experiences (available as an option).</p>
   </div>
 </div>
 
@@ -170,11 +161,11 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
 <div class="section-list">
   <div class="section-item">
     <h3>Polaris Data Explorer <span class="tag new">Coming EOY</span></h3>
-    <p>Generate SQL via natural language search. &ldquo;Get the right data to answer your business question.&rdquo; Early access coming by end of year.</p>
+    <p>Generate SQL via natural language search. Early access coming by end of year.</p>
   </div>
   <div class="section-item">
     <h3>Metadata Assistant</h3>
-    <p>Generates MARC suggestions, saving libraries <strong>20&ndash;180 minutes per record</strong>. Catalogers use it to accelerate their work while maintaining control and quality.</p>
+    <p>Generates MARC suggestions, saving libraries <strong>20&ndash;180 minutes per record</strong>.</p>
   </div>
 </div>
 
@@ -191,7 +182,7 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
   </div>
   <div class="section-item">
     <h3>Acquisitions Agent</h3>
-    <p>Handles purchasing and invoicing workflows. Moving toward &ldquo;more agentic things.&rdquo;</p>
+    <p>Handles purchasing and invoicing workflows.</p>
   </div>
 </div>
 
@@ -199,7 +190,7 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
 
 <div class="card">
   <p>Clarivate&rsquo;s academic side is ahead on AI adoption, and the public side benefits from their learnings. Key product:</p>
-  <p style="margin-top: 0.75rem;"><strong><a href="https://clarivate.com/academia-government/nexus-academic-assistant/">Nexus</a></strong> &mdash; a browser extension that works inside ChatGPT, Claude, and Gemini. Scans AI responses for scholarly references and verifies them against Web of Science, ProQuest, and Primo/Summon. Addresses the AI citation hallucination problem (e.g., the legal industry incidents where AI-generated case citations turned out to be fabricated). <a href="https://clarivate.com/news/clarivate-introduces-nexus-connecting-ai-users-to-trusted-academic-resources/">Announced January 2026</a>.</p>
+  <p style="margin-top: 0.75rem;"><strong><a href="https://clarivate.com/academia-government/nexus-academic-assistant/">Nexus</a></strong> &mdash; a browser extension that works inside ChatGPT, Claude, and Gemini. Scans AI responses for scholarly references and verifies them against Web of Science, ProQuest, and Primo/Summon. <a href="ai-the-right-way-ray-notes.html#nexus-details">&#128206;</a></p>
 </div>
 
 ## Audience Q&A
@@ -210,118 +201,11 @@ description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe),
     <p>Audience member commented on the value of achieving a failure state quickly &mdash; it&rsquo;s much quicker to develop and test ideas with AI. &ldquo;What didn&rsquo;t work is sometimes a lot more valuable than anything else.&rdquo; Ashley agreed and noted AI is also excellent for <strong>problem refinement</strong>: &ldquo;Here is the problem I&rsquo;m having &mdash; what are the data points or KPIs I need?&rdquo;</p>
   </div>
   <div class="section-item">
-    <h3>Vibe coding &amp; library catalogs</h3>
-    <p>Discussion about recent projects like <a href="https://walzr.com/library-spy">Library Spy</a> (Riley Walz, March 2025) &mdash; a live visualization of books being checked out from NYPL by scraping catalog availability. A <a href="https://www.juandavidcampolargo.com/projects/naperlibspy">derivative for Naperville PL</a> was later <strong>archived at the request of the library&rsquo;s executive director</strong>.</p>
-    <p style="margin-top: 0.5rem;">Question raised about a &ldquo;bring your own agent&rdquo; model &mdash; making catalogs more agent-friendly rather than having agents scrape them in uncontrolled ways. Ashley acknowledged this is a security concern: &ldquo;These things are so hungry for data, and your catalog is an obvious source.&rdquo; Need guardrails to prevent agents from bringing down existing infrastructure.</p>
+    <h3>Vibe coding &amp; library catalogs <a href="ai-the-right-way-ray-notes.html#library-spy">&#128206;</a></h3>
+    <p>Question raised about a &ldquo;bring your own agent&rdquo; model &mdash; making catalogs more agent-friendly rather than having agents scrape them in uncontrolled ways. Ashley acknowledged this is a security concern: &ldquo;These things are so hungry for data, and your catalog is an obvious source.&rdquo; Need guardrails to prevent agents from bringing down existing infrastructure.</p>
   </div>
   <div class="section-item">
     <h3>AI model costs</h3>
     <p>Will AI features eventually cost extra? Ashley: &ldquo;We&rsquo;re in a golden age of cost vs. value.&rdquo; AI providers are already &ldquo;turning up the dial.&rdquo; Current features won&rsquo;t have added costs, but more advanced capabilities may. &ldquo;We&rsquo;re very hesitant in the environment we find ourselves in.&rdquo;</p>
   </div>
-</div>
-
-## Related: Simon Willison's Principles for Responsible AI
-
-<div class="card">
-  <p><a href="https://simonwillison.net">Simon Willison</a> (developer, blogger) has been a prominent voice on practical responsible AI use. His principles complement Clarivate&rsquo;s framework:</p>
-  <ul style="margin: 0.75rem 0 0 1.5rem;">
-    <li><strong>Transparency</strong> &mdash; always disclose when AI was used; label AI-assisted work</li>
-    <li><strong>Human accountability</strong> &mdash; you remain responsible for AI output; AI is a tool, you are the author</li>
-    <li><strong>Don&rsquo;t trust, verify</strong> &mdash; LLMs hallucinate; treat output as a first draft requiring fact-checking</li>
-    <li><strong>Augment, don&rsquo;t replace, judgment</strong> &mdash; AI works best for tasks you already understand</li>
-    <li><strong>Attribution &amp; IP</strong> &mdash; respect provenance of training data</li>
-    <li><strong>Experimentation over hype</strong> &mdash; ground claims in what LLMs actually do</li>
-  </ul>
-  <p style="margin-top: 0.75rem;">Core theme: <strong>the human stays in the loop and stays accountable.</strong></p>
-</div>
-
-## Sources & Further Reading
-
-### AI Risk Management & Governance
-
-<div class="sources">
-  <ol>
-    <li><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10">NIST AI Risk Management Framework (AI RMF 1.0)</a> &mdash; January 2023. Four core functions: Govern, Map, Measure, Manage. (<a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf">PDF</a>)</li>
-    <li><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence">NIST Generative AI Profile (AI 600-1)</a> &mdash; GenAI-specific extension, July 2024 (<a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf">PDF</a>)</li>
-    <li><a href="https://artificialintelligenceact.eu/the-act/">EU Artificial Intelligence Act</a> &mdash; Regulation (EU) 2024/1689, August 2024</li>
-    <li><a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics">UNESCO Recommendation on the Ethics of AI</a> &mdash; adopted November 2021 by 194 member states</li>
-  </ol>
-</div>
-
-### Library-Specific AI Guidance
-
-<div class="sources">
-  <ol start="5">
-    <li><a href="https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/">ARL Research Libraries Guiding Principles for AI</a> &mdash; April 2024</li>
-    <li><a href="https://www.ala.org/acrl/standards/ai">ACRL AI Competencies for Academic Library Workers</a> &mdash; approved October 2025</li>
-    <li><a href="https://www.ifla.org/g/ai/developing-a-library-strategic-response-to-artificial-intelligence/">IFLA: Developing a Library Strategic Response to AI</a> &mdash; 2023/2024</li>
-    <li><a href="https://clarivate.com/pulse-of-the-library/">Clarivate Pulse of the Library 2025</a> &mdash; survey of 2,000+ librarians across 109 countries (<a href="https://clarivate.com/wp-content/uploads/dlm_uploads/2025/10/BXD1675689689-Pulse-of-the-Library-2025-v9.0.pdf">PDF</a>)</li>
-  </ol>
-</div>
-
-### Library AI Policy & Experimentation
-
-<div class="sources">
-  <ol start="9">
-    <li>Gupta, Varun. <a href="https://www.tandfonline.com/doi/full/10.1080/01616846.2024.2445356">&ldquo;AI Experimentation Policy for Libraries.&rdquo;</a> <em>Public Library Quarterly</em>, December 2024</li>
-    <li>Ali &amp; Richardson. <a href="https://journals.sagepub.com/doi/10.1177/03400352251321192">&ldquo;AI Literacy Guidelines and Policies for Academic Libraries: A Scoping Review.&rdquo;</a> <em>IFLA Journal</em>, 2025</li>
-  </ol>
-</div>
-
-### AI Environmental Impact
-
-<div class="sources">
-  <ol start="11">
-    <li><a href="https://www.iea.org/reports/energy-and-ai/executive-summary">IEA: Energy and AI</a> &mdash; projects data centre electricity doubling to 945 TWh by 2030, April 2025</li>
-    <li><a href="https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117">MIT: Generative AI&rsquo;s Environmental Impact Explained</a> &mdash; January 2025</li>
-    <li><a href="https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/">Pew: Energy Use at US Data Centers Amid the AI Boom</a> &mdash; October 2025</li>
-  </ol>
-</div>
-
-### Responsible AI Commentary
-
-<div class="sources">
-  <ol start="14">
-    <li>Willison, Simon. <a href="https://simonwillison.net/2024/Dec/31/llms-in-2024/">&ldquo;Things We Learned about LLMs in 2024.&rdquo;</a> December 2024</li>
-    <li>Willison, Simon. <a href="https://simonwillison.net/2023/May/2/prompt-injection-explained/">&ldquo;Prompt Injection Explained.&rdquo;</a> May 2023</li>
-    <li><a href="https://simonwillison.net/tags/prompt-injection/">Simon Willison&rsquo;s prompt injection tag archive</a> &mdash; ongoing collection</li>
-  </ol>
-</div>
-
-### AI & Jobs / Economic Frameworks
-
-<div class="sources">
-  <ol start="17">
-    <li><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/">The Future of Jobs Report 2025</a> &mdash; World Economic Forum, January 2025. Net increase of 78M jobs by 2030; AI creates 11M, displaces 9M; 39% of key skills will change by 2030 (<a href="https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/">press release</a>)</li>
-    <li>Acemoglu &amp; Restrepo. <a href="https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3">&ldquo;Automation and New Tasks: How Technology Displaces and Reinstates Labor.&rdquo;</a> <em>Journal of Economic Perspectives</em>, Spring 2019 (<a href="https://www.nber.org/papers/w25684">NBER WP 25684</a>)</li>
-  </ol>
-</div>
-
-### Clarivate Academic AI Products
-
-<div class="sources">
-  <ol start="19">
-    <li><a href="https://clarivate.com/news/clarivate-introduces-nexus-connecting-ai-users-to-trusted-academic-resources/">Clarivate Introduces Nexus</a> &mdash; January 2026. Browser extension for AI citation verification (<a href="https://clarivate.com/academia-government/nexus-academic-assistant/">product page</a>)</li>
-  </ol>
-</div>
-
-### Literary & Historical AI Framing
-
-<div class="sources">
-  <ol start="20">
-    <li>Asimov, Isaac. &ldquo;Runaround.&rdquo; <em>Astounding Science Fiction</em>, March 1942. First appearance of the Three Laws of Robotics; collected in <em>I, Robot</em> (1950). (<a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics">Wikipedia</a>)</li>
-    <li><a href="https://www.brookings.edu/articles/isaac-asimovs-laws-of-robotics-are-wrong/">Brookings: Isaac Asimov&rsquo;s Laws of Robotics Are Wrong</a> &mdash; why the framework is insufficient for real-world AI governance, July 2016</li>
-    <li>Butler, Samuel. <em>Erewhon.</em> 1872. &ldquo;The Book of the Machines&rdquo; (Ch. 23&ndash;25) &mdash; one of the earliest explorations of machine consciousness; developed from his 1863 article <a href="https://en.wikipedia.org/wiki/Darwin_among_the_Machines">&ldquo;Darwin among the Machines.&rdquo;</a> (<a href="https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/ch23.htm">full text</a>)</li>
-    <li>Clarke, Arthur C. <em>2001: A Space Odyssey.</em> 1968. HAL 9000 &mdash; iconic depiction of AI failure. (<a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)">Wikipedia</a>)</li>
-  </ol>
-</div>
-
-### Vibe Coding & AI Scraping of Library Catalogs
-
-<div class="sources">
-  <ol start="24">
-    <li>Walz, Riley. <a href="https://walzr.com/library-spy">Library Spy</a> &mdash; real-time visualization of NYPL checkouts via catalog scraping, March 2025 (<a href="https://news.ycombinator.com/item?id=43384453">Hacker News</a>) (<a href="https://x.com/rtwlz/status/1901717264707330074">X announcement</a>). Walz also created Bop Spotter; works at OpenAI.</li>
-    <li>Campolargo, Juan David. <a href="https://www.juandavidcampolargo.com/projects/naperlibspy">Naperville Library Spy</a> &mdash; derivative for Naperville PL; archived at request of library director (<a href="https://news.ycombinator.com/item?id=47158355">Show HN</a>)</li>
-    <li>Willison, Simon. <a href="https://simonwillison.net/2025/Jul/17/vibe-scraping/">&ldquo;Vibe Scraping.&rdquo;</a> July 2025</li>
-  </ol>
 </div>
