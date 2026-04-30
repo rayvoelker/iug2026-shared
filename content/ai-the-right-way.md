@@ -36,7 +36,7 @@ supplemental: ai-the-right-way-ray-notes.html
 </div>
 
 <div class="card">
-  <p>Ashley referenced jobs and AI displacement, drawing on the World Economic Forum&rsquo;s Future of Jobs reporting &mdash; reskilling and job transformation, not wholesale replacement. <a href="ai-the-right-way-ray-notes.html#wef-jobs-report">&#128206;</a></p>
+  <p>Ashley referenced jobs and AI displacement &mdash; reskilling and job transformation, not wholesale replacement. <a href="ai-the-right-way-ray-notes.html#wef-jobs-report">&#128206;</a></p>
 </div>
 
 ## Literary & Cultural Influences on AI Perception

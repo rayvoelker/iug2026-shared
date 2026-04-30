@@ -25,7 +25,7 @@ Ashley showed a slide of book covers (Butler's *Erewhon*, Asimov, Clarke's *2001
 
 - Asimov, Isaac. "Runaround." *Astounding Science Fiction*, March 1942. First appearance of the [Three Laws of Robotics](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics); collected in *I, Robot* (1950).
 - Butler, Samuel. *Erewhon.* 1872. ["The Book of the Machines" (Ch. 23–25)](https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/ch23.htm) — one of the earliest explorations of machine consciousness; developed from his 1863 article ["Darwin among the Machines."](https://en.wikipedia.org/wiki/Darwin_among_the_Machines)
-- Clarke, Arthur C. [*2001: A Space Odyssey.*](https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)) 1968. HAL 9000 — iconic depiction of AI failure.
+- Clarke, Arthur C. *2001: A Space Odyssey.* 1968. HAL 9000 — iconic depiction of AI failure. (<https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)>)
 
 <h3 id="asimov-three-laws">Asimov's Three Laws (text)</h3>
 
