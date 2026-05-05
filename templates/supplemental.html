@@ -8,10 +8,17 @@
 <h1>Ray's Research Notes</h1>
 <p class="page-subtitle">For &ldquo;<a href="{{ page.primary }}">{{ page.session_title }}</a>&rdquo; &middot; {{ page.day | title }}, {{ page.date }}</p>
 
+{% if page.personal_notes_disclaimer %}
+<div class="card supplemental-header">
+  <p>&#128221; <strong>Ray&rsquo;s research notes for &ldquo;{{ page.session_title }}&rdquo;</strong></p>
+  <p><em>These are Ray&rsquo;s personal research notes &mdash; background context, citations, related links, and his own commentary gathered while attending the session. <strong>They are not part of what the speaker presented.</strong> For the actual session content, see <a href="{{ page.primary }}">the session page &#8599;</a>. Errors are Ray&rsquo;s; corrections welcome &mdash; see <a href="about.html">About</a>.</em></p>
+</div>
+{% else %}
 <div class="card supplemental-header">
   <p>&#128221; <strong>Ray&rsquo;s research notes for &ldquo;{{ page.session_title }}&rdquo;</strong></p>
   <p><em>These are personal research notes I (Ray) gathered with Claude&rsquo;s help while attending the session &mdash; background context, citations I looked up, related links, and my own commentary. <strong>They are not part of what the speaker presented.</strong> For the actual session content, see <a href="{{ page.primary }}">the session page &#8599;</a>.</em></p>
 </div>
+{% endif %}
 
 {{ content }}
 {% endblock %}

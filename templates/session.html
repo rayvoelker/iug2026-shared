@@ -21,7 +21,11 @@
 </div>
 {% endif %}
 
-{% if page.supplemental %}
+{% if page.personal_notes_disclaimer %}
+<div class="card supplemental-banner">
+  <p>&#128221; <strong>These are Ray&rsquo;s personal notes from the session, not an authorized transcript.</strong> They reflect his interpretation and may contain errors or omissions &mdash; those are his, not the speaker&rsquo;s. For details on how this site was built and how to reach him, see <a href="about.html">About</a>. Corrections, amendments, or takedown requests welcome &mdash; <a href="https://github.com/rayvoelker/iug2026-shared/issues">open an issue</a> or email Ray.{% if page.supplemental %} Ray&rsquo;s background research and citations live on a separate page: <a href="{{ page.supplemental }}">Ray&rsquo;s research notes &#8599;</a>.{% endif %}</p>
+</div>
+{% elif page.supplemental %}
 <div class="card supplemental-banner">
   <p>&#128206; <strong>These notes contain only what was directly presented.</strong> For background research, references, and Ray&rsquo;s commentary that came up while taking these notes, see <a href="{{ page.supplemental }}">Ray&rsquo;s research notes &#8599;</a>.</p>
 </div>

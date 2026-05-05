@@ -229,10 +229,6 @@ Description: Clarivate's Responsible AI framework (Transparent, Ethical, Safe), 
   </div>
 </div>
 
-<div class="card">
-  <p><strong>AI model:</strong> Clarivate uses a smaller, closed AI model (&ldquo;Mini&rdquo;) as part of their controlled environment.</p>
-</div>
-
 ## New Public AI Advisory Board
 
 <div class="card">

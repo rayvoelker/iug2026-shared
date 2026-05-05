@@ -8,6 +8,7 @@ speakers:
 speakers_display: "Ashley Barey (VP Product Management, Clarivate) · 4:30–5:30 PM · Denver Room · General Track"
 description: "Clarivate's Responsible AI framework (Transparent, Ethical, Safe), product roadmap (Data Explorer, Metadata Assistant, Acquisitions Agent), Pulse of the Library 2025 data, and audience Q&A."
 supplemental: ai-the-right-way-ray-notes.html
+personal_notes_disclaimer: true
 ---
 
 <div class="card">
@@ -122,10 +123,6 @@ supplemental: ai-the-right-way-ray-notes.html
     <h3>Safe</h3>
     <p>Human in the loop. Uphold privacy &amp; security standards. Adherence to evolving global regulations. Referenced the NIST AI Risk Management Framework. <a href="ai-the-right-way-ray-notes.html#nist-framework">&#128206;</a></p>
   </div>
-</div>
-
-<div class="card">
-  <p><strong>AI model:</strong> Clarivate uses a smaller, closed AI model (&ldquo;Mini&rdquo;) as part of their controlled environment.</p>
 </div>
 
 ## New Public AI Advisory Board

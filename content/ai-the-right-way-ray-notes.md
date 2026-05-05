@@ -5,7 +5,8 @@ day: tuesday
 date: "April 14"
 session_title: "AI The Right Way: Smarter Tools, Stronger Outcomes"
 primary: ai-the-right-way.html
-description: "Ray's research notes and commentary for the AI The Right Way session — citations, background context, and external links Ray and Claude looked up during the session."
+description: "Ray's research notes and commentary for the AI The Right Way session — citations, background context, and external links Ray looked up during the session."
+personal_notes_disclaimer: true
 ---
 
 <h2 id="monday-cross-ref">Cross-reference: Monday's opening session</h2>
